@@ -1,3 +1,71 @@
-page-home {
+page-home 
+{
+    
+    .scroll-content {
+        background-color: map-get($colors, secondary);
+    }
 
+    canvas {
+        position: absolute;
+        bottom: 170px;
+    }    
+    .gapChart{
+        background-color: map-get($colors, primary);
+        width: 100%;
+        bottom: 0px;
+        position: absolute;
+        height: 171px;
+    }
+    
+    .trm-title{
+        font-size: 20pt;
+        color: map-get($colors, primary);
+    }
+    .trm-info{
+        font-size: 7pt;
+        color: map-get($colors, dark);
+    }
+    
+    .btn-date{
+        margin-top: 10px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .trm-arrow{
+        font-size: 25pt;
+        color: limegreen;
+        text-align: center;
+        width: 100%;
+        margin-top: 34px;
+    }
+    
+    .trm-floating{
+        position: absolute;
+        bottom: 80px;
+        left: 150px;
+    }
+    
+    .trm-float-txt{
+        font-size: 18pt;
+    }
+    .trm-float-txtminR{
+        font-size: 7pt;
+        color: red;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    .trm-float-txtminG{
+        font-size: 7pt;
+        color: greenyellow;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    .trm-float-txtday{
+        font-size: 7pt;
+        color: white;
+        margin-left: 20px;
+        margin-bottom: -5px;
+    }
 }

@@ -1,17 +1,31 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      INICIO
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  
+  <ion-icon ios="md-arrow-dropdown" md="md-arrow-dropdown" class="trm-arrow"></ion-icon>
+  <div text-center class="trm-title">$ 2,831.99</div>
+    <div text-center class="trm-info">TRM Vigente hoy 24 Diciembre 2018</div>
+  
+    <canvas #lineCanvas></canvas>
+    <div class="gapChart"></div>
+    
+    <ion-item class="btn-date">
+      <ion-label>Buscar por fecha</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY"></ion-datetime>>
+    </ion-item>
+    
+    <div class="trm-floating">
+        <p class="trm-float-txtday">24 Diciembre 2018</p>
+        <button color="light" ion-button clear icon-right (click)="regularShare(index)">
+        <p class="trm-float-txt">$ 2,831.99  |</p>
+        <ion-icon ios="ios-share-outline" md="md-share"></ion-icon>
+        </button>
+        <p class="trm-float-txtminG">+0.35</p>
+    </div>
 </ion-content>
