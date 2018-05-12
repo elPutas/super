@@ -34,9 +34,11 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
+  bgContent:  #F9F9F9,
   primary:    #0669eb,
   secondary:  #F9F9F9,
   danger:     #f53d3d,
+  succes:     #60bb5b,
   light:      #f4f4f4,
   dark:       #222
 );
@@ -72,7 +74,8 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
+$toolbar-background: color($colors, primary);
+$background-color: map-get($colors, bgContent);
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:

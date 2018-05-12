@@ -12,8 +12,11 @@ import { EventosPage } from '../pages/eventos/eventos';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { CalendarModule } from 'ionic3-calendar-en';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import {RlTagInputModule} from 'angular2-tag-input';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage
   ],
   imports: [
+    RlTagInputModule,
+    CalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],

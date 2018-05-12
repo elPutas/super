@@ -7,12 +7,27 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Entidades</ion-title>
+    <ion-title text-center color="primary">ENTIDADES VIGILADAS</ion-title>
   </ion-navbar>
 
+    
 </ion-header>
 
 
 <ion-content padding>
+<div text-center class="title">Consultar entidad</div>
+  <rl-tag-input
+    [addOnBlur]="false"
+    [autocomplete]="true"
+    [autocompleteItems]="autocompleteItems"
+    [(ngModel)]="autocompleteTags"
+    placeholder="Nombre del Banco">
+  </rl-tag-input>
 
+<ion-list>
+  
+</ion-list> 
+    <div text-center  >
+    <button ion-button color="succes" round>Consultar</button>
+        </div>
 </ion-content>

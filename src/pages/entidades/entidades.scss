@@ -1,3 +1,52 @@
 page-entidades {
-
+    
+    
+    [_nghost-c1] {
+        background-color: color($colors, primary);
+        border-radius: 40px;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 1px;
+    }
+    [_nghost-c1] .ng2-tag-input-remove[_ngcontent-c1] {
+        color: color($colors, primary);
+        background: #fff;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+    }
+    
+    [_nghost-c0] .ng2-tag-input-field[_ngcontent-c0] {
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        display: inline-block;
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    [_nghost-c0] {
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        display: block;
+        padding: 8px;
+        box-shadow: none;
+    }
+    
+    
+    .title{
+        font-size: 20pt;
+        padding: 20px;
+        font-weight: bolder;
+        color: map-get($colors, primary);
+    }
+    
+    .ion-button{
+        color: #fff;
+    }
 }

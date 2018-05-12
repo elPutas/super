@@ -13,7 +13,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-entidades',
   templateUrl: 'entidades.html',
 })
-export class EntidadesPage {
+export class EntidadesPage 
+{
+
+ public autocompleteTags = [];
+  public autocompleteItems = [
+    'BANCO DE LA REPÚBLICA',
+    'BANCO DE BOGOTÁ',
+    'BANCO POPULAR',
+    'BANCO CORPBANCA COLOMBIA S.A.',
+    'BANCOLOMBIA',
+    'CITIBANK COLOMBIA',
+    'BANCO GNB SUDAMERIS COLOMBIA',
+    'BBVA COLOMBIA'
+  ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
