@@ -76,7 +76,7 @@ export class HomePage
                             data: [2791.88, 2791.88, 2781.95, 2733.24, 2810.03, 2705.34, 2705.34, 2726.47, 2705.34, 2705.34],
                             spanGaps: false,
                     }],
-                    lineAtIndex: 4
+                    lineAtIndex: 1
                   },
                   options:
                 {

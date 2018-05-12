@@ -14,6 +14,7 @@ import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
@@ -22,6 +23,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {RlTagInputModule} from 'angular2-tag-input';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, "/public/i18n/", "-lang.json");
+}
 
 @NgModule({
   declarations: [
