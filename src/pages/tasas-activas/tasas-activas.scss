@@ -1,4 +1,10 @@
-page-entidades {
+page-tasas-activas {
+    .titlePage{
+            font-size: 20pt;
+            padding: 20px;
+            font-weight: bolder;
+            color: map-get($colors, primary);
+        }
     
     
     [_nghost-c1] {
@@ -23,10 +29,7 @@ page-entidades {
         width: 100%;
         box-shadow: none;
         border: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 15px;
     }
     
     
@@ -38,15 +41,4 @@ page-entidades {
         box-shadow: none;
     }
     
-    
-    .titlePage{
-        font-size: 20pt;
-        padding: 20px;
-        font-weight: bolder;
-        color: map-get($colors, primary);
-    }
-    
-    .ion-button{
-        color: #fff;
-    }
 }

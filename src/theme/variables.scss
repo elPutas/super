@@ -75,6 +75,7 @@ $colors: (
 @import "ionic.theme.default";
 
 $toolbar-background: color($colors, primary);
+$toolbar-text-align: center;
 $background-color: map-get($colors, bgContent);
 // Ionicons
 // --------------------------------------------------
