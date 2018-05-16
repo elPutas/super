@@ -1,0 +1,73 @@
+page-alert-event {
+    .sample-modal-page {
+            padding: 30px;
+            background: rgba(0,0,0,0.5);
+        }
+    .bg-alert{
+        background-color: white;
+        height: 60%;
+        top: 60%;
+        position: relative;
+        padding: 10px;
+        line-height: 5px;
+    }
+    .bg-btn{
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 46%;
+    }
+    
+    .button-close{
+        background: none;
+        width: 100%;
+        position: absolute;
+        margin-top: -35px;
+    }
+    
+    .line{
+        background-color: #9E9E9E;
+        height: 1px !important;
+        height: 90%;
+        margin: 0 auto;
+    }
+    
+    .title-link{
+        color: map-get($colors, primary);
+        font-size: 8pt;
+    }
+    .title-event{
+        color: gray;
+        font-size: 10pt;
+    }
+    .title-date{
+        color: map-get($colors, primary);
+        font-size: 12pt;
+    }
+    
+    
+    .ion-md-arrow-dropup-circle:before {
+        font-size: 50px;
+        color: white;
+        margin-left: -10px;
+    }
+    
+    .ion-ios-arrow-dropup-circle:before{
+        font-size: 50px;
+        color: white;
+        margin-left: -10px;
+    }
+    
+    .ion-md-arrow-dropdown-circle:before {
+        font-size: 50px;
+        color: white;
+        margin-left: -10px;
+    }
+    .ion-ios-arrow-dropdown-circle:before{
+        font-size: 50px;
+        color: white;
+        margin-left: -10px;
+    }
+}

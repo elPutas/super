@@ -3,6 +3,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Chart } from 'chart.js';
 import { Http } from '@angular/http'; 
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 
 @Component({
   selector: 'page-home',

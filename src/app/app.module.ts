@@ -11,8 +11,13 @@ import { RedesPage } from '../pages/redes/redes';
 import { EventosPage } from '../pages/eventos/eventos';
 
 import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
+import { TasasActivasResultPage } from '../pages/tasas-activas-result/tasas-activas-result';
 
 import { TabsPage } from '../pages/tabs/tabs';
+
+
+//alerts
+import { AlertEventPage } from '../pages/alert-event/alert-event';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -24,9 +29,46 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {RlTagInputModule} from 'angular2-tag-input';
 
-// AoT requires an exported function for factories
+
+// webpack-translate-loader.ts
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http, "/public/i18n/", "-lang.json");
+    return new TranslateHttpLoader(http);
+}
+
+@Injectable()
+export class WA18396Interceptor implements HttpInterceptor {
+	constructor() { }
+
+	intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+		if (req.responseType == 'json') {
+			req = req.clone({ responseType: 'text' });
+
+			return next.handle(req).map(response => {
+				if (response instanceof HttpResponse) {
+					response = response.clone<any>({ body: JSON.parse(response.body) });
+				}
+
+				return response;
+			});
+		}
+
+		return next.handle(req);
+	}
+}
+
+declare var System: System;
+interface System {
+  import(request: string): Promise<any>;
+}
+
+export class WebpackTranslateLoader implements TranslateLoader {
+  getTranslation(lang: string): Observable<any> {
+    return Observable.fromPromise(System.import(`../assets/i18n/${lang}.json`));
+  }
 }
 
 @NgModule({
@@ -38,6 +80,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RedesPage,
     EventosPage,
     TasasActivasPage,
+    TasasActivasResultPage,
+    AlertEventPage,
     TabsPage
   ],
   imports: [
@@ -50,9 +94,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+          }
     })
   ],
   bootstrap: [IonicApp],
@@ -64,6 +108,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RedesPage,
     EventosPage,
     TasasActivasPage,
+    TasasActivasResultPage,
+    AlertEventPage,
     TabsPage
   ],
   providers: [
