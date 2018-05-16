@@ -17,6 +17,18 @@ import { AlertEventPage } from '../alert-event/alert-event';
 export class EventosPage 
 {
 
+     currentEvents = [
+        {
+            year: 2018,
+            month: 4,
+            date: 15
+        },
+        {
+            year: 2018,
+            month: 4,
+            date: 13
+        }
+      ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
@@ -28,25 +40,15 @@ export class EventosPage
   
   
     
+  onDaySelect(data)
+  {
+    console.log("click", data)
+    this.presentModal()
+  }
+    
 
   ionViewDidLoad() {
     
-    /*
-    this.currentEvents = [
-      {
-        year: 2018,
-        month: 5,
-        date: 15
-      },
-      {
-        year: 2018,
-        month: 5,
-        date: 13
-      }
-    ];
-    
-    //console.log('ionViewDidLoad EventosPage', this.currentEvents);
-    */
   }
 
 }

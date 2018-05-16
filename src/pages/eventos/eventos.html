@@ -15,8 +15,6 @@
 
 <ion-content padding>
     
-    <ion-calendar #calendar  ></ion-calendar>
-    <a ion-item (click)="presentModal()">
-      Gollum
-    </a>
+    <ion-calendar #calendar  [events]="currentEvents" (onDaySelect)="onDaySelect($event)" ></ion-calendar>
+    
 </ion-content>
