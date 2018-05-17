@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TasasActivasResultPage } from '../tasas-activas-result/tasas-activas-result';
 
 /**
  * Generated class for the TasasActivasPage page.
@@ -13,7 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-tasas-activas',
   templateUrl: 'tasas-activas.html',
 })
-export class TasasActivasPage {
+export class TasasActivasPage 
+{
+
+    tasasActivasResultPage = TasasActivasResultPage
 
 public autocompleteTags = [];
   public autocompleteItems = [

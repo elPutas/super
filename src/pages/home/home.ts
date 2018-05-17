@@ -2,8 +2,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Chart } from 'chart.js';
+
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
+
 
 @Component({
   selector: 'page-home',
@@ -111,57 +113,6 @@ export class HomePage
 
             var ctx = this.lineCanvas.nativeElement;
             this.lineChart = new Chart(ctx, config);
-
-            /*this.lineChart = new Chart(this.lineCanvas.nativeElement, {
-              type: 'line',
-              data: {
-                labels: ["", "", "", "", "", "", "", "", "", ""],
-                datasets: [{
-                      borderWidth: 0,
-                      label: "",
-                      fill: true,
-                      lineTension: 0,
-                      backgroundColor: "#0669eb",
-                      borderColor: "#0669eb",
-                      borderCapStyle: 'butt',
-                      borderDash: [],
-                      borderDashOffset: 0.0,
-                      borderJoinStyle: 'miter',
-                      pointBorderColor: "rgba(255,255,255,1)",
-                      pointBackgroundColor: "#fff",
-                      pointBorderWidth: 1,
-                      pointHoverRadius: 5,
-                      pointHoverBorderColor: "rgba(220,220,220,1)",
-                      pointHoverBorderWidth: 2,
-                      pointRadius: 1,
-                      pointHitRadius: 10,
-                      data: [2791.88, 2791.88, 2781.95, 2733.24, 2810.03, 2705.34, 2705.34, 2726.47, 2705.34, 2705.34],
-                      spanGaps: false,
-                    }],
-                    lineAtIndex: 1
-                  },
-                  options:
-                {
-                    scales:
-                    {
-                        xAxes: [{
-                            display: false
-                        }],
-                        yAxes: [{
-                            display: false,
-
-                        }]
-                    },
-                   legend:
-                   {
-                     labels:
-                     {
-                       boxWidth: 0,
-                     }
-                   }
-                }
-            });*/
-
         }
 
         dayInMiliseconds(){
@@ -201,20 +152,6 @@ export class HomePage
                 dataset.data[i] = data_serie[i];
               }
                 //dataset.data.push(data_serie);
-            });
-            chart.update();
-        }
-
-        removeData(chart) {
-            chart.data.datasets.forEach((dataset) => {
-              //chart.data.labels.pop();
-              /*chart.data.labels.forEach((label) => {
-                console.log(label);
-              });*/
-              dataset.data.forEach((row) => {
-                row.pop();
-              });
-
             });
             chart.update();
         }
@@ -290,9 +227,6 @@ export class HomePage
             var data_index = (serie.length-1) - index;
             var data_ser = serie.reverse();
             console.log(data_ser);
-            //this.chart.data = data_ser;
-            //this.chart.update();
-            //this.removeData(this.lineChart);
             this.lineChart.data.lineAtIndex = data_index;
             this.addData(this.lineChart, data_ser);
           });
@@ -320,56 +254,8 @@ export class HomePage
             }
 
           }
-          /*
-          console.log(new Date(end_real));
-          console.log(new Date(start_real));
-          */
 
-          this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real);/*.then((value)=>{
-            start = start_real;
-            end = value;
-            this.trmProvider.httpGetTrmGovco(
-              this.stringifyDateForQuery(new Date(start)),
-              this.stringifyDateForQuery(new Date(end))
-            ).then((data) =>{
-              console.log(new Date(end_real));
-              var serie = [];
-              var index = data.length;
-              var fecha_progress = end_real;
-              for (let i = (data.length -1); i >= 0; i = i-1) {
-                if(serie.length == 10){
-                  break;
-                }
-                var days_between_range = this.getAvlbleDaysForToday(new Date(data[i].vigenciadesde), new Date(data[i].vigenciahasta));
-
-                for(let j=0; j <= days_between_range; j++){
-                  if(
-                    new Date(data[i].vigenciahasta).getTime() >= fecha_progress &&
-                    new Date(data[i].vigenciadesde).getTime() <= fecha_progress &&
-                    serie.length <= 10
-                    ){
-                      serie.push( parseFloat(data[i].valor));
-                      if(choosed_day.getTime() ==  fecha_progress){
-                        index = serie.length - 1;
-                      }
-                      fecha_progress = fecha_progress - this.dayInMiliseconds();
-                      if(serie.length == 10){
-                        break;
-                      }
-                  }
-                }
-              }
-
-              var data_index = (serie.length-1) - index;
-              var data_ser = serie.reverse();
-              console.log(data_ser);
-
-            });
-
-          });*/
-
-
-
+          this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real);
         }
 
 }

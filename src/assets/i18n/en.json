@@ -12,5 +12,9 @@
   "oct_month":"October",
   "nov_month":"November",
   "dec_month":"December",
-  "events":"events"
+  "events":"events",
+  "home":"Home",
+  "about": "About",
+  "contact": "Contact",
+  "welcome":"Welcome to ionic"
 }

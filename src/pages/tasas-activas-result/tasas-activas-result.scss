@@ -1,0 +1,63 @@
+page-tasas-activas-result {
+    .titlePage{
+        font-size: 20pt;
+        padding: 30px;
+        font-weight: bolder;
+        background-color: white;
+        color: map-get($colors, primary);
+        height: 110px;
+    }
+    
+    .bankPage{
+        font-size: 17pt;
+        margin-top: 30px;
+        font-weight: 100;
+        color: #0669eb;
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+    
+    .typePage{
+        font-size: 15pt;
+        padding: 10px;
+        font-weight: 100;
+        background: linear-gradient(to right, #2a94d6 0%, #7db9e8 100%);
+        color: white;
+        height: 45px;
+        width: 70%;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .item{
+        margin-top: 5px;
+        width: 70%;
+        height: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        background: linear-gradient(to right, #2840c9 0%,#778ad6 100%);
+        color: white;
+        padding: 5px;
+        border-radius: 7px;
+    }
+    .itemText{
+        color: white;
+        font-size: 9pt;
+    }
+    .itemNum{
+        background: linear-gradient(to top, #2840c9 0%,#778ad6 100%);
+        color: white;
+        width: 60px;
+        text-align: center;
+        margin-top: -8px;
+        height: 26px;
+        margin-left: 18px;
+        padding-top: 5px;
+    }
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a94d6+0,7db9e8+100 */
+
+    
+}

@@ -1,9 +1,11 @@
 page-tasas-activas {
     .titlePage{
             font-size: 20pt;
-            padding: 20px;
+            padding: 30px;
             font-weight: bolder;
+            background-color: white;
             color: map-get($colors, primary);
+            height: 110px;
         }
     
     
@@ -34,11 +36,22 @@ page-tasas-activas {
     
     
     [_nghost-c0] {
+        width: 94%;
         font-family: "Roboto", "Helvetica Neue", sans-serif;
         font-size: 16px;
         display: block;
         padding: 8px;
         box-shadow: none;
+        margin: 0 auto;
+    }
+    
+    .creditBox{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btnNext{
+        margin-top: 30px;
+        width: 50%;
     }
     
 }
