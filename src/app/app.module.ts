@@ -14,7 +14,7 @@ import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {HttpClient, HttpClientModule } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
@@ -23,10 +23,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {RlTagInputModule} from 'angular2-tag-input';
+import { TrmProvider } from '../providers/trm/trm';
 
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
+/*export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, "/public/i18n/", "-lang.json");
+}*/
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(httpClient: HttpClient) {
+    return new TranslateHttpLoader(httpClient, "../assets/i18n/", ".json");
 }
 
 @NgModule({
@@ -44,8 +50,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     RlTagInputModule,
     CalendarModule,
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    
     HttpClientModule,
     TranslateModule.forRoot({
         loader: {
@@ -53,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
-    })
+    }),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -69,7 +74,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    TrmProvider
   ]
 })
 export class AppModule {}
