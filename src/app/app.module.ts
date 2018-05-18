@@ -44,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 
+
 @Injectable()
 export class WA18396Interceptor implements HttpInterceptor {
 	constructor() { }
@@ -127,7 +128,6 @@ export class WebpackTranslateLoader implements TranslateLoader {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ServiceBankProvider
     ServiceBankProvider,
     TrmProvider
   ]
