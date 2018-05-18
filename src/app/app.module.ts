@@ -27,13 +27,16 @@ import { CalendarModule } from 'ionic3-calendar-en';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import {AutoCompleteModule} from 'primeng/autocomplete';
 import {RlTagInputModule} from 'angular2-tag-input';
+
 
 
 // webpack-translate-loader.ts
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { ServiceBankProvider } from '../providers/service-bank/service-bank';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -86,6 +89,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
   ],
   imports: [
     RlTagInputModule,
+    AutoCompleteModule,
     CalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -115,7 +119,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServiceBankProvider
   ]
 })
 export class AppModule {}
