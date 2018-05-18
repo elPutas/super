@@ -16,17 +16,18 @@
 
 <ion-content padding>
     <div text-center class="titlePage">Consultar entidad</div>
-    <rl-tag-input
-    [addOnBlur]="false"
-    [autocomplete]="true"
-    [autocompleteItems]="autocompleteItems"
-    [(ngModel)]="autocompleteTags"
-    placeholder="Nombre del Banco">
-    </rl-tag-input>
+    
+    <p-autoComplete [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
+    placeholder="Countries" [minLength]="1"></p-autoComplete>
+    
+    
+    <ion-list *ngIf="filteredCountriesSingle?.length < 3" >
+        <ion-item *ngFor="let c of filteredCountriesSingle">{{c.name}}</ion-item>
+    </ion-list>
+    
+    
 
-    <ion-list>
-
-    </ion-list> 
+    
     <div text-center  >
         <button ion-button color="succes" round>Consultar</button>
     </div>
