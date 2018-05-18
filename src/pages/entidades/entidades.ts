@@ -41,15 +41,10 @@ export class EntidadesPage
     filteredCountriesSingle: any[];
 
     
-  constructor(public navCtrl: NavController, public navParams: NavParams, private serviceBankProvider: ServiceBankProvider, public http: Http) 
+  constructor(public navCtrl: NavController, public navParams: NavParams, private serviceBankProvider: ServiceBankProvider) 
   {
-    let url = "https://www.datos.gov.co/resource/sr9n-792w.json";
-
-    this.http.get(url).map(res => res.json()).subscribe(data => {
-
-        console.log(data);
-
-    });
+  
+    
   }
   
   filterCountrySingle(event) {
