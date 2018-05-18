@@ -105,11 +105,6 @@ export class WebpackTranslateLoader implements TranslateLoader {
                 deps: [HttpClient]
           }
     })
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
-    }),
-    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
