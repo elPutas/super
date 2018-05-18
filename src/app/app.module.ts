@@ -30,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {RlTagInputModule} from 'angular2-tag-input';
 
+import { TrmProvider } from '../providers/trm/trm';
 
 
 // webpack-translate-loader.ts
@@ -41,6 +42,7 @@ import { ServiceBankProvider } from '../providers/service-bank/service-bank';
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
 }
+
 
 @Injectable()
 export class WA18396Interceptor implements HttpInterceptor {
@@ -102,6 +104,11 @@ export class WebpackTranslateLoader implements TranslateLoader {
                 deps: [HttpClient]
           }
     })
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    }),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -121,6 +128,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider
+    ServiceBankProvider,
+    TrmProvider
   ]
 })
 export class AppModule {}

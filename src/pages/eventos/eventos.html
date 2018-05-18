@@ -8,6 +8,7 @@
 
   <ion-navbar>
     <ion-title>EVENTOS</ion-title>
+    <ion-title style="text-transform: uppercase;">{{'events' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,6 +16,7 @@
 
 <ion-content padding>
     
+
     <ion-calendar #calendar  [events]="currentEvents" (onDaySelect)="onDaySelect($event)" ></ion-calendar>
-    
+
 </ion-content>

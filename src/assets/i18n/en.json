@@ -1,7 +1,20 @@
-
 {
-"home":"Home",
-"about": "About",
-"contact": "Contact",
-"welcome":"Welcome to ionic"
+  "trm_valid_today_label":"TRM Valid today",
+  "jan_month":"January",
+  "feb_month":"February",
+  "mar_month":"March",
+  "apr_month":"April",
+  "may_month":"May",
+  "jun_month":"June",
+  "jul_month":"July",
+  "ago_month":"August",
+  "sep_month":"September",
+  "oct_month":"October",
+  "nov_month":"November",
+  "dec_month":"December",
+  "events":"events",
+  "home":"Home",
+  "about": "About",
+  "contact": "Contact",
+  "welcome":"Welcome to ionic"
 }
