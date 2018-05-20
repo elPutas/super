@@ -165,7 +165,7 @@ export class HomePage
           return year+'-'+month+'-'+day;
         }
 
-        addData(chart, data_serie) {
+        addData(chart, data_serie, index_line) {
             chart.data.datasets.forEach((dataset) => {
                 //chart.data.labels.push("");
               for(let i = 0; i < data_serie.length; i++){
@@ -173,6 +173,8 @@ export class HomePage
               }
                 //dataset.data.push(data_serie);
             });
+            this.sel_trm = data_serie[index_line];
+            chart.data.lineAtIndex = index_line;
             chart.update();
         }
 
@@ -243,9 +245,7 @@ export class HomePage
             //var data_index = (serie.length-1) - index;
             var data_ser = serie.reverse();
             console.log(data_ser);
-            this.sel_trm = data_ser[index_line];
-            this.lineChart.data.lineAtIndex = index_line;
-            this.addData(this.lineChart, data_ser);
+            this.addData(this.lineChart, data_ser, index_line);
           });
         }
 
@@ -277,7 +277,18 @@ export class HomePage
 
           }
 
-          this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real, (index_line-1));
+          this.soapProgressserial(choosed_day ,start_real ,end_real ,index_line);
+
+          //this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real, (index_line-1));
+        }
+
+        public soapProgressserial(choosed_day ,start_real ,end_real ,index_line){
+          var fecha_progress = end_real;
+          for (let i = 0; i <10; i++) {
+            console.log(new Date(fecha_progress));
+            fecha_progress = fecha_progress - this.dayInMiliseconds();
+          }
+          console.log(new Date(start_real));
         }
 
         public regularShare(){
