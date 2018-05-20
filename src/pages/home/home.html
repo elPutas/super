@@ -10,9 +10,9 @@
 
   <ion-icon ios="md-arrow-dropdown" md="md-arrow-dropdown" class="trm-arrow"></ion-icon>
 
-  <div text-center class="trm-title">$ 2,831.99</div>
+  <div text-center class="trm-title">$ {{ sel_trm }}</div>
 
-    <div text-center class="trm-info">{{ 'trm_valid_today_label' | translate }} 24 {{ 'dec_month' | translate }} 2018</div>
+    <div text-center class="trm-info">{{ 'trm_valid_today_label' | translate }} {{ label_day }} {{ label_month | translate }} {{ label_year }}</div>
 
     <canvas #lineCanvas></canvas>
     <div class="gapChart"></div>
@@ -23,9 +23,9 @@
     </ion-item>
 
     <div class="trm-floating">
-        <p class="trm-float-txtday">24 Diciembre 2018</p>
+        <p class="trm-float-txtday">{{ label_day }} {{ label_month | translate }} {{ label_year }}</p>
         <button color="light" ion-button clear icon-right (click)="regularShare(index)">
-        <p class="trm-float-txt">$ 2,831.99  |</p>
+        <p class="trm-float-txt">$ {{ sel_trm }}  |</p>
         <ion-icon ios="ios-share-outline" md="md-share"></ion-icon>
         </button>
         <p class="trm-float-txtminG">+0.35</p>
