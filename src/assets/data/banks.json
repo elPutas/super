@@ -1,247 +1,5005 @@
-{
-    "data": [ 
-        {"name": "Afghanistan", "code": "AF"}, 
-        {"name": "Åland Islands", "code": "AX"}, 
-        {"name": "Albania", "code": "AL"}, 
-        {"name": "Algeria", "code": "DZ"}, 
-        {"name": "American Samoa", "code": "AS"}, 
-        {"name": "Andorra", "code": "AD"}, 
-        {"name": "Angola", "code": "AO"}, 
-        {"name": "Anguilla", "code": "AI"}, 
-        {"name": "Antarctica", "code": "AQ"}, 
-        {"name": "Antigua and Barbuda", "code": "AG"}, 
-        {"name": "Argentina", "code": "AR"}, 
-        {"name": "Armenia", "code": "AM"}, 
-        {"name": "Aruba", "code": "AW"}, 
-        {"name": "Australia", "code": "AU"}, 
-        {"name": "Austria", "code": "AT"}, 
-        {"name": "Azerbaijan", "code": "AZ"}, 
-        {"name": "Bahamas", "code": "BS"}, 
-        {"name": "Bahrain", "code": "BH"}, 
-        {"name": "Bangladesh", "code": "BD"}, 
-        {"name": "Barbados", "code": "BB"}, 
-        {"name": "Belarus", "code": "BY"}, 
-        {"name": "Belgium", "code": "BE"}, 
-        {"name": "Belize", "code": "BZ"}, 
-        {"name": "Benin", "code": "BJ"}, 
-        {"name": "Bermuda", "code": "BM"}, 
-        {"name": "Bhutan", "code": "BT"}, 
-        {"name": "Bolivia", "code": "BO"}, 
-        {"name": "Bosnia and Herzegovina", "code": "BA"}, 
-        {"name": "Botswana", "code": "BW"}, 
-        {"name": "Bouvet Island", "code": "BV"}, 
-        {"name": "Brazil", "code": "BR"}, 
-        {"name": "British Indian Ocean Territory", "code": "IO"}, 
-        {"name": "Brunei Darussalam", "code": "BN"}, 
-        {"name": "Bulgaria", "code": "BG"}, 
-        {"name": "Burkina Faso", "code": "BF"}, 
-        {"name": "Burundi", "code": "BI"}, 
-        {"name": "Cambodia", "code": "KH"}, 
-        {"name": "Cameroon", "code": "CM"}, 
-        {"name": "Canada", "code": "CA"}, 
-        {"name": "Cape Verde", "code": "CV"}, 
-        {"name": "Cayman Islands", "code": "KY"}, 
-        {"name": "Central African Republic", "code": "CF"}, 
-        {"name": "Chad", "code": "TD"}, 
-        {"name": "Chile", "code": "CL"}, 
-        {"name": "China", "code": "CN"}, 
-        {"name": "Christmas Island", "code": "CX"}, 
-        {"name": "Cocos (Keeling) Islands", "code": "CC"}, 
-        {"name": "Colombia", "code": "CO"}, 
-        {"name": "Comoros", "code": "KM"}, 
-        {"name": "Congo", "code": "CG"}, 
-        {"name": "Congo, The Democratic Republic of the", "code": "CD"}, 
-        {"name": "Cook Islands", "code": "CK"}, 
-        {"name": "Costa Rica", "code": "CR"}, 
-        {"name": "Cote D\"Ivoire", "code": "CI"}, 
-        {"name": "Croatia", "code": "HR"}, 
-        {"name": "Cuba", "code": "CU"}, 
-        {"name": "Cyprus", "code": "CY"}, 
-        {"name": "Czech Republic", "code": "CZ"}, 
-        {"name": "Denmark", "code": "DK"}, 
-        {"name": "Djibouti", "code": "DJ"}, 
-        {"name": "Dominica", "code": "DM"}, 
-        {"name": "Dominican Republic", "code": "DO"}, 
-        {"name": "Ecuador", "code": "EC"}, 
-        {"name": "Egypt", "code": "EG"}, 
-        {"name": "El Salvador", "code": "SV"}, 
-        {"name": "Equatorial Guinea", "code": "GQ"}, 
-        {"name": "Eritrea", "code": "ER"}, 
-        {"name": "Estonia", "code": "EE"}, 
-        {"name": "Ethiopia", "code": "ET"}, 
-        {"name": "Falkland Islands (Malvinas)", "code": "FK"}, 
-        {"name": "Faroe Islands", "code": "FO"}, 
-        {"name": "Fiji", "code": "FJ"}, 
-        {"name": "Finland", "code": "FI"}, 
-        {"name": "France", "code": "FR"}, 
-        {"name": "French Guiana", "code": "GF"}, 
-        {"name": "French Polynesia", "code": "PF"}, 
-        {"name": "French Southern Territories", "code": "TF"}, 
-        {"name": "Gabon", "code": "GA"}, 
-        {"name": "Gambia", "code": "GM"}, 
-        {"name": "Georgia", "code": "GE"}, 
-        {"name": "Germany", "code": "DE"}, 
-        {"name": "Ghana", "code": "GH"}, 
-        {"name": "Gibraltar", "code": "GI"}, 
-        {"name": "Greece", "code": "GR"}, 
-        {"name": "Greenland", "code": "GL"}, 
-        {"name": "Grenada", "code": "GD"}, 
-        {"name": "Guadeloupe", "code": "GP"}, 
-        {"name": "Guam", "code": "GU"}, 
-        {"name": "Guatemala", "code": "GT"}, 
-        {"name": "Guernsey", "code": "GG"}, 
-        {"name": "Guinea", "code": "GN"}, 
-        {"name": "Guinea-Bissau", "code": "GW"}, 
-        {"name": "Guyana", "code": "GY"}, 
-        {"name": "Haiti", "code": "HT"}, 
-        {"name": "Heard Island and Mcdonald Islands", "code": "HM"}, 
-        {"name": "Holy See (Vatican City State)", "code": "VA"}, 
-        {"name": "Honduras", "code": "HN"}, 
-        {"name": "Hong Kong", "code": "HK"}, 
-        {"name": "Hungary", "code": "HU"}, 
-        {"name": "Iceland", "code": "IS"}, 
-        {"name": "India", "code": "IN"}, 
-        {"name": "Indonesia", "code": "ID"}, 
-        {"name": "Iran, Islamic Republic Of", "code": "IR"}, 
-        {"name": "Iraq", "code": "IQ"}, 
-        {"name": "Ireland", "code": "IE"}, 
-        {"name": "Isle of Man", "code": "IM"}, 
-        {"name": "Israel", "code": "IL"}, 
-        {"name": "Italy", "code": "IT"}, 
-        {"name": "Jamaica", "code": "JM"}, 
-        {"name": "Japan", "code": "JP"}, 
-        {"name": "Jersey", "code": "JE"}, 
-        {"name": "Jordan", "code": "JO"}, 
-        {"name": "Kazakhstan", "code": "KZ"}, 
-        {"name": "Kenya", "code": "KE"}, 
-        {"name": "Kiribati", "code": "KI"}, 
-        {"name": "Korea, Democratic People\"S Republic of", "code": "KP"}, 
-        {"name": "Korea, Republic of", "code": "KR"}, 
-        {"name": "Kuwait", "code": "KW"}, 
-        {"name": "Kyrgyzstan", "code": "KG"}, 
-        {"name": "Lao People\"S Democratic Republic", "code": "LA"}, 
-        {"name": "Latvia", "code": "LV"}, 
-        {"name": "Lebanon", "code": "LB"}, 
-        {"name": "Lesotho", "code": "LS"}, 
-        {"name": "Liberia", "code": "LR"}, 
-        {"name": "Libyan Arab Jamahiriya", "code": "LY"}, 
-        {"name": "Liechtenstein", "code": "LI"}, 
-        {"name": "Lithuania", "code": "LT"}, 
-        {"name": "Luxembourg", "code": "LU"}, 
-        {"name": "Macao", "code": "MO"}, 
-        {"name": "Macedonia, The Former Yugoslav Republic of", "code": "MK"}, 
-        {"name": "Madagascar", "code": "MG"}, 
-        {"name": "Malawi", "code": "MW"}, 
-        {"name": "Malaysia", "code": "MY"}, 
-        {"name": "Maldives", "code": "MV"}, 
-        {"name": "Mali", "code": "ML"}, 
-        {"name": "Malta", "code": "MT"}, 
-        {"name": "Marshall Islands", "code": "MH"}, 
-        {"name": "Martinique", "code": "MQ"}, 
-        {"name": "Mauritania", "code": "MR"}, 
-        {"name": "Mauritius", "code": "MU"}, 
-        {"name": "Mayotte", "code": "YT"}, 
-        {"name": "Mexico", "code": "MX"}, 
-        {"name": "Micronesia, Federated States of", "code": "FM"}, 
-        {"name": "Moldova, Republic of", "code": "MD"}, 
-        {"name": "Monaco", "code": "MC"}, 
-        {"name": "Mongolia", "code": "MN"}, 
-        {"name": "Montserrat", "code": "MS"}, 
-        {"name": "Morocco", "code": "MA"}, 
-        {"name": "Mozambique", "code": "MZ"}, 
-        {"name": "Myanmar", "code": "MM"}, 
-        {"name": "Namibia", "code": "NA"}, 
-        {"name": "Nauru", "code": "NR"}, 
-        {"name": "Nepal", "code": "NP"}, 
-        {"name": "Netherlands", "code": "NL"}, 
-        {"name": "Netherlands Antilles", "code": "AN"}, 
-        {"name": "New Caledonia", "code": "NC"}, 
-        {"name": "New Zealand", "code": "NZ"}, 
-        {"name": "Nicaragua", "code": "NI"}, 
-        {"name": "Niger", "code": "NE"}, 
-        {"name": "Nigeria", "code": "NG"}, 
-        {"name": "Niue", "code": "NU"}, 
-        {"name": "Norfolk Island", "code": "NF"}, 
-        {"name": "Northern Mariana Islands", "code": "MP"}, 
-        {"name": "Norway", "code": "NO"}, 
-        {"name": "Oman", "code": "OM"}, 
-        {"name": "Pakistan", "code": "PK"}, 
-        {"name": "Palau", "code": "PW"}, 
-        {"name": "Palestinian Territory, Occupied", "code": "PS"}, 
-        {"name": "Panama", "code": "PA"}, 
-        {"name": "Papua New Guinea", "code": "PG"}, 
-        {"name": "Paraguay", "code": "PY"}, 
-        {"name": "Peru", "code": "PE"}, 
-        {"name": "Philippines", "code": "PH"}, 
-        {"name": "Pitcairn", "code": "PN"}, 
-        {"name": "Poland", "code": "PL"}, 
-        {"name": "Portugal", "code": "PT"}, 
-        {"name": "Puerto Rico", "code": "PR"}, 
-        {"name": "Qatar", "code": "QA"}, 
-        {"name": "Reunion", "code": "RE"}, 
-        {"name": "Romania", "code": "RO"}, 
-        {"name": "Russian Federation", "code": "RU"}, 
-        {"name": "RWANDA", "code": "RW"}, 
-        {"name": "Saint Helena", "code": "SH"}, 
-        {"name": "Saint Kitts and Nevis", "code": "KN"}, 
-        {"name": "Saint Lucia", "code": "LC"}, 
-        {"name": "Saint Pierre and Miquelon", "code": "PM"}, 
-        {"name": "Saint Vincent and the Grenadines", "code": "VC"}, 
-        {"name": "Samoa", "code": "WS"}, 
-        {"name": "San Marino", "code": "SM"}, 
-        {"name": "Sao Tome and Principe", "code": "ST"}, 
-        {"name": "Saudi Arabia", "code": "SA"}, 
-        {"name": "Senegal", "code": "SN"}, 
-        {"name": "Serbia and Montenegro", "code": "CS"}, 
-        {"name": "Seychelles", "code": "SC"}, 
-        {"name": "Sierra Leone", "code": "SL"}, 
-        {"name": "Singapore", "code": "SG"}, 
-        {"name": "Slovakia", "code": "SK"}, 
-        {"name": "Slovenia", "code": "SI"}, 
-        {"name": "Solomon Islands", "code": "SB"}, 
-        {"name": "Somalia", "code": "SO"}, 
-        {"name": "South Africa", "code": "ZA"}, 
-        {"name": "South Georgia and the South Sandwich Islands", "code": "GS"}, 
-        {"name": "Spain", "code": "ES"}, 
-        {"name": "Sri Lanka", "code": "LK"}, 
-        {"name": "Sudan", "code": "SD"}, 
-        {"name": "Suriname", "code": "SR"}, 
-        {"name": "Svalbard and Jan Mayen", "code": "SJ"}, 
-        {"name": "Swaziland", "code": "SZ"}, 
-        {"name": "Sweden", "code": "SE"}, 
-        {"name": "Switzerland", "code": "CH"}, 
-        {"name": "Syrian Arab Republic", "code": "SY"}, 
-        {"name": "Taiwan, Province of China", "code": "TW"}, 
-        {"name": "Tajikistan", "code": "TJ"}, 
-        {"name": "Tanzania, United Republic of", "code": "TZ"}, 
-        {"name": "Thailand", "code": "TH"}, 
-        {"name": "Timor-Leste", "code": "TL"}, 
-        {"name": "Togo", "code": "TG"}, 
-        {"name": "Tokelau", "code": "TK"}, 
-        {"name": "Tonga", "code": "TO"}, 
-        {"name": "Trinidad and Tobago", "code": "TT"}, 
-        {"name": "Tunisia", "code": "TN"}, 
-        {"name": "Turkey", "code": "TR"}, 
-        {"name": "Turkmenistan", "code": "TM"}, 
-        {"name": "Turks and Caicos Islands", "code": "TC"}, 
-        {"name": "Tuvalu", "code": "TV"}, 
-        {"name": "Uganda", "code": "UG"}, 
-        {"name": "Ukraine", "code": "UA"}, 
-        {"name": "United Arab Emirates", "code": "AE"}, 
-        {"name": "United Kingdom", "code": "GB"}, 
-        {"name": "United States", "code": "US"}, 
-        {"name": "United States Minor Outlying Islands", "code": "UM"}, 
-        {"name": "Uruguay", "code": "UY"}, 
-        {"name": "Uzbekistan", "code": "UZ"}, 
-        {"name": "Vanuatu", "code": "VU"}, 
-        {"name": "Venezuela", "code": "VE"}, 
-        {"name": "Viet Nam", "code": "VN"}, 
-        {"name": "Virgin Islands, British", "code": "VG"}, 
-        {"name": "Virgin Islands, U.S.", "code": "VI"}, 
-        {"name": "Wallis and Futuna", "code": "WF"}, 
-        {"name": "Western Sahara", "code": "EH"}, 
-        {"name": "Yemen", "code": "YE"}, 
-        {"name": "Zambia", "code": "ZM"}, 
-        {"name": "Zimbabwe", "code": "ZW"} 
-    ]
+[ {
+  "cod_entidad" : "156",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8050038017",
+  "emailprincipal" : "clgongora@gonseguros.com.co",
+  "representante_legal" : "Claudia Liliana Gongora Rodriguez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 13 No. 101 - 71",
+  "tipo_entidad" : "11",
+  "razon_social" : "GONSEGUROS CORREDORES DE SEGUROS S.A."
 }
+, {
+  "cod_entidad" : "30",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600091959",
+  "emailprincipal" : "malves@segurexpo.com",
+  "representante_legal" : "Manuel Fernando Antunes Alves",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurexpo.com",
+  "direccion" : "Calle 72 No. 6-44 Piso  12",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUREXPO DE COLOMBIA S.A. ASEGURADORA DE CR�DITO Y DEL COMERCIO EXTERIOR"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000214090",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Pastor Mejia Peqaloza",
+  "ciudad" : "CERETE",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "KM 1 VIA CERETE CIENAGA DE ORO",
+  "tipo_entidad" : "31",
+  "razon_social" : "ACEITES COMESTIBLES DEL SINU S.A."
+}
+, {
+  "cod_entidad" : "60",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9007689338",
+  "emailprincipal" : "cumplimiento.normativo@bmm.com.co",
+  "representante_legal" : "Leonor  Melo de Velasco",
+  "ciudad" : "POPAYAN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 5 - 56 Barrio Valencia",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Mundo Mujer S.A."
+}
+, {
+  "cod_entidad" : "114",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600503901",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Hernando Li�vano Vegalara",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Caracas No. 28 A 17",
+  "tipo_entidad" : "11",
+  "razon_social" : "PROMOTEC S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "91",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8301181205",
+  "emailprincipal" : "marbelaez@nacion.com.co",
+  "representante_legal" : "Maria Eugenia Arbelaez Cifuentes",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.servivalores.gnbsudameris.com.co",
+  "direccion" : "CR 7  75 85/87   PISO 3",
+  "tipo_entidad" : "85",
+  "razon_social" : "SERVIVALORES GNB SUDAMERIS S.A. Comisionista de Bolsa"
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300388857",
+  "emailprincipal" : "cbcarreno@gmail.com",
+  "representante_legal" : "Carlos Bernardo Carre�o Rodr�guez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valorem.com.co",
+  "direccion" : "CALLE 75 NO. 5-59",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALOREM S.A."
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "jaramburo@berkleylac.com",
+  "representante_legal" : "Jaime Alberto Aramburo Cortez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 77a - 49/65 oficina 202",
+  "tipo_entidad" : "27",
+  "razon_social" : "BERKLEY INSURANCE COMPANY"
+}
+, {
+  "cod_entidad" : "25",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9005685795",
+  "emailprincipal" : "abiendarra@munichre.com",
+  "representante_legal" : "Anja  Biendarra",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 -21 ofc 902 T B",
+  "tipo_entidad" : "27",
+  "razon_social" : "M�NCHENER R�CKVERSICHERUNGS - GESELLSCHAFT AKTIENGESELLSCHAFT IN M�NCHEN"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909001207",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mario Cardona Bermudez",
+  "ciudad" : "SABANETA",
+  "uripaginaweb" : "www.sumicol.com",
+  "direccion" : "CR 49   67 SUR 520 AV REGIONAL",
+  "tipo_entidad" : "44",
+  "razon_social" : "SUMINISTROS DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "24",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001468148",
+  "emailprincipal" : "armanda.mago@citi.com",
+  "representante_legal" : "Armanda  Mago Vicentelli",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.citibank.com.co",
+  "direccion" : "Carrera  9 No. 99-02 Piso 1",
+  "tipo_entidad" : "5",
+  "razon_social" : "CITITRUST COLOMBIA S.A. SIGLA: CITITRUST"
+}
+, {
+  "cod_entidad" : "75",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001525123",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Olga Lucia Lopez Ochoa",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.cooasesores.com.co",
+  "direccion" : "CR  71 C4-22",
+  "tipo_entidad" : "88",
+  "razon_social" : "COOPERTIVA  DE ASESORES EN INVERSIONES COOASESORES"
+}
+, {
+  "cod_entidad" : "132",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8001622945",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Ram�n Eduardo Madri��n de la Torre",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 26-20 Oficina 1002",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO DEL PACIFICO (PANAMA) S.A."
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600791743",
+  "emailprincipal" : "muribe@corredores.com",
+  "representante_legal" : "Maria Teresa Uribe Gomez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.daviviendacorredores.com",
+  "direccion" : "CR 7  71 52  TO B  PI 16",
+  "tipo_entidad" : "85",
+  "razon_social" : "CORREDORES DAVIVIENDA S.A.COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "pablo.crain@xlcatlin.com",
+  "representante_legal" : "Pablo  Crain Loizaga Corcuera",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 114-33 ofc 802",
+  "tipo_entidad" : "27",
+  "razon_social" : "XL INSURANCE COMPANY SE"
+}
+, {
+  "cod_entidad" : "25",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600319798",
+  "emailprincipal" : "sandra.solorzano@segurosalfa.com.co",
+  "representante_legal" : "Sandra Patricia Solorzano Daza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurosalfa.com.co",
+  "direccion" : "Avenida Calle 26 No. 59 - 15 local 6 y 7",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUROS ALFA S.A."
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600025041",
+  "emailprincipal" : "santiago.garcia@oldmutual.com.co",
+  "representante_legal" : "Santiago  Garcia Martinez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.skandia.com.co",
+  "direccion" : "Avenida 19 No.109a -30",
+  "tipo_entidad" : "14",
+  "razon_social" : "OLD MUTUAL COMPA��A DE SEGUROS DE VIDA S.A. sigla OLD MUTUAL SEGUROS DE VIDA S.A"
+}
+, {
+  "cod_entidad" : "104",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8001470383",
+  "emailprincipal" : "juancarlos.gomez@guycarp.com",
+  "representante_legal" : "Juan Carlos G�mez Olmos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.guycarp.com",
+  "direccion" : "Avenida Dorado No. 69 B 45 Piso 9",
+  "tipo_entidad" : "11",
+  "razon_social" : "GUY CARPENTER COLOMBIA CORREDORES DE REASEGUROS LTDA."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000470313",
+  "emailprincipal" : "patricia.fandino@corficolombiana.com.co",
+  "representante_legal" : "Martha Patricia Fandi�o Arce",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tablemac.com",
+  "direccion" : "CR 43A CL 19  127 P 3 ED RECIFE",
+  "tipo_entidad" : "36",
+  "razon_social" : "TABLEMAC S.A."
+}
+, {
+  "cod_entidad" : "45",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8605060311",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Dar�o  C�rdenas Navas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera  7 No. 71-52  Piso 9  Torre B",
+  "tipo_entidad" : "20",
+  "razon_social" : "BARCLAYS BANK PLC"
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909002663",
+  "emailprincipal" : "javelez@grupoargos.com",
+  "representante_legal" : "Jose Alberto Velez Cadavid",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.argos.com.co",
+  "direccion" : "CARRERA 43 A NO. 1 A  SUR - 143 TORRE SUR",
+  "tipo_entidad" : "43",
+  "razon_social" : "GRUPO ARGOS S.A."
+}
+, {
+  "cod_entidad" : "62",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600259715",
+  "emailprincipal" : "gregorio.mejia@bancompartir.co",
+  "representante_legal" : "Gregorio Alberto de Jes�s Mej�a Solano",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 16 No. 6-66 Piso 4 Edificio Avianca",
+  "tipo_entidad" : "1",
+  "razon_social" : "Bancompartir S.A."
+}
+, {
+  "cod_entidad" : "143",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300366661",
+  "emailprincipal" : "lferro@euroamericanre.com",
+  "representante_legal" : "Leonardo Alfredo Ferro Barriga",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 49 A No. 86 B 02 Barrio San Mart�n",
+  "tipo_entidad" : "11",
+  "razon_social" : "EURO AMERICAN RE CORREDORES DE SEGUROS -EAR S.A.-"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909000438",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Miroslaw Marek Zielinski",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.coltabaco.com.co",
+  "direccion" : "CR 43A 1 A SUR 143",
+  "tipo_entidad" : "33",
+  "razon_social" : "COMPA�IA COLOMBIANA DE TABACO S.A."
+}
+, {
+  "cod_entidad" : "40",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600073798",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "M�nica  Romero Guerrero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.caxdac.com",
+  "direccion" : "CALLE 99 NO. 10-19  OFICINA 402 EDIFICIO 99 TRADE CENTER",
+  "tipo_entidad" : "80",
+  "razon_social" : "CAJA DE AUXILIOS Y DE PRESTACIONES DE ACDAC"
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605014486",
+  "emailprincipal" : "l1alvarez@fundaci�n-social.com.co",
+  "representante_legal" : "Luz Maria Alvarez Echavarria",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colmena-fiduciaria.com.co",
+  "direccion" : "Avenida El Dorado No. 69C-03 Piso 7 Torre A Capital Center II",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA COLMENA S.A.-COLMENA FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000470313",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Hern�n de Jes�s Palacio Isaza",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tablemac.com",
+  "direccion" : "CR 43A CL 19  127 P 3 ED RECIFE",
+  "tipo_entidad" : "36",
+  "razon_social" : "TABLEMAC S.A."
+}
+, {
+  "cod_entidad" : "196",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9003800717",
+  "emailprincipal" : "rocio.sanchezl@baml.com",
+  "representante_legal" : "Rocio Ximena Sanchez Lopez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No- 113-43 Of. 1506 Edificio Torre Samsung",
+  "tipo_entidad" : "20",
+  "razon_social" : "MERRILL LYNCH PIERCE FENNER & SMITH INCORPORATED"
+}
+, {
+  "cod_entidad" : "24",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600024002",
+  "emailprincipal" : "mauricio.rodriguez@previsora.gov.co",
+  "representante_legal" : "Mauricio  Rodriguez Avellaneda",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.laprevisorasa.com",
+  "direccion" : "Calle 57 No. 9-07",
+  "tipo_entidad" : "13",
+  "razon_social" : "LA PREVISORA S.A. COMPA��A DE SEGUROS"
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "Presidente Encargado",
+  "numeroidentificacion" : "8999990357",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Victor Alejandro Venegas Mendoza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.icetex.gov.co",
+  "direccion" : "Carrera 3 No. 18 - 32",
+  "tipo_entidad" : "22",
+  "razon_social" : "ICETEX"
+}
+, {
+  "cod_entidad" : "190",
+  "nombrepublicocargo" : "Representante  para Colombia",
+  "numeroidentificacion" : "9001143142",
+  "emailprincipal" : "andres.uribe@hsbc.com.co",
+  "representante_legal" : "Andres  Uribe Arango",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No.75- 66  oficina 402",
+  "tipo_entidad" : "20",
+  "razon_social" : "HSBC BANK USA N.A."
+}
+, {
+  "cod_entidad" : "47",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9005324405",
+  "emailprincipal" : "ingrid.pahl@itaubba.com",
+  "representante_legal" : "Ingrid  Pahl Maya",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.itaubba.co",
+  "direccion" : "Carrera 11 No. 84 - 09  Torre Norte Oficina 301",
+  "tipo_entidad" : "2",
+  "razon_social" : "Ita� Bba Colombia S.A."
+}
+, {
+  "cod_entidad" : "117",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9004064721",
+  "emailprincipal" : "jspardo@credifamilia.com",
+  "representante_legal" : "Juan Sebastian Pardo Lanzetta",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.credifamilia.com",
+  "direccion" : "Carrera 11 A No. 69 - 08",
+  "tipo_entidad" : "4",
+  "razon_social" : "Credifamilia"
+}
+, {
+  "cod_entidad" : "88",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8300352173",
+  "emailprincipal" : "fbuendiaangel@corpbanca.com.co",
+  "representante_legal" : "Felix Eduardo Buendia Anjel",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.itau.co/grupo/comisionista/i",
+  "direccion" : "CARRERA 7 NO. 27 - 18 PISO 21",
+  "tipo_entidad" : "85",
+  "razon_social" : "ITA� COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "16",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600382991",
+  "emailprincipal" : "jluque2@palig.com",
+  "representante_legal" : "Juan Pablo Luque Luque",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 116 No. 23 - 06/28 Piso 7 Edificio Business Center Calle 116",
+  "tipo_entidad" : "14",
+  "razon_social" : "PAN AMERICAN LIFE DE COLOMBIA COMPA��A DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "Presidente  (Sin perjuicio de lo dispuesto en el art�culo 164 del C�digo de Comercio con informaci�n radicada con el n�mero 2018040392-000 del d�a 27 de marzo de 2018 la entidad informa que con documento del 14 de marzo de 2018 renunci� al cargo de Presidente fue aceptada por la Junta Directiva en acta 506 del 14 de marzo de 2018.  Lo anterior de conformidad con los efectos establecidos por la Sentencia C-621 de julio 29 de 2003 de la Constitucional).",
+  "numeroidentificacion" : "8600221375",
+  "emailprincipal" : "guilermovallejo@condorsa.com",
+  "representante_legal" : "Guillermo Tomas Vallejo Franco",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 74 - 21 pisos 1 y 3",
+  "tipo_entidad" : "14",
+  "razon_social" : "COMPA�IA DE SEGUROS DE VIDA AURORA S.A."
+}
+, {
+  "cod_entidad" : "59",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8000247028",
+  "emailprincipal" : "maria.reyes@leasingcorficolombiana.com",
+  "representante_legal" : "Maria del Pilar Reyes Martinez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.leasingcorficolombiana.com",
+  "direccion" : "Calle 10 No. 4-47 Piso 17",
+  "tipo_entidad" : "4",
+  "razon_social" : "Leasing Corficolombiana"
+}
+, {
+  "cod_entidad" : "54",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9004061505",
+  "emailprincipal" : "hto62@yahoo.com",
+  "representante_legal" : "Hans Juergen Theilkuhl Ochoa",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 13 No. 57-50 piso 2",
+  "tipo_entidad" : "1",
+  "razon_social" : "Bancoomeva"
+}
+, {
+  "cod_entidad" : "31",
+  "nombrepublicocargo" : "Representante Legal Principal",
+  "numeroidentificacion" : "8001502800",
+  "emailprincipal" : "julimora@bancolombia.com.co",
+  "representante_legal" : "Julian  Mora Gomez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.fiduciariabancolombia.com.co",
+  "direccion" : "Carrera 48 No. 26 -85 Av. Los Industriales Torre Sur Piso 6E",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA BANCOLOMBIA S.A. SOCIEDAD FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "81",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Michael  Kalavritinos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bnymellon.com",
+  "direccion" : "Avenida 82 No. 10 - 65 Piso 5",
+  "tipo_entidad" : "20",
+  "razon_social" : "THE BANK OF NEW YORK MELLON"
+}
+, {
+  "cod_entidad" : "177",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Angela Mar�a Alzate Ochoa",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.bancorfinsura.com",
+  "direccion" : "Carrera 43A No. 3-101 Piso 6",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO CORFINSURA INTERNACIONAL INC"
+}
+, {
+  "cod_entidad" : "89",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050141830",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Lucia Argenzola Tascon de Mahecha",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.gfs-sa.com",
+  "direccion" : "AVENIDA 5 A NORTE 17-98 OFIC.601",
+  "tipo_entidad" : "88",
+  "razon_social" : "GLOBAL FINANCIAL SERVICES S.A."
+}
+, {
+  "cod_entidad" : "31",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600293968",
+  "emailprincipal" : "felipe.ferreira@gmacfs.com",
+  "representante_legal" : "Felipe Cesar Rodrigues Ferreira",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.chevroletfs.com.co",
+  "direccion" : "Calle 98 No. 22-64 Piso 9",
+  "tipo_entidad" : "4",
+  "razon_social" : "GM FINANCIAL COLOMBIA S.A. COMPA��A DE FINANCIAMIENTO"
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600377079",
+  "emailprincipal" : "martalucia.pava@aig.com",
+  "representante_legal" : "Marta Lucia Pava Velez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.aig.com",
+  "direccion" : "Avenida Carrera 9 No. 101 - 67",
+  "tipo_entidad" : "13",
+  "razon_social" : "SBS SEGUROS"
+}
+, {
+  "cod_entidad" : "20",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600021821",
+  "emailprincipal" : "gabsil09@gmail.com",
+  "representante_legal" : "Gabriel  Silva Lujan",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.globalseguroscolombia.com",
+  "direccion" : "Carrera 9 No 74-62",
+  "tipo_entidad" : "14",
+  "razon_social" : "GLOBAL SEGUROS DE VIDA S.A."
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600589566",
+  "emailprincipal" : "cnieto@oldmutual.com.co",
+  "representante_legal" : "Carolina  Nieto Murillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.skandia.com.co",
+  "direccion" : "Avenida 19 No. 109 A 30",
+  "tipo_entidad" : "5",
+  "razon_social" : "OLD MUTUAL SOCIEDAD FIDUCIARIA S.A. sigla OLD MUTUAL FIDUCIARIA S.A."
+}
+, {
+  "cod_entidad" : "77",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300247722",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jorge Hernandez Herrera",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CRA. 13 No. 76-47",
+  "tipo_entidad" : "88",
+  "razon_social" : "VANGUARDIA INVERSIONES Y CONSULTORIAS S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909029226",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Rodriguez Velasquez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.upb.edu.co",
+  "direccion" : "CIRCULAR 1   70-01",
+  "tipo_entidad" : "74",
+  "razon_social" : "UNIVERSIDAD PONTIFICIA BOLIVARIANA"
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050004271",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jorge Humberto Cespedes Ibarra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.eps.coomeva.com",
+  "direccion" : "CALLE 13 NUMERO 57-50 OFICINA 20 PISO 4",
+  "tipo_entidad" : "69",
+  "razon_social" : "COOMEVA ENTIDAD PROMOTORA DE SALUD S.A."
+}
+, {
+  "cod_entidad" : "198",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "9004458713",
+  "emailprincipal" : "gmorles@bladex.com",
+  "representante_legal" : "Gustavo Enrique Morales Branger",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 113 No. 7 - 45 Torre B oficina 1008",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO LATINOAMERICANO DE COMERCIO EXTERIOR S.A. BLADEX"
+}
+, {
+  "cod_entidad" : "23",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600431866",
+  "emailprincipal" : "nfayad@serfinansa.com.co",
+  "representante_legal" : "Gian Piero Celia Martinez Aparicio",
+  "ciudad" : "BARRANQUILLA",
+  "uripaginaweb" : "www.serfinansa.com.co",
+  "direccion" : "Calle 72 No. 54-35 Pisos 1 11 y 12",
+  "tipo_entidad" : "4",
+  "razon_social" : "Serfinansa"
+}
+, {
+  "cod_entidad" : "74",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600611998",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mar�a Cecilia L�pez de Uribe",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 81A No. 8-13",
+  "tipo_entidad" : "11",
+  "razon_social" : "CENTROSEGUROS S.A."
+}
+, {
+  "cod_entidad" : "73",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001980731",
+  "emailprincipal" : "nubia.teresa.aldanagonzalez@citi.com",
+  "representante_legal" : "Nubia Teresa Aldana Gonzalez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.citibank.com.co/citivalores",
+  "direccion" : "CR 9  A 99 02 P 3",
+  "tipo_entidad" : "85",
+  "razon_social" : "CITIVALORES S.A. Comisionista de Bolsa"
+}
+, {
+  "cod_entidad" : "158",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9008903694",
+  "emailprincipal" : "pacanchique@brsint.com",
+  "representante_legal" : "Dario Rodolfo Pacanchique Moreno",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No. 77-67 Of.1001",
+  "tipo_entidad" : "11",
+  "razon_social" : "ANGLO LATINO CORREDORES DE REASEGUROS LIMITADA"
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600486085",
+  "emailprincipal" : "mauricio.wandurraga@bbva.com.co",
+  "representante_legal" : "Jose Mauricio Wandurraga Baron",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "Carrera 9 No. 72-21 Piso 9",
+  "tipo_entidad" : "5",
+  "razon_social" : "BBVA ASSET MANAGEMENT S.A. Sociedad Fiduciaria"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001820912",
+  "emailprincipal" : "jhjaramillo@deceval.com.co",
+  "representante_legal" : "Jorge Hern�n Jaramillo Ossa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.deceval.com.co",
+  "direccion" : "AC 26 59-51 TO 3 OF 501",
+  "tipo_entidad" : "83",
+  "razon_social" : "DEP�SITO CENTRALIZADO DE VALORES DE COLOMBIA DECEVAL S.A."
+}
+, {
+  "cod_entidad" : "59",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "9006281103",
+  "emailprincipal" : "mdelacruz@santander.com.co",
+  "representante_legal" : "Manuel  de la Cruz de la Cruz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.santander.com.co",
+  "direccion" : "Calle 93 A No. 13-24 Piso 4",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Santander"
+}
+, {
+  "cod_entidad" : "25",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000489431",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mauricio Moreno Escallon",
+  "ciudad" : "CARTAGENA",
+  "uripaginaweb" : "www.biofilm.com.co",
+  "direccion" : "KM 5 V�A A MAMONAL SECTOR PUERTA DE HIERRO",
+  "tipo_entidad" : "39",
+  "razon_social" : "BIOFILM S.A."
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8904019487",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Vergara Munarriz",
+  "ciudad" : "CARTAGENA",
+  "uripaginaweb" : "sin reguistro.",
+  "direccion" : "ZONA IND MAMONAL KM 7",
+  "tipo_entidad" : "43",
+  "razon_social" : "COMPA�IA COLOMBIANA DE CLINKER S.A.(FUSION CEMENTOS CARIBE RES.1000 DEL 18/11/20"
+}
+, {
+  "cod_entidad" : "155",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "9003671641",
+  "emailprincipal" : "rodolfo_arana@coomeva.com.co",
+  "representante_legal" : "Rodolfo Enrique Arana Ramirez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 13 No. 57 - 08",
+  "tipo_entidad" : "11",
+  "razon_social" : "COOMEVA CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600097592",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Ricardo  Morales Casas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.larepublica.com.co",
+  "direccion" : "CL 25 D BIS 102A 63",
+  "tipo_entidad" : "38",
+  "razon_social" : "EDITORIAL EL GLOBO S.A."
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8000960369",
+  "emailprincipal" : "juanpablo.amorocho@bbva.com",
+  "representante_legal" : "Juan Pablo Amorocho Gutierrez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bbva.com",
+  "direccion" : "CR 9  72-21 P. 9",
+  "tipo_entidad" : "85",
+  "razon_social" : "BBVA VALORES COLOMBIA S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600274041",
+  "emailprincipal" : "david.colmenares@allianz.co",
+  "representante_legal" : "David Alejandro Colmenares Spence",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.allianz.co",
+  "direccion" : "Carrera 13A No. 29-24/26 Piso 19",
+  "tipo_entidad" : "14",
+  "razon_social" : "ALLIANZ SEGUROS DE VIDA S.A."
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8909813951",
+  "emailprincipal" : "lceballos@confiar.com.co",
+  "representante_legal" : "Leandro Antonio Ceballos Valencia",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 52 No. 49-40",
+  "tipo_entidad" : "32",
+  "razon_social" : "Confiar Cooperativa Financiera"
+}
+, {
+  "cod_entidad" : "29",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600095786",
+  "emailprincipal" : "presidencia@segurosdelestado.com",
+  "representante_legal" : "Jorge Arturo Mora Sanchez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 90-20",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUROS DEL ESTADO S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8903279964",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jos� Joaqu�n Montalvo Forero",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.pisa.com.co",
+  "direccion" : "CL 10  4-47  P10",
+  "tipo_entidad" : "56",
+  "razon_social" : "PROYECTOS DE INFRAESTRUCTURA S.A."
+}
+, {
+  "cod_entidad" : "57",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8902007567",
+  "emailprincipal" : "liliana.deplaza@pichincha.com.co",
+  "representante_legal" : "Liliana Marcela de Plaza Buritica",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancopichincha.com.co",
+  "direccion" : "Carrera 11 No. 92 - 09",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Pichincha S.A."
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600021807",
+  "emailprincipal" : "javier.suarez@segurosbolivar.com",
+  "representante_legal" : "Javier Jose Suarez Esparragoza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurosbolivar.com",
+  "direccion" : "Avenida El dorado No. 68 B 31 Piso 10",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUROS COMERCIALES BOLIVAR S.A."
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8999992844",
+  "emailprincipal" : "hbarros@findeter.gov.co",
+  "representante_legal" : "Helmuth  Barros Pe�a",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fna.gov.co",
+  "direccion" : "Carrera 65 No. 11 - 50/83",
+  "tipo_entidad" : "22",
+  "razon_social" : "Fondo Nacional del Ahorro"
+}
+, {
+  "cod_entidad" : "18",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600086457",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luiz Francisco Minarelli Campos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 72 No.10-07 y Calle 71 No. 10-08 Pisos 167 y 8",
+  "tipo_entidad" : "14",
+  "razon_social" : "LIBERTY SEGUROS DE VIDA S.A."
+}
+, {
+  "cod_entidad" : "130",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001380844",
+  "emailprincipal" : "presidente@innovadora.com.co",
+  "representante_legal" : "Luis Domingo Hernandez Caceres",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.innovadora.com.co",
+  "direccion" : "Carrera 69 No. 25B-44 Oficina 804 Edificio World Business Port",
+  "tipo_entidad" : "11",
+  "razon_social" : "INNOVADORA DE SEGUROS S.A. CORREDORA DE SEGUROS"
+}
+, {
+  "cod_entidad" : "54",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8002069753",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mar�a Victoria S�nchez Garrido",
+  "ciudad" : "CALI",
+  "uripaginaweb" : ".",
+  "direccion" : "CALLE 25 NORTE     6 N 39",
+  "tipo_entidad" : "88",
+  "razon_social" : "SUINVERSION LTDA."
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8908020209",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Ximena Jaramillo Jaramillo",
+  "ciudad" : "MANIZALES",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "PARQUE INDUSTRIAL JUANCHITO",
+  "tipo_entidad" : "53",
+  "razon_social" : "PLANTA TERMINAL DE DISTRIBUCION DE PRODUCTOS DERIVADOS DEL PETROLEO DEL CENTRO S"
+}
+, {
+  "cod_entidad" : "18",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001412350",
+  "emailprincipal" : "hectorcadena4@etb.net.co",
+  "representante_legal" : "Hector Jose Cadena Clavijo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fidupopular.com.co",
+  "direccion" : "Carrera 13 A No. 29 - 24 Pisos 20 y 21",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA POPULAR S.A. - FIDUCIAR S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600299951",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Sergio Leopoldo Blanco E",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pazdelrio.com.co",
+  "direccion" : "CL 100 13 21 OF 601",
+  "tipo_entidad" : "45",
+  "razon_social" : "ACERIAS PAZ DEL RIO S.A ."
+}
+, {
+  "cod_entidad" : "111",
+  "nombrepublicocargo" : "Gerente General (Sin perjuicio de lo dispuesto en el art�culo 164 del C�digo de Comercio el d�a 26  de mayo de 2017  se acept� la renuncia al cargo de Gerente General  informaci�n radicada con el n�mero P2017002794-000.  Lo anterior de conformidad con los efectos establecidos por la Sentencia C-621 de julio 29 de 2003 de la Constitucional).",
+  "numeroidentificacion" : "8605266601",
+  "emailprincipal" : "esteban.madero@grupohelm.com",
+  "representante_legal" : "Esteban  Madero Crump",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurcol.com",
+  "direccion" : "Carrera 7 No. 27-18 Piso 15",
+  "tipo_entidad" : "11",
+  "razon_social" : "ITA� CORREDOR DE SEGUROS"
+}
+, {
+  "cod_entidad" : "80",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300453515",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Guillermo Prieto Treviqo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.icap.com",
+  "direccion" : "CR  11  93-46 OF. 403",
+  "tipo_entidad" : "88",
+  "razon_social" : "ICAP SECURITIES COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "111",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9003817869",
+  "emailprincipal" : "hidetsugu_khono@mufg.jp",
+  "representante_legal" : "Hidetsugu  Kono",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bk.mufg.jp/nglish/index.html",
+  "direccion" : "Carrera 7 No. 71-21 Torre B Oficina  507",
+  "tipo_entidad" : "20",
+  "razon_social" : "MUFG BANK LTD."
+}
+, {
+  "cod_entidad" : "29",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110262262",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Carlos Guillermo Posada Gonz�lez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.valoressimesa.com",
+  "direccion" : "CRA. 43B NO. 16-80 ED. DELTA. OF. 403",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES SIMESA S.A."
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "8300220321",
+  "emailprincipal" : "jclana@mapfre.com",
+  "representante_legal" : "Juan Carlos Lanau Arilla",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 90 No. 19 - 41 oficina 901 Edificio Quantum",
+  "tipo_entidad" : "27",
+  "razon_social" : "MAPFRE ASISTENCIA COMPA��A INTERNACIONAL"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909061196",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Mario Zapata",
+  "ciudad" : "SABANETA",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CL 61 SUR  43A 290",
+  "tipo_entidad" : "40",
+  "razon_social" : "PLASTIQUIMICA S.A."
+}
+, {
+  "cod_entidad" : "51",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9002009609",
+  "emailprincipal" : "Meik.Proescher@bancoprocredit.com.sv",
+  "representante_legal" : "Meik  Proescher",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancoprocredit.com.co",
+  "direccion" : "Avenida Calle 39 No. 13 A 16",
+  "tipo_entidad" : "1",
+  "razon_social" : "Procredit"
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001539937",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adrian Efren Hernandez Urueta",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.claro.com.co",
+  "direccion" : "CL 90 14-37",
+  "tipo_entidad" : "64",
+  "razon_social" : "COMUNICACION CELULAR S.A."
+}
+, {
+  "cod_entidad" : "49",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600358275",
+  "emailprincipal" : "angeljc@bancoavvillas.com.co",
+  "representante_legal" : "Juan Camilo Angel Mejia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.avvillas.com.co",
+  "direccion" : "Carrera 13 No. 27-47",
+  "tipo_entidad" : "1",
+  "razon_social" : "Av Villas"
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8915011334",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Eduardo Valderrama Varela",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.ingeniolacaba�a.com",
+  "direccion" : "CL 23 NTE.    4N-50 P-8",
+  "tipo_entidad" : "31",
+  "razon_social" : "INGENIO LA CABA�A S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600029644",
+  "emailprincipal" : "afigueroa@bancodebogota.com.co",
+  "representante_legal" : "Alejandro Augusto Figueroa Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancodebogota.com.co",
+  "direccion" : "Calle 36 No. 7 - 47",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco de Bogota"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600021839",
+  "emailprincipal" : "bernardo.serrano@axacolpatria.co",
+  "representante_legal" : "Bernardo Rafael Serrano L�pez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com",
+  "direccion" : "Carrera 7 No. 24-89 Pisos 4 y 7 (Torre Colpatria)",
+  "tipo_entidad" : "14",
+  "razon_social" : "AXA COLPATRIA SEGUROS DE VIDA  S.A."
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110107541",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Diego Gaviria Cano",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.valoresindustriales.com",
+  "direccion" : "CL 5 A  39 - 131  T-4 P-3 CENTRO DE TRABAJO CORFIN",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES INDUSTRIALES S.A."
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "9006431541",
+  "emailprincipal" : "manuelricardo_perez@swissre.com",
+  "representante_legal" : "Manuel Ricardo. Per�z Cifuentes",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 - 21 Torre B piso 13",
+  "tipo_entidad" : "27",
+  "razon_social" : "SWISS RE COLOMBIA - OFICINA DE REPRESENTACION"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600002393",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Marma Claudia Prieto Salazar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colinagro.com.co",
+  "direccion" : "AV CRA 15   106-65P-5",
+  "tipo_entidad" : "39",
+  "razon_social" : "COMPA�IA COLOMBIANA DE INVERSIONES AGRICOLAS S.A."
+}
+, {
+  "cod_entidad" : "141",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8300148925",
+  "emailprincipal" : "germangarcia@crearprogreso.com",
+  "representante_legal" : "Germ�n Antonio Garc�a Garc�a",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 22 No 164-10",
+  "tipo_entidad" : "11",
+  "razon_social" : "CREAR PROGRESO S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "23",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8903002794",
+  "emailprincipal" : "eotero@bancodeoccidente.com.co",
+  "representante_legal" : "Efrain  Otero Alvarez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancodeccidente.com.co",
+  "direccion" : "Carrera 13 No. 27-47",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco de Occidente"
+}
+, {
+  "cod_entidad" : "31",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8909060252",
+  "emailprincipal" : "LUIS.BETANCUR@ARESS.COM.CO",
+  "representante_legal" : "Luis Guillermo Betancur Vergara",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 52 No. 47 - 42 Edificio Coltejer Piso 20",
+  "tipo_entidad" : "11",
+  "razon_social" : "ARESS CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "62",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001201843",
+  "emailprincipal" : "ppaucar@serfinco.com.co",
+  "representante_legal" : "Marta Paula Paucar Vallejo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.ultraserfinco.com",
+  "direccion" : "CR 7  73-55 P 6",
+  "tipo_entidad" : "85",
+  "razon_social" : "ULTRASERFINCO S.A."
+}
+, {
+  "cod_entidad" : "29",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9008119729",
+  "emailprincipal" : "sonia.galvis@markelintl.com.com",
+  "representante_legal" : "Sonia Maria Galvis de Molina",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida carrera 9 No. 115-06/30 oficina 1804 Edificio Tierra Firme",
+  "tipo_entidad" : "27",
+  "razon_social" : "MARKEL INTERNATIONAL INSURANCE COMPANY LIMITED"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Director",
+  "numeroidentificacion" : "8605307517",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "David Marcell Salamanca Rojas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fogafin.gov.co",
+  "direccion" : "Carrera 7 No. 35-40",
+  "tipo_entidad" : "22",
+  "razon_social" : "Fogafin"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8000963291",
+  "emailprincipal" : "rezea@findeter.gov.co",
+  "representante_legal" : "Rodolfo Enrique Zea Navarro",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.findeter.gov.co",
+  "direccion" : "Calle 103 No. 19 -20",
+  "tipo_entidad" : "22",
+  "razon_social" : "Findeter"
+}
+, {
+  "cod_entidad" : "136",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8300180041",
+  "emailprincipal" : "eacevedo@correcol.com",
+  "representante_legal" : "Enrique  Acevedo Schwabe",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.correcol.com",
+  "direccion" : "Calle 93A No. 11-36 Piso 4",
+  "tipo_entidad" : "11",
+  "razon_social" : "CORRECOL"
+}
+, {
+  "cod_entidad" : "101",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8000636065",
+  "emailprincipal" : "geradm@sanvelez.com",
+  "representante_legal" : "Luis Fernando Velez Zuluaga",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 16A No 78-11 Oficina 202 Edificio Oikos II",
+  "tipo_entidad" : "11",
+  "razon_social" : "SANTIAGO VELEZ & ASOCIADOS CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909011108",
+  "emailprincipal" : "jl.aristizabal@conconcreto.com",
+  "representante_legal" : "Juan Luis Aristiz�bal V�lez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.conconcreto.com",
+  "direccion" : "CR 43A 18S - 135 P4",
+  "tipo_entidad" : "55",
+  "razon_social" : "CONSTRUCTORA CONCONCRETO S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9000905293",
+  "emailprincipal" : "MJANNA1@GMAIL.COM",
+  "representante_legal" : "Michel  Janna Gandur",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.amvcolombia.org.co",
+  "direccion" : "CALLE 72 NO. 10-07 OFICINA 1202 EDIFICIO LIBERTY",
+  "tipo_entidad" : "81",
+  "razon_social" : "CORPORACI�N AUTORREGULADOR DEL MERCADO DE VALORES  DE COLOMBIA  AMV"
+}
+, {
+  "cod_entidad" : "192",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9001186779",
+  "emailprincipal" : "silvia.duran@bbva.com.co",
+  "representante_legal" : "Silvia Constanza Dur�n Chac�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 73 - 47 Piso 7",
+  "tipo_entidad" : "20",
+  "razon_social" : "MULTIBANK INC"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600025279",
+  "emailprincipal" : "carvelez@yahoo.com",
+  "representante_legal" : "Carlos Arturo Velez Mejia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.nacionaldeseguros.com.co",
+  "direccion" : "Calle 94 No. 11-30 Piso 4",
+  "tipo_entidad" : "13",
+  "razon_social" : "NACIONAL DE SEGUROS"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909001214",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Mejia Escobar",
+  "ciudad" : "SABANETA",
+  "uripaginaweb" : "www.gamma.com.co",
+  "direccion" : "CR 49  67 SUR -680",
+  "tipo_entidad" : "41",
+  "razon_social" : "ELECTROPORCELANA GAMMA S.A."
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600101714",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Fredy Jose Gomez Ardila",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.transpensilvania.com",
+  "direccion" : "CRA 21  37-55",
+  "tipo_entidad" : "63",
+  "razon_social" : "TRANSPORTES RAPIDO PENSILVANIA S.A."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909003084",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Mariano San�n Echeverri",
+  "ciudad" : "BELLO",
+  "uripaginaweb" : "www.fabricato.com.co",
+  "direccion" : "CR 50  38-320",
+  "tipo_entidad" : "34",
+  "razon_social" : "FABRICATO S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000470313",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Andres Zuluaga Olarte",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tablemac.com",
+  "direccion" : "CR 43A CL 19  127 P 3 ED RECIFE",
+  "tipo_entidad" : "36",
+  "razon_social" : "TABLEMAC S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001499236",
+  "emailprincipal" : "mario.suarez@bancoldex.com",
+  "representante_legal" : "Mario  Su�rez Melo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancoldex.com",
+  "direccion" : "Calle 28 No. 13A-15 Pisos 38 al 42",
+  "tipo_entidad" : "22",
+  "razon_social" : "Bancoldex"
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909006089",
+  "emailprincipal" : "gonzalo.restrepo@grupo-exito.com",
+  "representante_legal" : "Gonzalo Alonso Restrepo Lopez",
+  "ciudad" : "ENVIGADO",
+  "uripaginaweb" : "www.almacenesexito.com",
+  "direccion" : "CR 48 32 B SUR 139",
+  "tipo_entidad" : "58",
+  "razon_social" : "ALMACENES EXITO S.A."
+}
+, {
+  "cod_entidad" : "35",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600256742",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Paulo  Laserna Philips",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.canalcaracol.com",
+  "direccion" : "CL 103  NO. 69B-43",
+  "tipo_entidad" : "80",
+  "razon_social" : "CARACOL TELEVISION S.A."
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8000198072",
+  "emailprincipal" : "beatrizcuello@profesionalesdebolsa.com",
+  "representante_legal" : "Beatriz Helena Cuello Lacouture",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.profesionalesdebolsa.com",
+  "direccion" : "CALLE 93 B NO. 12-18 OFICINA 401",
+  "tipo_entidad" : "85",
+  "razon_social" : "COMPA��A DE PROFESIONALES DE BOLSA S.A. COMISIONISTA DE BOLSA pero podr� utili"
+}
+, {
+  "cod_entidad" : "38",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050290229",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adriana Osorio Parra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.pendiente.com.co",
+  "direccion" : "CL 19 N  2N - 29  OF 2402",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES CINECO S.A. - EN LIQUIDACI�N"
+}
+, {
+  "cod_entidad" : "82",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8603537650",
+  "emailprincipal" : "cvillaveces@inverlink.com.co",
+  "representante_legal" : "Camilo  Villaveces Atuesta",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.inverlink.com.co",
+  "direccion" : "CRA 7 NO. 71-52 TORRE B PISO 15",
+  "tipo_entidad" : "88",
+  "razon_social" : "INVERLINK S.A."
+}
+, {
+  "cod_entidad" : "12",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605251485",
+  "emailprincipal" : "sgomez@bbvahorizonte.com.co",
+  "representante_legal" : "Sandra  G�mez Arias",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiduprevisora.com.co",
+  "direccion" : "Calle 72 No. 10-03 Pisos 4 5 8 y 9",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA LA PREVISORA S.A.  SIGLA FIDUPREVISORA S.A."
+}
+, {
+  "cod_entidad" : "76",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002031865",
+  "emailprincipal" : "daniel.gomez@corficolombiana.com.co",
+  "representante_legal" : "Daniel Humberto Gomez Martinez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.casadebolsa.com.co",
+  "direccion" : "CRA 7 NO 33-42",
+  "tipo_entidad" : "85",
+  "razon_social" : "CASA DE BOLSA S.A. SOCIEDAD COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "61",
+  "nombrepublicocargo" : "Representante Legal Principal",
+  "numeroidentificacion" : "8600244141",
+  "emailprincipal" : "sheltonw@bancoavvillas.com.co",
+  "representante_legal" : "William  Shelton Salazar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 73-47 Piso 6",
+  "tipo_entidad" : "1",
+  "razon_social" : "Multibank"
+}
+, {
+  "cod_entidad" : "19",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8903013876",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adriana Osorio Parra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.ingeniomayaguez.com",
+  "direccion" : "CALLE 19 NORTE NO.2N-29 OFICINA 2402 EDIFICIO TORRE DE CALI",
+  "tipo_entidad" : "80",
+  "razon_social" : "N. HURTADO Y CIA. S.A."
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8605192883",
+  "emailprincipal" : "gespinosa@bancodebogota.com.co",
+  "representante_legal" : "Guillermo  Espinosa Salazar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancodebogotainternacional.com",
+  "direccion" : "Calle 36 No. 7-47  Piso 14",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO DE BOGOT� (PANAM�) S.A."
+}
+, {
+  "cod_entidad" : "41",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8600801358",
+  "emailprincipal" : "jorge.valderrama@bnpparibas.com",
+  "representante_legal" : "Jorge Mario Valderrama Velez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bnpparibas.com",
+  "direccion" : "Carrera 7 No. 77-07 Piso 11 Edificio Torre Siete 77",
+  "tipo_entidad" : "20",
+  "razon_social" : "BNP PARIBAS"
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8605094443",
+  "emailprincipal" : "consultores48@gmail.com",
+  "representante_legal" : "Miguel Angel Ferro Velasquez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 13 No. 119-95 oficina 105",
+  "tipo_entidad" : "20",
+  "razon_social" : "MERCANTIL C.A. BANCO UNIVERSAL"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300254485",
+  "emailprincipal" : "josea.cortes@segurosbolivar.com",
+  "representante_legal" : "Jose Alejandro Cortes Osorio",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.sociedadesbolivar.com",
+  "direccion" : "AV. EL DORADO NO. 68B-31 P. 10",
+  "tipo_entidad" : "66",
+  "razon_social" : "GRUPO BOLIVAR S.A. (ANTES SOCIEDADES BOLIVAR S.A.)"
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600248586",
+  "emailprincipal" : "liliana_perez@yahoo.com",
+  "representante_legal" : "Liliana  Perez Uribe",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.proseguros.com.co",
+  "direccion" : "Carrera 7 No. 32 - 33 piso 24 Edificio Telesentinel",
+  "tipo_entidad" : "11",
+  "razon_social" : "PROSEGUROS CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "149",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8000181658",
+  "emailprincipal" : "jargu@jargu.com",
+  "representante_legal" : "Juan Carlos Alvarez Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 19 B No. 83-02 oficina 602",
+  "tipo_entidad" : "11",
+  "razon_social" : "JARGU S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300083589",
+  "emailprincipal" : "jaime.mantilla@valoresymandatos.com",
+  "representante_legal" : "Monique  Didier Lopez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valoresymandatos.com",
+  "direccion" : "CR 19 B 82 46 OF 302",
+  "tipo_entidad" : "86",
+  "razon_social" : "VALORES Y MANDATOS DE COLOMBIA S.A. COMISIONISTAS INDEPENDIENT"
+}
+, {
+  "cod_entidad" : "60",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9006356070",
+  "emailprincipal" : "claudia.calderon@bnpparibas.com",
+  "representante_legal" : "Claudia Patricia Calderon Cadena",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "securities.bnpparibas.com",
+  "direccion" : "Carrera 11 No. 77 A-65 Oficina 203 -204 Edificio Semana",
+  "tipo_entidad" : "5",
+  "razon_social" : "BNP PARIBAS SECURITIES SERVICES SOCIEDAD FIDUCIARIA S.A."
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600021846",
+  "emailprincipal" : "bernardo.serrano@axacolpatria.co",
+  "representante_legal" : "Bernardo Rafael Serrano L�pez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com",
+  "direccion" : "Carrera 7 No. 24-89 Pisos 4 y 7 (Torre Colpatria)",
+  "tipo_entidad" : "13",
+  "razon_social" : "AXA COLPATRIA SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "205",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9005649815",
+  "emailprincipal" : "jbdiaz@banesco.com",
+  "representante_legal" : "Jesus Benedicto Diaz Duran",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 - 21 Edif Av Chile Torre B Piso 9 ofic 910",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANESCO S.A."
+}
+, {
+  "cod_entidad" : "39",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600343137",
+  "emailprincipal" : "eforero@davivienda.com",
+  "representante_legal" : "Efrain Enrique Forero Fonseca",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida El Dorado No. 68 B 31 Piso 1",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Davivienda"
+}
+, {
+  "cod_entidad" : "123",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8002250410",
+  "emailprincipal" : "GERENCIA@BFRSA.COM",
+  "representante_legal" : "Cesare Giovanni Rossi Buenaventura",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 71 - 40 oficina 502",
+  "tipo_entidad" : "11",
+  "razon_social" : "B.F.R. S.A. SOCIEDAD CORREDORA DE SEGUROS"
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600298478",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mar�a Fernanda de los Angeles Gonz�lez Lozano",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.cofinpro.gov.co",
+  "direccion" : "Calle 38 No. 8-56 Local 101",
+  "tipo_entidad" : "4",
+  "razon_social" : "COMPA�IA DE  FINANCIAMIENTO COMERCIAL COFINPRO"
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600067979",
+  "emailprincipal" : "jpcruz@girosyfinanzas.com",
+  "representante_legal" : "Juan Pablo Cruz L�pez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.girosyfinanzas.com",
+  "direccion" : "Calle 4 No. 27-52",
+  "tipo_entidad" : "4",
+  "razon_social" : "Giros & Finanzas C.F."
+}
+, {
+  "cod_entidad" : "112",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001539905",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adolfo  Urdaneta Gutierrez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.guianza.com.co",
+  "direccion" : "Avenida 19 No. 120- 71 ofc 513",
+  "tipo_entidad" : "11",
+  "razon_social" : "ARTHUR J GALLAGHER CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600029454",
+  "emailprincipal" : "bernardo.serrano@axacolpatria.co",
+  "representante_legal" : "Bernardo Rafael Serrano L�pez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com",
+  "direccion" : "Carrera 7 No. 24-89 Pisos 4 y 7 (Torre Colpatria)",
+  "tipo_entidad" : "10",
+  "razon_social" : "AXA COLPATRIA CAPITALIZADORA  S.A."
+}
+, {
+  "cod_entidad" : "16",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909001341",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Nome Leonardo Cardenas Pelaez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.vicuna.com.co",
+  "direccion" : "CR 82C 30 A 150",
+  "tipo_entidad" : "34",
+  "razon_social" : "PA�OS VICU�A SANTA FE S.A. -EN CONCORDATO"
+}
+, {
+  "cod_entidad" : "30",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110303227",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Dar�o de Jes�s M�nera Arango",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.colinversiones.com.co",
+  "direccion" : "CR 43 A  1A SUR 143 PISO 5",
+  "tipo_entidad" : "66",
+  "razon_social" : "COMPA�IA COLOMBIANA DE INVERSIONES"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001163987",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Ramiro Chavarro Cuellar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.finagro.com.co",
+  "direccion" : "Carrera 13 No. 28-17 Pisos 2 3 4 y 5",
+  "tipo_entidad" : "22",
+  "razon_social" : "Finagro"
+}
+, {
+  "cod_entidad" : "96",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8903112706",
+  "emailprincipal" : "cfonseca@fonsecasanclemente.com.co",
+  "representante_legal" : "Carlos Hernando Fonseca Sanclemente",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida 8 Norte No. 24AN-65",
+  "tipo_entidad" : "11",
+  "razon_social" : "FONSECA SANCLEMENTE S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "12",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600109734",
+  "emailprincipal" : "octavio.castilla@almacafe.com.co",
+  "representante_legal" : "Octavio  Castilla Gutierrez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 73 No. 8-13 Torre B Piso 6 Edificio Federaci�n Nacional de Cafeteros",
+  "tipo_entidad" : "6",
+  "razon_social" : "ALMACENES GENERALES DE DEP�SITO DE CAFE S.A. - ALMACAF�"
+}
+, {
+  "cod_entidad" : "42",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001822815",
+  "emailprincipal" : "fhinestrosa@davivienda.com",
+  "representante_legal" : "Fernando  Hinestrosa Rey",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.davivenda.com",
+  "direccion" : "Avenida El dorado No. 68 B 85 Piso 2",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA DAVIVIENDA S.A. pudiendo utilizar la sigla \"FIDUDAVIVIENDA S.A.\""
+}
+, {
+  "cod_entidad" : "34",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9010924614",
+  "emailprincipal" : "marilena.rodriguez@xlcatlin.com",
+  "representante_legal" : "Marilena  Rodriguez Forero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 # 115 - 30 oficina 1603 Edificio Tierra Firme",
+  "tipo_entidad" : "27",
+  "razon_social" : "CATLIN RE SWITZERLAND LTD"
+}
+, {
+  "cod_entidad" : "44",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9002004353",
+  "emailprincipal" : "jorge.hernandez@cardif.com.co",
+  "representante_legal" : "Jorge Enrique Hernandez Rodriguez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.cardif.com.co",
+  "direccion" : "Carrera 7 No. 75 - 66",
+  "tipo_entidad" : "13",
+  "razon_social" : "CARDIF COLOMBIA SEGUROS GENERALES S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600318087",
+  "emailprincipal" : "pbickenbach@byvsa.com.co",
+  "representante_legal" : "Paul  Bickenbach Plata",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 16 A No. 79 - 95 oficina 501",
+  "tipo_entidad" : "11",
+  "razon_social" : "BICKENBACH + VIEITES S.A."
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909037905",
+  "emailprincipal" : "JuanEsFr@suramericana.com.co",
+  "representante_legal" : "Juan David Escobar Franco",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.suramericana.com.co",
+  "direccion" : "Carrera 64B No. 49A-30",
+  "tipo_entidad" : "14",
+  "razon_social" : "SEGUROS DE VIDA SURAMERICANA S.A."
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300762193",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jose Antonio Amaya Angulo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.coinsaonline.com",
+  "direccion" : "CARRERA 13 N�.92-57 P 4� OF.402",
+  "tipo_entidad" : "86",
+  "razon_social" : "COMPA��A DE ASESOR�AS EN INVERSIONES COIN S.A."
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8903006536",
+  "emailprincipal" : "bernardo.norena@corficolombiana.com",
+  "representante_legal" : "Bernardo  Nore�a Ocampo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.corficolombiana.com.co.",
+  "direccion" : "Carrera 13 No. 26 - 45 Pisos 3 7 y 8",
+  "tipo_entidad" : "2",
+  "razon_social" : "Corficolombiana S.A."
+}
+, {
+  "cod_entidad" : "18",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909034079",
+  "emailprincipal" : "JuanEsFr@suramericana.com.co",
+  "representante_legal" : "Juan David Escobar Franco",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.suramericana.com",
+  "direccion" : "Carrera 64B No. 49A-30",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUROS GENERALES SURAMERICANA S.A."
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600101707",
+  "emailprincipal" : "Roberto_Vergara@generali.com.co",
+  "representante_legal" : "Roberto  Vergara Ortiz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.generali.com.co",
+  "direccion" : "Carrera 7 No. 72-13 Piso 8",
+  "tipo_entidad" : "14",
+  "razon_social" : "HDI VIDA"
+}
+, {
+  "cod_entidad" : "94",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300958297",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Fernando  Agudelo Lopez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "N/A.",
+  "direccion" : "CRA 69 43B-44 OFICINA 604 EDIF WORD BUSINESS PORT",
+  "tipo_entidad" : "88",
+  "razon_social" : "CORFIN COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "37",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300297037",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Gabriel Martin Reyes Copello",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.canalrcn.com",
+  "direccion" : "AV DE LAS AM�RICAS 65-82",
+  "tipo_entidad" : "80",
+  "razon_social" : "RCN TELEVISION S.A."
+}
+, {
+  "cod_entidad" : "56",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9000479818",
+  "emailprincipal" : "mlamprea@bancofalabella.com.co",
+  "representante_legal" : "Sergio  Mu�oz Gomez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancofalabella.com.co",
+  "direccion" : "Avenida 19 No. 120-71 Piso 3",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Falabella S.A."
+}
+, {
+  "cod_entidad" : "24",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9005339101",
+  "emailprincipal" : "jose.ospina@libertysyndicates.com",
+  "representante_legal" : "Jose Ernesto Ospina Roa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7a No. 71-21 Torre A Piso 9 oficina 901",
+  "tipo_entidad" : "27",
+  "razon_social" : "LIBERTY  MANAGING AGENCY LIMITED - OFICINA DE REPRESENTACI�N BOGOTA"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600024643",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Hernando  Restrepo Londo�o",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.corferias.com",
+  "direccion" : "CR 37   24   67",
+  "tipo_entidad" : "78",
+  "razon_social" : "CORPORACION DE FERIAS Y EXPOSICIONES S.A. USUARIO OPERADOR DE ZONA FRANCA"
+}
+, {
+  "cod_entidad" : "43",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8000378008",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Enrique Dussan L�pez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancoagrario.gov.co",
+  "direccion" : "Carrera 8 No. 15-43",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banagrario"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909000857",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jaime Alberto Angel Mejia",
+  "ciudad" : "CALDAS",
+  "uripaginaweb" : "www.vajillascorona.com.co",
+  "direccion" : "CR 54  129 SUR 51",
+  "tipo_entidad" : "41",
+  "razon_social" : "LOCERIA COLOMBIANA S.A."
+}
+, {
+  "cod_entidad" : "24",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8909041165",
+  "emailprincipal" : "rpohenao@une.net.co",
+  "representante_legal" : "�ngela Mar�a Restrepo Henao",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 50 No. 51-29 Oficina 615 Edificio Banco de Bogot�",
+  "tipo_entidad" : "11",
+  "razon_social" : "RESTREPO HENAO S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "59",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9005204847",
+  "emailprincipal" : "evillamizar@fiducorreval.com",
+  "representante_legal" : "Ernesto  Villamizar Mallarino",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.credicorpcapitalfiduciaria.com",
+  "direccion" : "Calle 34 No. 6 - 61 Piso 2",
+  "tipo_entidad" : "5",
+  "razon_social" : "CREDICORP CAPITAL FIDUCIARIA S.A."
+}
+, {
+  "cod_entidad" : "133",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300306291",
+  "emailprincipal" : "polarte@occidentalbankbarbados.com",
+  "representante_legal" : "Paolina  Olarte Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-52 Torre A Piso 3 Oficina 301 A",
+  "tipo_entidad" : "20",
+  "razon_social" : "OCCIDENTAL BANK (BARBADOS) LTD."
+}
+, {
+  "cod_entidad" : "15",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300915943",
+  "emailprincipal" : "gaguirre@scor.com",
+  "representante_legal" : "Germ�n Andr�s Aguirre Casta�eda",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 113 - 43 oficinas 906",
+  "tipo_entidad" : "27",
+  "razon_social" : "SCOR SE OFICINA DE REPRESENTACION EN COLOMBIA EP"
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600048756",
+  "emailprincipal" : "Roberto_Vergara@generali.com.co",
+  "representante_legal" : "Roberto  Vergara Ortiz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.generali.com.co",
+  "direccion" : "Carrera 7 No. 72-13 Piso 8",
+  "tipo_entidad" : "13",
+  "razon_social" : "HDI SEGUROS"
+}
+, {
+  "cod_entidad" : "82",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8603537650",
+  "emailprincipal" : "fencinales@inverlink.com.co",
+  "representante_legal" : "Felipe  Encinales Silva",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.inverlink.com.co",
+  "direccion" : "CRA 7 NO. 71-52 TORRE B PISO 15",
+  "tipo_entidad" : "88",
+  "razon_social" : "INVERLINK S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8110226883",
+  "emailprincipal" : "jcorrales@cfa.com.co",
+  "representante_legal" : "Jorge Alberto Corrales Montoya",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.efa.com.co",
+  "direccion" : "Carrera 43A No. 31-159 Local 202 Edificio Gruval Piso 2",
+  "tipo_entidad" : "32",
+  "razon_social" : "Cooperativa Financiera de Antioquia"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600261825",
+  "emailprincipal" : "david.colmenares@allianz.co",
+  "representante_legal" : "David Alejandro Colmenares Spence",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.allianz.co",
+  "direccion" : "Carrera 13A No. 29-24/26 Piso 19",
+  "tipo_entidad" : "13",
+  "razon_social" : "ALLIANZ SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "32",
+  "nombrepublicocargo" : "Representante para Colomiba",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "Hernan.Moreno@terrabrasis.com.br",
+  "representante_legal" : "Tulio Hernan Moreno Torres",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 114-33 oficina 1207 Ed Torres Unidas 2",
+  "tipo_entidad" : "27",
+  "razon_social" : "TERRA BRASIS RESSEGUROS S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300396744",
+  "emailprincipal" : "rmgg@brc.com.co",
+  "representante_legal" : "Rafael Mar�a Gonz�lez Guill�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.brc.com.co",
+  "direccion" : "CR 19A  90-13 OF 708 ED 90 OFICINAS",
+  "tipo_entidad" : "84",
+  "razon_social" : "BRC INVESTOR SERVICES S.A. Sociedad Calificadora de Valores"
+}
+, {
+  "cod_entidad" : "58",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8902030889",
+  "emailprincipal" : "gerenciageneral@coopcentral.com.co",
+  "representante_legal" : "Jorge Andres Lopez Bautista",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Calle 116 No. 23-06/28 Edificio Business Center 116",
+  "tipo_entidad" : "1",
+  "razon_social" : "Coopcentral"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8002162780",
+  "emailprincipal" : "josenicolasarenas@yahoo.com",
+  "representante_legal" : "Jose Nicolas Arenas Henao",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.pensionesantioquia.com.co",
+  "direccion" : "Carrera 51 No. 52 - 03 Edi Palacio de la Cultura Rafael Uribe",
+  "tipo_entidad" : "25",
+  "razon_social" : "PENSIONES DE ANTIOQUIA"
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600030122",
+  "emailprincipal" : "fbossiomolano@gmail.com",
+  "representante_legal" : "Fernando  Bossio Molano",
+  "ciudad" : "COTA",
+  "uripaginaweb" : "www.titancemento.com",
+  "direccion" : "AUT MEDELLIN ENTRADA 2.4 KM AL OCC DEL RIO BOGOTA",
+  "tipo_entidad" : "44",
+  "razon_social" : "MANUFACTURAS DE CEMENTO S.A."
+}
+, {
+  "cod_entidad" : "52",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9002958962",
+  "emailprincipal" : "horacio.vivas@commerzbank.com",
+  "representante_legal" : "Horacio Rafael Vivas Arg�ello",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 72 No. 7 - 82 Piso 8",
+  "tipo_entidad" : "20",
+  "razon_social" : "COMMERZBANK A.G."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000470313",
+  "emailprincipal" : "lfo@amtex.com.co",
+  "representante_legal" : "Luis Fernando Ochoa Acevedo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tablemac.com",
+  "direccion" : "CR 43A CL 19  127 P 3 ED RECIFE",
+  "tipo_entidad" : "36",
+  "razon_social" : "TABLEMAC S.A."
+}
+, {
+  "cod_entidad" : "33",
+  "nombrepublicocargo" : "Director General",
+  "numeroidentificacion" : "8001554136",
+  "emailprincipal" : "juan.montoya@accion.com.co",
+  "representante_legal" : "Juan Antonio Montoya Uricoechea",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.accion.com.co",
+  "direccion" : "Calle 85 No. 9 -65",
+  "tipo_entidad" : "5",
+  "razon_social" : "ACCION SOCIEDAD FIDUCIARIA S.A.  SIGLA ACCI�N FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "87",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050131954",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Gustavo Aragon Alvarez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CALLE 10 NO. 4-40 ED. BOLSA DE OCCIDENTE    OFI 411",
+  "tipo_entidad" : "88",
+  "razon_social" : "CORPORACION INTERNACIONAL DE CORRETAJE S.A."
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600265186",
+  "emailprincipal" : "mobregon@chubb.com",
+  "representante_legal" : "Manuel Francisco Obreg�n Trillos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.ace_ina.com",
+  "direccion" : "Carrera 7 No. 71-21 Torre B Piso 7 Edificio Bolsa de Valores",
+  "tipo_entidad" : "13",
+  "razon_social" : "CHUBB SEGUROS COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300388857",
+  "emailprincipal" : "fpearl@valorem.com.co",
+  "representante_legal" : "Frank Joseph Pearl Gonz�lez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valorem.com.co",
+  "direccion" : "CALLE 75 NO. 5-59",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALOREM S.A."
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600511759",
+  "emailprincipal" : "lfs@afin.com.co",
+  "representante_legal" : "Leopoldo  Forero Samper",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.afin.com.co",
+  "direccion" : "CALLE 26 B NO 4A-45",
+  "tipo_entidad" : "85",
+  "razon_social" : "AFIN S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8301123171",
+  "emailprincipal" : "ocampo.juanf@cable.net.co",
+  "representante_legal" : "Juan Fernando Ocampo Herr�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.juanvaldezcafe.com",
+  "direccion" : "CL 73  8-13 TORRE A PISO 3",
+  "tipo_entidad" : "31",
+  "razon_social" : "PROMOTORA DE CAFE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "12",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "890905071",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Humberto Montoya Ortega",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 34 No. 43-59 Piso 2",
+  "tipo_entidad" : "11",
+  "razon_social" : "SEA -EN LIQUIDACI�N-"
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001443313",
+  "emailprincipal" : "mlargacham@bbvahorizonte.com.co",
+  "representante_legal" : "Miguel  Largacha Martinez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.porvenir.com.co",
+  "direccion" : "Carrera 13 No. 26 A- 65",
+  "tipo_entidad" : "23",
+  "razon_social" : "PORVENIR"
+}
+, {
+  "cod_entidad" : "20",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8001408878",
+  "emailprincipal" : "jaime.sierra@corficolombiana.com.co",
+  "representante_legal" : "Jaime Alberto Sierra Giraldo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiduciariacorficolombiana.com",
+  "direccion" : "Carrera 13 No. 26 - 45 Piso 14 Edificio Internacional",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA CORFICOLOMBIANA S.A."
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909034742",
+  "emailprincipal" : "alvaro.hincapie@enka.com.co",
+  "representante_legal" : "Alvaro Jairo Hincapie Velez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.enka.com.co",
+  "direccion" : "CR 37A  8 - 43  OF 901",
+  "tipo_entidad" : "39",
+  "razon_social" : "ENKA DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "52",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "9002150711",
+  "emailprincipal" : "miguel.charria@bancamia.com.co",
+  "representante_legal" : "Miguel Angel Charria Lievano",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancamia.com.co",
+  "direccion" : "Carrera 9 No. 66 -25",
+  "tipo_entidad" : "1",
+  "razon_social" : "Bancam�a S.A."
+}
+, {
+  "cod_entidad" : "59",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8902069071",
+  "emailprincipal" : "nathalia.lopez@previcar.com.co",
+  "representante_legal" : "Nathalia  Lopez Bernal",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 14 B No. 119 - 95 Piso 4",
+  "tipo_entidad" : "11",
+  "razon_social" : "VML S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "33",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "eduardo.machado@libertymutual.com",
+  "representante_legal" : "Jorge Eduardo Machado Jimenez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 72 No.10 - 07",
+  "tipo_entidad" : "27",
+  "razon_social" : "LIBERTY MUTUAL INSURANCE COMPANY"
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Koppers  Horst �gata",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "http://www.colognere.com",
+  "direccion" : "Carrera 7 No.115-33 Oficina 504",
+  "tipo_entidad" : "27",
+  "razon_social" : "GENERAL & COLOGNE"
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9005199459",
+  "emailprincipal" : "daniel.klein@partners.axa",
+  "representante_legal" : "Daniel Emmanuel Klein",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 100 No. 8 a - 37 Torre A oficina 505",
+  "tipo_entidad" : "27",
+  "razon_social" : "FINANCIAL INSURANCE COMPANY LIMITED"
+}
+, {
+  "cod_entidad" : "39",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "ladarve@cardenasycardenas.com",
+  "representante_legal" : "Luz Helena Adarve Gomez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 -52 Torre B Piso 9",
+  "tipo_entidad" : "20",
+  "razon_social" : "CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK"
+}
+, {
+  "cod_entidad" : "137",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300183273",
+  "emailprincipal" : "julian.suza@coopergay.com.co",
+  "representante_legal" : "Juli�n Eduardo Suza Fl�rez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 90 No. 19 - 41 oficina 401 y 402",
+  "tipo_entidad" : "11",
+  "razon_social" : "INTEGRO ANDINA LTDA. CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8917000379",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jos�  Carpio Casta�o",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.mapfre.com.co",
+  "direccion" : "Carrera 14 No. 96-34",
+  "tipo_entidad" : "13",
+  "razon_social" : "MAPFRE SEGUROS GENERALES DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300083589",
+  "emailprincipal" : "mclaudia-musa@gmail.com",
+  "representante_legal" : "Maria Claudia Pinzon Urdaneta",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valoresymandatos.com",
+  "direccion" : "CR 19 B 82 46 OF 302",
+  "tipo_entidad" : "86",
+  "razon_social" : "VALORES Y MANDATOS DE COLOMBIA S.A. COMISIONISTAS INDEPENDIENT"
+}
+, {
+  "cod_entidad" : "63",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9009994456",
+  "emailprincipal" : "jdiaz@renta4global.com",
+  "representante_legal" : "Javier  Diaz Fajardo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 N� 78 - 15",
+  "tipo_entidad" : "5",
+  "razon_social" : "RENTA4G FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "62",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9009783039",
+  "emailprincipal" : "mariate.gonzalezb@gmail.com",
+  "representante_legal" : "Maria Teresa Gonzalez Bedoya",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "http://www.fiducoomeva.com/",
+  "direccion" : "Calle 13 No. 57-50 Piso 3",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA COOMEVA S.A."
+}
+, {
+  "cod_entidad" : "72",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8002217932",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Victoria Eugenia Rojas Ramirez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "Calle 94A No. 13-59 Of.403",
+  "tipo_entidad" : "88",
+  "razon_social" : "EUROINVERSIONES S.A.-EN LIQUIDACION"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8911028773",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Tony Quintero Mejia",
+  "ciudad" : "NEIVA",
+  "uripaginaweb" : "www.sinreguistro",
+  "direccion" : "CL 100  10-99",
+  "tipo_entidad" : "53",
+  "razon_social" : "TERPEL SUR S.A."
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050111679",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adriana Osorio Parra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.ingeniomayaguez.com",
+  "direccion" : "CALLE 19 NORTE NO. 2N-29 OFICINA 2402 EDIF. TORRE DE CALI",
+  "tipo_entidad" : "66",
+  "razon_social" : "INVERSIONES HOLGUIN HURTADO S.A."
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909039388",
+  "emailprincipal" : "jcmora@bancolombia.com.co",
+  "representante_legal" : "Juan Carlos Mora Uribe",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.bancolombia.com.co",
+  "direccion" : "Carrera 48 No.26-85 Avenida los Industriales.",
+  "tipo_entidad" : "1",
+  "razon_social" : "Bancolombia"
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600219677",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Felipe Paredes Cadena",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 41 A No.46-21 CAN",
+  "tipo_entidad" : "22",
+  "razon_social" : "Caja Promotora De Vivienda Militar Y De Polic�a"
+}
+, {
+  "cod_entidad" : "19",
+  "nombrepublicocargo" : "Agente Especial - Representante Legal",
+  "numeroidentificacion" : "8901003755",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Alfredo Enrique Arcieri Marchese",
+  "ciudad" : "BARRANQUILLA",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 52 No. 72-65 Oficina 306",
+  "tipo_entidad" : "2",
+  "razon_social" : "COFINORTE"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600025032",
+  "emailprincipal" : "javier.suarez@segurosbolivar.com",
+  "representante_legal" : "Javier Jose Suarez Esparragoza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurosbolivar.com",
+  "direccion" : "Avenida El Dorado No. 68B - 31 Piso 10",
+  "tipo_entidad" : "14",
+  "razon_social" : "COMPA��A DE SEGUROS BOLIVAR S.A."
+}
+, {
+  "cod_entidad" : "195",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9003890012",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Glenda Maria Ruth Tulia Edda Rodriguez de Villamizar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 113 No. 7 - 45 ofc 1009 Torre B Edificio Teleport Business Park",
+  "tipo_entidad" : "20",
+  "razon_social" : "OFICINA DE REPRESENTACION DEL BANCO LAFISE BANCENTRO S.A. DE NICARAGUA, DEL BANC"
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001423837",
+  "emailprincipal" : "cprado@fidubogota.com",
+  "representante_legal" : "C�sar  Prado Villegas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fidubogota.com",
+  "direccion" : "Calle 67 No. 7-37 Tercer Piso Edificio Plaza 67",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA BOGOT� S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600788287",
+  "emailprincipal" : "lauromero@colsanitas.com",
+  "representante_legal" : "Roberto  Cocheteux Tierno",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colsanitas.com.co",
+  "direccion" : "CL 100 11 B 67",
+  "tipo_entidad" : "69",
+  "razon_social" : "COMPA�IA DE MEDICINA PREPAGADA COLSANITAS S.A."
+}
+, {
+  "cod_entidad" : "67",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605058004",
+  "emailprincipal" : "posadaarturo@ixp.net",
+  "representante_legal" : "Arturo Carlos Tom�s Posada Rodr�guez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera  27 No. 53-11-Oficina 204",
+  "tipo_entidad" : "11",
+  "razon_social" : "A.P. CORREDORES INTERNACIONALES DE REASEGUROS LTDA"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600063596",
+  "emailprincipal" : "javier.suarez@segurosbolivar.com",
+  "representante_legal" : "Javier Jose Suarez Esparragoza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurosbolivar.com",
+  "direccion" : "Avenida El dorado No. 68 B 31 Piso 10",
+  "tipo_entidad" : "10",
+  "razon_social" : "CAPITALIZADORA BOLIVAR S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600073798",
+  "emailprincipal" : "dnino@amvcolombia.org.co",
+  "representante_legal" : "Daniel Ignacio Ni�o Tarazona",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.caxdac.com",
+  "direccion" : "Calle 99 No. 10 - 19 oficina 402 Edificio 99 Trade Center",
+  "tipo_entidad" : "25",
+  "razon_social" : "CAXDAC"
+}
+, {
+  "cod_entidad" : "19",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600091744",
+  "emailprincipal" : "presidencia@segurosdelestado.com",
+  "representante_legal" : "Jorge Arturo Mora Sanchez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 90 - 20",
+  "tipo_entidad" : "14",
+  "razon_social" : "SEGUROS DE VIDA DEL ESTADO S.A."
+}
+, {
+  "cod_entidad" : "121",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9006880663",
+  "emailprincipal" : "lvera@juriscoop.com.co",
+  "representante_legal" : "Luis Alfonso Vera Osorio",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.financierajuriscoop.com.co",
+  "direccion" : "Av. Calle 26 No. 69D 91 Torre Av. Eldorado Piso 10",
+  "tipo_entidad" : "4",
+  "razon_social" : "Financiera Juriscoop C.F."
+}
+, {
+  "cod_entidad" : "193",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9001298568",
+  "emailprincipal" : "daniel.botero@bakermckenzie.com",
+  "representante_legal" : "Gloria Raquel Gonz�lez Salinas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 80-49 oficina 505 Edificio Centro de Negocios El Nogal",
+  "tipo_entidad" : "20",
+  "razon_social" : "CREDICORP BANK S.A."
+}
+, {
+  "cod_entidad" : "30",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600073354",
+  "emailprincipal" : "dprieto@fundacion-social.com.co",
+  "representante_legal" : "Diego Fernando Prieto Rivera",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 77-65 Torre Colmena",
+  "tipo_entidad" : "1",
+  "razon_social" : "BANCO CAJA SOCIAL"
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Gerente Principal (Presidente)",
+  "numeroidentificacion" : "8909071570",
+  "emailprincipal" : "jrperez@bolsayrenta.com",
+  "representante_legal" : "Juan Rafael P�rez V�lez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.btgpactual.com.co",
+  "direccion" : "CR 43 A 1 50 ANDI TO 2 P 10",
+  "tipo_entidad" : "85",
+  "razon_social" : "BTG PACTUAL S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909000991",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Felipe Posada Moreno",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.estra.com",
+  "direccion" : "CL 30   55-72",
+  "tipo_entidad" : "40",
+  "razon_social" : "INDUSTRIAS ESTRA S.A."
+}
+, {
+  "cod_entidad" : "82",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8603537650",
+  "emailprincipal" : "bmacmast@minhacienda.gov.co",
+  "representante_legal" : "William Bruce Mac Master Rojas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.inverlink.com.co",
+  "direccion" : "CRA 7 NO. 71-52 TORRE B PISO 15",
+  "tipo_entidad" : "88",
+  "razon_social" : "INVERLINK S.A."
+}
+, {
+  "cod_entidad" : "42",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9004085370",
+  "emailprincipal" : "omar.duque@bnpparibas.com",
+  "representante_legal" : "Omar Andres Duque Tobon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "cib.bnpparibas.com/websites/page.aspx/76",
+  "direccion" : "Carrera 7 No. 77 - 07 piso 11 Edificio Torre Siete 77",
+  "tipo_entidad" : "2",
+  "razon_social" : "BNP Paribas"
+}
+, {
+  "cod_entidad" : "38",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001713721",
+  "emailprincipal" : "oscardejesusmarin25@gmail.com",
+  "representante_legal" : "Oscar de Jes�s Marin",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiducentral.com",
+  "direccion" : "Avenida El Dorado No. 69A-51 Interior 3 Piso 3",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA CENTRAL S.A. sigla FIDUCENTRAL S.A."
+}
+, {
+  "cod_entidad" : "61",
+  "nombrepublicocargo" : "Representante Legal",
+  "numeroidentificacion" : "9007951724",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Camilo  Aristizabal Velez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 43 A No. 1-50 San Fernando Plaza Torre 2 Piso 12",
+  "tipo_entidad" : "5",
+  "razon_social" : "BTG PACTUAL FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "80",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8903000401",
+  "emailprincipal" : "mfranco@correvalle.com",
+  "representante_legal" : "Mariela  Franco de Duque",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida 3 Norte No. 32N-05",
+  "tipo_entidad" : "11",
+  "razon_social" : "CORREDORES DE SEGUROS DEL VALLE S.A."
+}
+, {
+  "cod_entidad" : "51",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600001854",
+  "emailprincipal" : "mauricio.guzman@alianzavalores.com.co",
+  "representante_legal" : "Mauricio  Guzman Carvajal",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.alianzavalores.com.co",
+  "direccion" : "Carrera 15 No. 82-99 Piso 3",
+  "tipo_entidad" : "85",
+  "razon_social" : "ALIANZA VALORES COMISIONISTA DE BOLSA S.A."
+}
+, {
+  "cod_entidad" : "35",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8301136013",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Sadinsa S.A.",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendiente.com.co",
+  "direccion" : "CR 13 26 45 P 11",
+  "tipo_entidad" : "66",
+  "razon_social" : "ACTIUNIDOS S.A."
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605036173",
+  "emailprincipal" : "sandra.solorzano@segurosalfa.com.co",
+  "representante_legal" : "Sandra Patricia Solorzano Daza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.segurosalfa.com.co",
+  "direccion" : "Avenida Calle 26 No. 59 -15 local 6 y 7",
+  "tipo_entidad" : "14",
+  "razon_social" : "SEGUROS DE VIDA ALFA - VIDALFA"
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050111686",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Adriana Osorio Parra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.ingeniomayaguez.com",
+  "direccion" : "CL 19 NORTE 2 N 29 OFICINA 2402 ED TORRE DE CALI",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES DIACO S.A."
+}
+, {
+  "cod_entidad" : "56",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600692652",
+  "emailprincipal" : "jose.plana@aon.com",
+  "representante_legal" : "Jose Luis Plana Villarroel",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 86-35/53 Pisos 1 4 8 y 9",
+  "tipo_entidad" : "11",
+  "razon_social" : "AON RISK SERVICES COLOMBIA S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Director",
+  "numeroidentificacion" : "8915007550",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mar�a Teresa Otoya de Mu�oz",
+  "ciudad" : "POPAYAN",
+  "uripaginaweb" : "www.unicauca.edu.co",
+  "direccion" : "Calle 4 No. 3-57",
+  "tipo_entidad" : "25",
+  "razon_social" : "CAJA DE PREVISI�N SOCIAL DE LA UNIVERSIDAD DEL CAUCA EN LIQUIDACI�N"
+}
+, {
+  "cod_entidad" : "191",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9001228992",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Guillermo Antonio Villalba Yabrudy",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 98 No. 22 - 64 oficina 309 Edificio Calle 100",
+  "tipo_entidad" : "20",
+  "razon_social" : "MERCANTIL BANK N.A."
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600063335",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jorge Bernal Gomez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.abocol.com",
+  "direccion" : "AV 15 NO. 100-43 PISO 2",
+  "tipo_entidad" : "39",
+  "razon_social" : "ABONOS COLOMBIANOS S.A."
+}
+, {
+  "cod_entidad" : "33",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600399880",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luiz Francisco Minarelli Campos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 72 No. 10-07 y Calle 71 No. 10-08 Pisos 167 y 8",
+  "tipo_entidad" : "13",
+  "razon_social" : "LIBERTY SEGUROS"
+}
+, {
+  "cod_entidad" : "48",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "9008469640",
+  "emailprincipal" : "victoria.bejarano@zurich.com",
+  "representante_legal" : "Victoria Eugenia Bejarano de la Torre",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 116 No.7-15Interior 2 Piso 14 Oficina 1401",
+  "tipo_entidad" : "13",
+  "razon_social" : "ZURICH COLOMBIA SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Apoderado General",
+  "numeroidentificacion" : "8999990260",
+  "emailprincipal" : "apoderadogeneral@caprecom.gov.co",
+  "representante_legal" : "Felipe  Negret Mosquera",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 69 No. 47 - 34 Piso 5",
+  "tipo_entidad" : "25",
+  "razon_social" : "CAJA DE PREVISION SOCIAL DE COMUNICACIONES CAPRECOM EICE en liquidaci�n"
+}
+, {
+  "cod_entidad" : "83",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300456423",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Enrique Jose Vallejomuqoz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CRA 11 NO. 93-46 OF. 403",
+  "tipo_entidad" : "88",
+  "razon_social" : "ICAP COLOMBIA INVESTMENT CORPORATI�N S.A."
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300762193",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Marma Consuelo Urbina Pinzsn",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.coinsaonline.com",
+  "direccion" : "CARRERA 13 N�.92-57 P 4� OF.402",
+  "tipo_entidad" : "86",
+  "razon_social" : "COMPA��A DE ASESOR�AS EN INVERSIONES COIN S.A."
+}
+, {
+  "cod_entidad" : "36",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600540414",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Enrique Garcia Rodriguez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.caf.com",
+  "direccion" : "CR 9 NO. 76-49 PISO 7",
+  "tipo_entidad" : "66",
+  "razon_social" : "CORPORACION ANDINA DE FOMENTO"
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000670659",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Eduardo Vargas Martinez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.lasamericas.com.co",
+  "direccion" : "DG 75B  2 A -120 OF 308",
+  "tipo_entidad" : "69",
+  "razon_social" : "PROMOTORA MEDICA LAS AMERICAS S.A."
+}
+, {
+  "cod_entidad" : "53",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9003782122",
+  "emailprincipal" : "jose.guerrero@grupohelm.com",
+  "representante_legal" : "Jose Alejandro Guerrero Becerra",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.bancowwb.com",
+  "direccion" : "Avenida 5 Norte No. 16 N 57 Piso 4",
+  "tipo_entidad" : "1",
+  "razon_social" : "BANCO W S.A."
+}
+, {
+  "cod_entidad" : "58",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9003223398",
+  "emailprincipal" : "luistorres@gestionfiduciaria.com.co",
+  "representante_legal" : "Luis Ernesto Torres Rodriguez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.gestionfiduciaria.com.co",
+  "direccion" : "Calle 10 No. 4 - 40 oficina 705 Edificio Bolsa de",
+  "tipo_entidad" : "5",
+  "razon_social" : "GESTION FIDUCIARIA S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600023029",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Michel Emile Portron",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.eternit.com.co",
+  "direccion" : "CR 7  26-20  P 16",
+  "tipo_entidad" : "44",
+  "razon_social" : "ETERNIT COLOMBIANA S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909145257",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Beatriz  Uribe de Uribe",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CR  43A  14-109   P. 6",
+  "tipo_entidad" : "30",
+  "razon_social" : "MINEROS S.A."
+}
+, {
+  "cod_entidad" : "125",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600567847",
+  "emailprincipal" : "RODRIGO.GALVIS@AVIATUR.COM.CO",
+  "representante_legal" : "Rodrigo  Galvis Lopez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 20 No. 4-55 piso 3",
+  "tipo_entidad" : "11",
+  "razon_social" : "AVIA CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "37",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002354265",
+  "emailprincipal" : "jeserani@bancolombia.com.co",
+  "representante_legal" : "Jean Pierre Serani Toro",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.bancolombia.com.co",
+  "direccion" : "Carrera 48 No. 26-85 Torre Sur Piso 10 Sector E",
+  "tipo_entidad" : "2",
+  "razon_social" : "Banca De Inversi�n Bancolombia"
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600203824",
+  "emailprincipal" : "mario.valbuena@alpopular.com.co",
+  "representante_legal" : "Mario Nelson Valbuena Ruiz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.alpopular.com.co",
+  "direccion" : "Calle 17 No. 7- 35 Oficina 1109",
+  "tipo_entidad" : "6",
+  "razon_social" : "ALPOPULAR ALMACEN GENERAL DE DEP�SITOS S.A. - ALPOPULAR S.A."
+}
+, {
+  "cod_entidad" : "182",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9000027904",
+  "emailprincipal" : "mibarra@bgeneral.com",
+  "representante_legal" : "Marcela Maria Ibarra Garcia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11A  No.93-67 Oficina 402",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO GENERAL S.A."
+}
+, {
+  "cod_entidad" : "45",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001387099",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Maria del Carmen Zapata Lavado",
+  "ciudad" : "BARRANQUILLA",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "Cra 54 No. 75-33",
+  "tipo_entidad" : "88",
+  "razon_social" : "SOCIEDAD ENDOSAR S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909001619",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Carlos Uribe Jaramillo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.grupofamilia.com.co",
+  "direccion" : "CR 50  8 SUR 117",
+  "tipo_entidad" : "37",
+  "razon_social" : "PRODUCTOS FAMILIA S.A."
+}
+, {
+  "cod_entidad" : "116",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8301159285",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Nikolaus Phillip Reiner Lerner",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera  7 No.32-33 oficina 1202 Edificio Fenix Telesentinel",
+  "tipo_entidad" : "20",
+  "razon_social" : "MIZUHO BANK LTD."
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8260001076",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Isauro Morales Rico",
+  "ciudad" : "SOGAMOSO",
+  "uripaginaweb" : "www.sinreguistro",
+  "direccion" : "CL 22   11A- 73",
+  "tipo_entidad" : "69",
+  "razon_social" : "SERVICIOS MEDICOS ESPECIALIZADOS EL LAGUITO S.A."
+}
+, {
+  "cod_entidad" : "31",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9010613867",
+  "emailprincipal" : "CASANCHEZ@BMICOS.COM",
+  "representante_legal" : "Carlos Alberto Sanchez Rodriguez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 84-09Oficina 903",
+  "tipo_entidad" : "14",
+  "razon_social" : "BMI COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300083589",
+  "emailprincipal" : "jaime.mantilla@valoresymandatos.com",
+  "representante_legal" : "Vivian Aminta Guerrero de Restrepo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valoresymandatos.com",
+  "direccion" : "CR 19 B 82 46 OF 302",
+  "tipo_entidad" : "86",
+  "razon_social" : "VALORES Y MANDATOS DE COLOMBIA S.A. COMISIONISTAS INDEPENDIENT"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600511354",
+  "emailprincipal" : "alvaro.jaramillo@citi.com",
+  "representante_legal" : "Alvaro  Jaramillo Escallon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.citibank.com.co",
+  "direccion" : "Carrera 9 A No. 99-02 Piso 3",
+  "tipo_entidad" : "1",
+  "razon_social" : "Citibank"
+}
+, {
+  "cod_entidad" : "20",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9003256626",
+  "emailprincipal" : "marilena.rodriguez@xlcatlin.com",
+  "representante_legal" : "Marilena  Rodriguez Forero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7a No. 114 - 33 oficina 802",
+  "tipo_entidad" : "27",
+  "razon_social" : "CATLIN INSURANCE COMPANY (UK) LTD OFICINA DE REPRESENTACI�N BOGOT�  E.P"
+}
+, {
+  "cod_entidad" : "97",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9005771404",
+  "emailprincipal" : "mjramirez@larrainvial.com",
+  "representante_legal" : "Maria Jose Ramirez Botero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "https://colombia.larrainvial.com",
+  "direccion" : "CARRERA 7 NO. 71 - 21 TO B OF 1008 EDIFICIO AVENIDA CHILE",
+  "tipo_entidad" : "85",
+  "razon_social" : "LARRAIN VIAL COLOMBIA S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600023985",
+  "emailprincipal" : "presidencia@metlife.com.co",
+  "representante_legal" : "Maria Juliana Tobon Pe�a",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.alico.com.co",
+  "direccion" : "Carrera 7 No. 99 - 53 Piso 17",
+  "tipo_entidad" : "14",
+  "razon_social" : "METLIFE COLOMBIA SEGUROS DE VIDA S.A."
+}
+, {
+  "cod_entidad" : "29",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8605005315",
+  "emailprincipal" : "jbdiaz@banesco.com",
+  "representante_legal" : "Jesus Benedicto Diaz Duran",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-21 Torre B Oficina 910",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANESCO BANCO UNIVERSAL C. A."
+}
+, {
+  "cod_entidad" : "101",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002253859",
+  "emailprincipal" : "fernando.esmeral@bancoldex.com",
+  "representante_legal" : "Fernando  Esmeral Cortes",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.leasingbancoldex.com",
+  "direccion" : "Calle 28 No. 13 A -15 Piso 21",
+  "tipo_entidad" : "4",
+  "razon_social" : "ARCO GRUPO BANCOLDEX"
+}
+, {
+  "cod_entidad" : "39",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "80009102941",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Doris Herrera-Pol",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.worldbank.org",
+  "direccion" : "CRA 7  71-21 TORRE A P16",
+  "tipo_entidad" : "66",
+  "razon_social" : "BANCO INTERNACIONAL DE RECONSTRUCCION Y FOMENTO"
+}
+, {
+  "cod_entidad" : "103",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001392931",
+  "emailprincipal" : "j_jaramillo@jaramillore.com",
+  "representante_legal" : "Jorge Alberto Jaramillo Sanchez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11A No. 93-67  Oficina 203",
+  "tipo_entidad" : "11",
+  "razon_social" : "J A JARAMILLO S.A. CORREDORES DE REASEGUROS SIGLA JARAMILLORE CORREDORES DE RE"
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300388857",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Diego  Cardona Mallarino",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valorem.com.co",
+  "direccion" : "CALLE 75 NO. 5-59",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALOREM S.A."
+}
+, {
+  "cod_entidad" : "16",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605313153",
+  "emailprincipal" : "lguzman@alianza.com.co",
+  "representante_legal" : "Luis Fernando Guzman Ortiz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.alianza.com.co",
+  "direccion" : "Carrera 15 No. 82-99 Piso 3",
+  "tipo_entidad" : "5",
+  "razon_social" : "ALIANZA FIDUCIARIA S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001381881",
+  "emailprincipal" : "jucorrea@bancolombia.com.co",
+  "representante_legal" : "Juan David Correa Sol�rzano",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.proteccion.com.co",
+  "direccion" : "Calle 49 No. 63-100",
+  "tipo_entidad" : "23",
+  "razon_social" : "PROTECCION"
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8605090229",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Clemente Luis del Valle Borr�ez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fen.gov.co",
+  "direccion" : "Carrera 7 No. 71-52 Torre B Piso 6",
+  "tipo_entidad" : "22",
+  "razon_social" : "Financiera De Desarrollo Nacional S.A."
+}
+, {
+  "cod_entidad" : "41",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002260984",
+  "emailprincipal" : "MDMICAN@YAHOO.COM",
+  "representante_legal" : "Milton David Mican Beltran",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bbva.com.co",
+  "direccion" : "Carrera 15 No. 95 - 65 Edificio Astoria Pisos 5 y 6",
+  "tipo_entidad" : "13",
+  "razon_social" : "BBVA SEGUROS COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "46",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9006796349",
+  "emailprincipal" : "manuel.arevalo@caoface.com",
+  "representante_legal" : "Manuel Eduardo Arevalo Esguerra",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida 15 No.91-30 Oficina 601",
+  "tipo_entidad" : "13",
+  "razon_social" : "COFACE COLOMBIA SEGUROS DE CR�DITO S.A."
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8600681825",
+  "emailprincipal" : "lgonzalez@credicorpcapital.com",
+  "representante_legal" : "Luis Miguel Gonzalez Espinosa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.credicorpcapitalcolombia.com",
+  "direccion" : "CL 34 6 65",
+  "tipo_entidad" : "85",
+  "razon_social" : "CREDICORP CAPITAL COLOMBIA S.A. (la \"sociedad\")"
+}
+, {
+  "cod_entidad" : "19",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9001155523",
+  "emailprincipal" : "MIGUEL.GUARIN@HANNOVER-RE.COM",
+  "representante_legal" : "Miguel Eduardo Guarin Contreras",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No. 77-67 Piso 5 Edificio Torre Unika",
+  "tipo_entidad" : "27",
+  "razon_social" : "HANNOVER R�CK SE BOGOT� OFICINA DE REPRESENTACI�N"
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600370136",
+  "emailprincipal" : "jbustamante@mundialseguros.com.co",
+  "representante_legal" : "Juan Enrique Bustamante Molina",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.mundialseguros.com.co",
+  "direccion" : "Calle 33 No. 6B-24 Pisos 2 y 3",
+  "tipo_entidad" : "13",
+  "razon_social" : "COMPA��A MUNDIAL DE SEGUROS S.A. sigla comercial \"SEGUROS MUNDIAL\""
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8903006045",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Alberto Jos� Otoya",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.conciviles.com",
+  "direccion" : "CL 64N  5B 146 CENTRO EMPRESA II OF 412G",
+  "tipo_entidad" : "56",
+  "razon_social" : "CONSTRUCCIONES CIVILES S.A."
+}
+, {
+  "cod_entidad" : "101",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8600685907",
+  "emailprincipal" : "juanita.gomez@wachovia.com",
+  "representante_legal" : "Juanita  Gomez Gonzalez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No. 115-06 Oficina 2203 Edificio Tierra Firme",
+  "tipo_entidad" : "20",
+  "razon_social" : "WELLS FARGO BANK NATIONAL ASSOCIATION"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente -(Sin perjuicio de lo dispuesto en el art�culo 164 del C�digo de Comercio con informaci�n radicada con el n�mero P2017003845-000 del d�a 28 de diciembre de 2017 la entidad informa que con documento del 24 de noviembre de 2017 renunci� al cargo de Presidente  la cual fue aceptada por la Junta Directiva en acta  355 de 19 de diciembre de 2017.  Lo anterior de conformidad con los efectos establecidos por la Sentencia C-621 de julio 29 de 2003 de la Constitucional).",
+  "numeroidentificacion" : "8909316099",
+  "emailprincipal" : "lrodriguez@ad-cap.com",
+  "representante_legal" : "Luis Horacio Rodriguez Levcovich",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.ad-cap.com.co",
+  "direccion" : "CR.43A # 1-50 SAN FERNANDO PLAZA TORRE BVC OF 1201",
+  "tipo_entidad" : "85",
+  "razon_social" : "ADCAP COLOMBIA S.A.COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909039370",
+  "emailprincipal" : "alvaro.pimentel@corpbanca.com.co",
+  "representante_legal" : "�lvaro de Alvarenga Freire Pimentel",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancocorpbanca.com.co",
+  "direccion" : "Carrera 7 No. 99-53 Piso 18",
+  "tipo_entidad" : "1",
+  "razon_social" : "ITA�"
+}
+, {
+  "cod_entidad" : "53",
+  "nombrepublicocargo" : "Liquidador principal",
+  "numeroidentificacion" : "8600521420",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Justo Eduardo Iregui Ortiz",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 123 No 20-16",
+  "tipo_entidad" : "11",
+  "razon_social" : "LATINCOR S.A.  -EN LIQUIDACION-"
+}
+, {
+  "cod_entidad" : "70",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8914107712",
+  "emailprincipal" : "fernando.vallejo@correseguros.com",
+  "representante_legal" : "Fernando  Vallejo Mazuera",
+  "ciudad" : "PEREIRA",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 18-21 Oficina 1401  Edificio Antonio Correa",
+  "tipo_entidad" : "11",
+  "razon_social" : "CORREDORES DE SEGUROS ASOCIADOS S.A."
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8002561619",
+  "emailprincipal" : "izuluaga@sura.com.co",
+  "representante_legal" : "Iv�n Ignacio Zuluaga Latorre",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.suratep.com.co",
+  "direccion" : "Calle 49 A No. 63-55 Ctro Suramericana Torre Suratep",
+  "tipo_entidad" : "14",
+  "razon_social" : "SEGUROS DE RIESGOS LABORALES SURAMERICANA S.A."
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600025340",
+  "emailprincipal" : "nicolas.delgado@qbe.com.co",
+  "representante_legal" : "Nicolas  Delgado Gonzalez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.qbe.com.co",
+  "direccion" : "Carrera 7 No. 76-35 Pisos 7 8 y 9",
+  "tipo_entidad" : "13",
+  "razon_social" : "QBE SEGUROS S.A. SIGLA QBE COLOMBIA"
+}
+, {
+  "cod_entidad" : "165",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300159182",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Claudia Patricia Serna Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.helmbankusa.com",
+  "direccion" : "Carrera 11 No. 82-01 Oficina 204 Piso 2",
+  "tipo_entidad" : "20",
+  "razon_social" : "HELM BANK USA"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8909085704",
+  "emailprincipal" : "presidencia@tecseguros.com",
+  "representante_legal" : "Diego Alonso Bravo Gomez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tecseguros.com",
+  "direccion" : "Carrera 52 No. 14-30 Local 410 Centro Empresarial Olaya Herrera",
+  "tipo_entidad" : "11",
+  "razon_social" : "TECSEGUROS S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "23",
+  "nombrepublicocargo" : "Gerente General -(Sin perjuicio de lo dispuesto en el art�culo 164 del C�digo de Comercio el d�a 26 de septiembre de 2017 se acept� la renuncia al cargo de Gerente General informaci�n radicada con el n�mero P2017003392-000.  Lo anterior de conformidad con los efectos establecidos por la Sentencia C-621 de julio 29 de 2003 de la Constitucional)",
+  "numeroidentificacion" : "8001410211",
+  "emailprincipal" : "lromerogalvez@corpbanca.com.co",
+  "representante_legal" : "Leopoldo  Romero Galvez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.grupohelm.com.co",
+  "direccion" : "Carrera 7 No. 27-18 Piso 19",
+  "tipo_entidad" : "5",
+  "razon_social" : "ITA� FIDUCIARIA"
+}
+, {
+  "cod_entidad" : "105",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8600799233",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Carlos Rocha Libreros",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No. 74-08 Oficina 305",
+  "tipo_entidad" : "20",
+  "razon_social" : "SOCI�T� G�N�RALE"
+}
+, {
+  "cod_entidad" : "75",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8903185322",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Ana Luc�a Paz Tenorio",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 70 Norte No. 3N-45",
+  "tipo_entidad" : "11",
+  "razon_social" : "GARCES LLOREDA Y CIA S.A."
+}
+, {
+  "cod_entidad" : "211",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9008721186",
+  "emailprincipal" : "pinerosf@bancsabadell.com",
+  "representante_legal" : "Juan Fernando Pi�eros Rocha",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-21 Torre B Oficina 1604 Edf. Av. Chile",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO DE SABADELL S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000470313",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "David Andr�s Duque Brumbaugh",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tablemac.com",
+  "direccion" : "CR 43A CL 19  127 P 3 ED RECIFE",
+  "tipo_entidad" : "36",
+  "razon_social" : "TABLEMAC S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8909074890",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Gustavo Le�n Calle Cano",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 51 No. 43-24",
+  "tipo_entidad" : "32",
+  "razon_social" : "JFK Cooperativa Financiera"
+}
+, {
+  "cod_entidad" : "31",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9008852127",
+  "emailprincipal" : "jcrealphe@gmail.com",
+  "representante_legal" : "Juan Carlos Realphe Guevara",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Av. Carrera 9 No. 115-06 oficina 2006",
+  "tipo_entidad" : "27",
+  "razon_social" : "LLOYD'S COLOMBIA OFICINA DE REPRESENTACI�N"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001485142",
+  "emailprincipal" : "santiago.garcia@oldmutual.com.co",
+  "representante_legal" : "Santiago  Garcia Martinez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.oldmutual.com.co",
+  "direccion" : "Avenida 19 No.109a -30",
+  "tipo_entidad" : "23",
+  "razon_social" : "OLD MUTUAL ADMINISTRADORA DE FONDOS DE PENSIONES Y CESANTIAS S.A."
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600021538",
+  "emailprincipal" : "jsamaca@almaviva.com",
+  "representante_legal" : "Juan Camilo Samaca Solano",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.almaviva.com.co",
+  "direccion" : "Carrera 13 A No. 34-72  Piso 11 Edificio Torre 1335",
+  "tipo_entidad" : "6",
+  "razon_social" : "ALMACENES GENERALES DE DEP�SITO - ALMAVIVA S.A."
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001431573",
+  "emailprincipal" : "mestupi�an@fiduoccidente.com.co",
+  "representante_legal" : "Mario Andres Estupi�an Alvarado",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiduoccidente.com.co",
+  "direccion" : "Carrera 13 No. 27-47 Piso 9",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA DE OCCIDENTE S.A.  - FIDUOCCIDENTE S.A."
+}
+, {
+  "cod_entidad" : "175",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300429646",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Manuel Posada G�mez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 13 No. 93B-11",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO COLPATRIA CAYMAN INC"
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9003360047",
+  "emailprincipal" : "AMGUZMANR@COLPENSIONES.GOV.CO",
+  "representante_legal" : "Adriana Maria Guzman Rodriguez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpensiones.gov.co",
+  "direccion" : "Carrera 10 No. 72 - 33 Torre B Pisos 11 y 12",
+  "tipo_entidad" : "25",
+  "razon_social" : "COLPENSIONES"
+}
+, {
+  "cod_entidad" : "77",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300247722",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jose Abraham Varon Lema",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CRA. 13 No. 76-47",
+  "tipo_entidad" : "88",
+  "razon_social" : "VANGUARDIA INVERSIONES Y CONSULTORIAS S.A."
+}
+, {
+  "cod_entidad" : "42",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8110191907",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Alejandro Miguel Santamar�a Caicedo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 Sur No. 42-70",
+  "tipo_entidad" : "13",
+  "razon_social" : "SOLUNION COLOMBIA SEGUROS DE CR�DITO S.A."
+}
+, {
+  "cod_entidad" : "12",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8002268553",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jorge Mario Velasquez Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.cpr.com.co",
+  "direccion" : "CR 7  71 21 TORRE  A  P-10",
+  "tipo_entidad" : "43",
+  "razon_social" : "CEMENTOS PAZ DEL RIO S.A.  (FUSION CEMENTOS CARIBE RES.1000 DEL 18/11/2005)"
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050111686",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Eduardo  Iragorri Holgu�n",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.ingeniomayaguez.com",
+  "direccion" : "CL 19 NORTE 2 N 29 OFICINA 2402 ED TORRE DE CALI",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES DIACO S.A."
+}
+, {
+  "cod_entidad" : "37",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110426818",
+  "emailprincipal" : "jl.aristizabal@conconcreto.com",
+  "representante_legal" : "Juan Luis Aristiz�bal V�lez",
+  "ciudad" : "ITAGUI",
+  "uripaginaweb" : "N/A.",
+  "direccion" : "CR 42 75 125 AUTOPISTA SUR",
+  "tipo_entidad" : "66",
+  "razon_social" : "INVERSIONES CONCONCRETO S.A"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8909011763",
+  "emailprincipal" : "lmarulanda@cotrafa.com.co",
+  "representante_legal" : "Luis Alfonso Marulanda Tob�n",
+  "ciudad" : "BELLO",
+  "uripaginaweb" : "www.cotrafa.com.co",
+  "direccion" : "Calle 46  No. 49-146",
+  "tipo_entidad" : "32",
+  "razon_social" : "Cotrafa Financiera"
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110107541",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "John  G�mez Restrepo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.valoresindustriales.com",
+  "direccion" : "CL 5 A  39 - 131  T-4 P-3 CENTRO DE TRABAJO CORFIN",
+  "tipo_entidad" : "66",
+  "razon_social" : "VALORES INDUSTRIALES S.A."
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300275325",
+  "emailprincipal" : "guillermo.espinosa@mapfre.com",
+  "representante_legal" : "Guillermo  Espinosa Calderon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 72 No. 10-07 Oficina 604",
+  "tipo_entidad" : "27",
+  "razon_social" : "MAPFRE RE"
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "Representante Legal (Gerente Burs�til)",
+  "numeroidentificacion" : "8600681825",
+  "emailprincipal" : "djimenez@correval.com",
+  "representante_legal" : "Diego  Jimenez Posada",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.credicorpcapitalcolombia.com",
+  "direccion" : "CL 34 6 65",
+  "tipo_entidad" : "85",
+  "razon_social" : "CREDICORP CAPITAL COLOMBIA S.A. (la \"sociedad\")"
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002408820",
+  "emailprincipal" : "MDMICAN@YAHOO.COM",
+  "representante_legal" : "Milton David Mican Beltran",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bbvaseguros.com",
+  "direccion" : "Carrera 15 No. 95 - 65 Edificio Astoria Pisos 5 y 6",
+  "tipo_entidad" : "14",
+  "razon_social" : "BBVA SEGUROS DE VIDA COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "179",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300521826",
+  "emailprincipal" : "volker.degenhardt@ubs.com",
+  "representante_legal" : "Volker Hans Degenhardt Streubel",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.ubs.com",
+  "direccion" : "Calle 87 No. 10 - 93 oficina 801",
+  "tipo_entidad" : "20",
+  "razon_social" : "UBS AG"
+}
+, {
+  "cod_entidad" : "68",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001896042",
+  "emailprincipal" : "aschober@correval.com",
+  "representante_legal" : "Andr� Kurt Schober Maya",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.globalcdb.com",
+  "direccion" : "CALLE 7 SUR NO 42 70 OF 215 TO 2",
+  "tipo_entidad" : "85",
+  "razon_social" : "GLOBAL SECURITIES S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "128",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600278289",
+  "emailprincipal" : "pstiefken@sekuritas.com.co",
+  "representante_legal" : "Pablo  Stiefken Hollman",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.sekuritas.com.co",
+  "direccion" : "Carrera  11 No. 86-60 Oficina 403",
+  "tipo_entidad" : "11",
+  "razon_social" : "SEKURITAS S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "188",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "900526354",
+  "emailprincipal" : "guillermo.crane@corficolombiana.com",
+  "representante_legal" : "Guillermo Ernesto Crane Arango",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 13 No. 26 -45 Piso 6",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO CORFICOLOMBIANA (PANAMA) S.A."
+}
+, {
+  "cod_entidad" : "15",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000594705",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Orlando Jos� Cabrales Mart�nez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.propilco.com",
+  "direccion" : "CR 10  28 49  P27",
+  "tipo_entidad" : "39",
+  "razon_social" : "POLIPROPILENO DEL CARIBE S.A."
+}
+, {
+  "cod_entidad" : "92",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8305047002",
+  "emailprincipal" : "andrea.gonzalez@co.scotiabank.com",
+  "representante_legal" : "Natalia Andrea Gonzalez Suarez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com/Securities/",
+  "direccion" : "CRA 7  NO.24 - 89 PISO 43",
+  "tipo_entidad" : "85",
+  "razon_social" : "SCOTIA SECURITIES (COLOMBIA) S.A. SOCIEDAD COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "55",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600518946",
+  "emailprincipal" : "orlando.forero@bancofinandina.com",
+  "representante_legal" : "Orlando  Forero G�mez",
+  "ciudad" : "CHIA",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Kilometro 17 carretera central del Norte v�a a Chia",
+  "tipo_entidad" : "1",
+  "razon_social" : "Finandina"
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001368351",
+  "emailprincipal" : "jpelaez@internexa.com",
+  "representante_legal" : "Jaime Alberto Pelaez Espinosa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.globalcrossing.com",
+  "direccion" : "AUT NORTE # 122-35",
+  "tipo_entidad" : "64",
+  "razon_social" : "GLOBAL CROSSING COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "66",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8600444897",
+  "emailprincipal" : "patricia.silva@db.com",
+  "representante_legal" : "Patricia  Silva Corredor",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.db.com",
+  "direccion" : "Calle 67 No. 7 -35 oficina 1204",
+  "tipo_entidad" : "20",
+  "razon_social" : "DEUTSCHE BANK A.G."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8301369911",
+  "emailprincipal" : "hrm-sato@ms-ins.com",
+  "representante_legal" : "Harumi  Sato",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 98 No. 9a - 46 oficina 501 A Edificio Parque Chico 99 Torre 2",
+  "tipo_entidad" : "27",
+  "razon_social" : "MITSUI SUMITOMO INSURANCE COMPANY LIMITED"
+}
+, {
+  "cod_entidad" : "129",
+  "nombrepublicocargo" : "Miembro principal junta directiva",
+  "numeroidentificacion" : "8600487836",
+  "emailprincipal" : "cmorales@colamseg.com",
+  "representante_legal" : "Carlos Gilberto Morales Escobar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 73-44 Oficina 808",
+  "tipo_entidad" : "11",
+  "razon_social" : "COLAMSEG CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "83",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300456423",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Agustin Morales Bermudez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CRA 11 NO. 93-46 OF. 403",
+  "tipo_entidad" : "88",
+  "razon_social" : "ICAP COLOMBIA INVESTMENT CORPORATI�N S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8909011770",
+  "emailprincipal" : "xoxol1@msn.com",
+  "representante_legal" : "Oscar  Ospina Pi�a",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.coofinep.com",
+  "direccion" : "Calle 30 No. 43 - 45 local 101",
+  "tipo_entidad" : "32",
+  "razon_social" : "Coofinep Cooperativa Financiera"
+}
+, {
+  "cod_entidad" : "108",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8110077294",
+  "emailprincipal" : "lfparedesgarcia@gmail.com",
+  "representante_legal" : "Luis Fernando Paredes Garcia",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.dannregional.com.co",
+  "direccion" : "Carrera 43A No. 7 - 50 A piso 17 Torre Financiera Dann",
+  "tipo_entidad" : "4",
+  "razon_social" : "Financiera Dann Regional"
+}
+, {
+  "cod_entidad" : "49",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8915003160",
+  "emailprincipal" : "tana_valencia@jltcolombia.com",
+  "representante_legal" : "Mar�a Alejandra Valencia Iargorri",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.jltcolombia.com",
+  "direccion" : "Calle 72 No. 10-07 Oficina 1004",
+  "tipo_entidad" : "11",
+  "razon_social" : "JARDINE LLOYD THOMPSON VALENCIA & IRAGORRI CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "12",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600507501",
+  "emailprincipal" : "cverastegui@gnbsudameris.com.co",
+  "representante_legal" : "Camilo  Verastegui Carvajal",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.gnbsudameris.com.co",
+  "direccion" : "Carrera 7 No. 75 - 85/87",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco GNB Sudameris"
+}
+, {
+  "cod_entidad" : "89",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050141830",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Francesco Tirelli Pardo",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.gfs-sa.com",
+  "direccion" : "AVENIDA 5 A NORTE 17-98 OFIC.601",
+  "tipo_entidad" : "88",
+  "razon_social" : "GLOBAL FINANCIAL SERVICES S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909002591",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Alberto Beltr�n Ardila",
+  "ciudad" : "ITAGUI",
+  "uripaginaweb" : "www.coltejer.com.co",
+  "direccion" : "CR 42 NRO 54A-161",
+  "tipo_entidad" : "34",
+  "razon_social" : "COLTEJER S.A."
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909310835",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Andres Zuluaga Olarte",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.cementosrioclaro.com.co",
+  "direccion" : "CL 7D  43 A 99  P8 TO ALMAGRAN",
+  "tipo_entidad" : "43",
+  "razon_social" : "CEMENTOS RIOCLARO S.A.(FUSION CEMENTOS CARIBE RES.1000 DEL 18/11/2005)"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600025412",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jorge  Cavelier Gaviria",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.marly.com.co",
+  "direccion" : "CL 50 9-67",
+  "tipo_entidad" : "68",
+  "razon_social" : "CLINICA DE MARLY S.A."
+}
+, {
+  "cod_entidad" : "115",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001881781",
+  "emailprincipal" : "carlosaq@pagosinternacionales.com",
+  "representante_legal" : "Carlos Alberto Quintana Varela",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.pagosinternacionales.com",
+  "direccion" : "Calle 5 No. 50-103 Ciudadela Comercial Cosmocentro Local 245",
+  "tipo_entidad" : "4",
+  "razon_social" : "FINANCIERA PAGOS INTERNACIONALES S.A. COMPA��A DE FINANCIAMIENTO"
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Director Ejecutivos",
+  "numeroidentificacion" : "8002140019",
+  "emailprincipal" : "alejandro.bertuol@fitchratings.com",
+  "representante_legal" : "Alejandro  Bertuol",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fitchratings.com.co",
+  "direccion" : "CALLE 69 A NO.9-85",
+  "tipo_entidad" : "84",
+  "razon_social" : "FITCH RATINGS COLOMBIA S.A. SOCIEDAD CALIFICADORA DE VALORES"
+}
+, {
+  "cod_entidad" : "41",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9001143468",
+  "emailprincipal" : "angela.x.hurtado@jpmorgan.com",
+  "representante_legal" : "Angela Maria Hurtado Castro",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 84-09 oficinas 701 702 y 703",
+  "tipo_entidad" : "2",
+  "razon_social" : "Jpmorgan"
+}
+, {
+  "cod_entidad" : "122",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9009776291",
+  "emailprincipal" : "jose.medina@renault.com",
+  "representante_legal" : "Jos� Luis Medina del Rio",
+  "ciudad" : "ENVIGADO",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 49  No. 39 Sur 100",
+  "tipo_entidad" : "4",
+  "razon_social" : "RCI COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "28",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8903015840",
+  "emailprincipal" : "juan.p.salazar@marsh.com",
+  "representante_legal" : "Juan Pablo Salazar Santamaria",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.delimamarsh.com",
+  "direccion" : "Calle 67 Norte No. 6N-85",
+  "tipo_entidad" : "11",
+  "razon_social" : "DELIMA MARSH S.A.o MARSH"
+}
+, {
+  "cod_entidad" : "111",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9001682311",
+  "emailprincipal" : "civargas@credifinanciera.com.co",
+  "representante_legal" : "Carlos Ivan Vargas Perdomo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.credifinancieracf.com",
+  "direccion" : "Carrera 10 No. 64 - 44",
+  "tipo_entidad" : "4",
+  "razon_social" : "C.A. Credifinanciera CF"
+}
+, {
+  "cod_entidad" : "207",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "9006564669",
+  "emailprincipal" : "aldasanchezr@bcp.com.pe",
+  "representante_legal" : "Alda Fiorella Sanchez Rivara",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 34 No. 6-65",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO DE CR�DITO DEL PER� - BCP"
+}
+, {
+  "cod_entidad" : "40",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001781488",
+  "emailprincipal" : "juanacarolina35@gmail.com",
+  "representante_legal" : "Juana Carolina Londo�o Jaramillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiducoldex.com.co",
+  "direccion" : "Calle 28 No. 13 A-24 Piso 6 y 7",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA COLOMBIANA DE COMERCIO EXTERIOR S.A.  FIDUCOLDEX"
+}
+, {
+  "cod_entidad" : "189",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9000922306",
+  "emailprincipal" : "valbuenafelipe@hotmail.com",
+  "representante_legal" : "Felipe Humberto Valbuena Ospina",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-21 Torre B. Oficina 506 Edificio Bancaf�",
+  "tipo_entidad" : "20",
+  "razon_social" : "EFG BANK AG"
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600050501",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Mauricio Eduardo Nieto Warken",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pavco.com.co",
+  "direccion" : "AUT SUR 71 75",
+  "tipo_entidad" : "40",
+  "razon_social" : "PAVCO S.A."
+}
+, {
+  "cod_entidad" : "30",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8300549046",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jos�  Carpio Casta�o",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.mapfrevida.com.co",
+  "direccion" : "Carrera 14 No. 96 - 34",
+  "tipo_entidad" : "14",
+  "razon_social" : "MAPFRE COLOMBIA VIDA SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9001965039",
+  "emailprincipal" : "luisfguevara@vriskr.com",
+  "representante_legal" : "Luis Fernando Guevara Otalora",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.vriskr.com",
+  "direccion" : "CARRERA 7 N.156-68 OFICINA 1301",
+  "tipo_entidad" : "84",
+  "razon_social" : "VALUE AND RISK RATING S.A. SOCIEDAD CALIFICADORA DE VALORES"
+}
+, {
+  "cod_entidad" : "17",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600204395",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "H�ctor  Rodelo S.",
+  "ciudad" : "BARRANQUILLA",
+  "uripaginaweb" : "www.monomeros.com",
+  "direccion" : "VIA 40 LAS FLORES",
+  "tipo_entidad" : "39",
+  "razon_social" : "MONOMEROS COLOMBO-VENEZOLANOS S.A."
+}
+, {
+  "cod_entidad" : "19",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8605004808",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jaime Alberto Zawazki Barberena",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "AV EL DORADO 86-85",
+  "tipo_entidad" : "60",
+  "razon_social" : "ALMACENES CORONA S.A."
+}
+, {
+  "cod_entidad" : "200",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "rocio.sanchezl@baml.com",
+  "representante_legal" : "Rocio Ximena Sanchez Lopez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 113 -43 oficina 1506 Edf Torre Samsung",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANK OF AMERICA NATIONAL ASSOCIATION"
+}
+, {
+  "cod_entidad" : "11",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9002664151",
+  "emailprincipal" : "stellita.bernal@hotmail.com",
+  "representante_legal" : "Luz Stella Bernal Rueda",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.progresion.com.co",
+  "direccion" : "CARRERA 7 N 77-07 OFC 302",
+  "tipo_entidad" : "87",
+  "razon_social" : "PROGRESI�N SOCIEDAD ADMINISTRADORA DE INVERSION S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001493846",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Fernando Fonseca Chaparro",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.clini-colsanitas.com.co",
+  "direccion" : "CR 31 125 A 23",
+  "tipo_entidad" : "68",
+  "razon_social" : "CLINICA COLSANITAS S.A."
+}
+, {
+  "cod_entidad" : "120",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9003771707",
+  "emailprincipal" : "andres.pareja@me.com",
+  "representante_legal" : "Andres  Pareja Perdomo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No.113 - 52 oficina 808 Edif Torres Unidas 2",
+  "tipo_entidad" : "20",
+  "razon_social" : "SUMITOMO MITSUI BANKING CORPORATION"
+}
+, {
+  "cod_entidad" : "34",
+  "nombrepublicocargo" : "Gerente General Encargado",
+  "numeroidentificacion" : "8001687635",
+  "emailprincipal" : "vreyna@gnbsudameris.com.co",
+  "representante_legal" : "Vivian Johana Reyna Abril",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiduciaria.gnbsudameris.com.co",
+  "direccion" : "Carrera 7 No. 75-85/87 Piso 10",
+  "tipo_entidad" : "5",
+  "razon_social" : "SERVITRUST GNB SUDAMERIS S.A."
+}
+, {
+  "cod_entidad" : "87",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050131954",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jos� Rene Osorio Lopez",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CALLE 10 NO. 4-40 ED. BOLSA DE OCCIDENTE    OFI 411",
+  "tipo_entidad" : "88",
+  "razon_social" : "CORPORACION INTERNACIONAL DE CORRETAJE S.A."
+}
+, {
+  "cod_entidad" : "27",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110112582",
+  "emailprincipal" : "jkochoa@une.net.co",
+  "representante_legal" : "Juan Camilo Ochoa Restrepo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.pendiente.incluir",
+  "direccion" : "CR 64 B  49A-30",
+  "tipo_entidad" : "66",
+  "razon_social" : "PORTAFOLIO DE INVERSIONES SURAMERICANA S.A."
+}
+, {
+  "cod_entidad" : "101",
+  "nombrepublicocargo" : "Miembro principal junta directiva",
+  "numeroidentificacion" : "8000636065",
+  "emailprincipal" : "santiagov@sanvelez.com",
+  "representante_legal" : "Francisco Santiago Velez Garces",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 16A No 78-11 Oficina 202 Edificio Oikos II",
+  "tipo_entidad" : "11",
+  "razon_social" : "SANTIAGO VELEZ & ASOCIADOS CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600077389",
+  "emailprincipal" : "carlos_upegui@bancopopular.com.co",
+  "representante_legal" : "Carlos Eduardo Upegui Cuartas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bancopopular.com.co",
+  "direccion" : "Calle 17 No. 7-35/43",
+  "tipo_entidad" : "1",
+  "razon_social" : "Banco Popular"
+}
+, {
+  "cod_entidad" : "145",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300434926",
+  "emailprincipal" : "cgutierrez@uib.com.co",
+  "representante_legal" : "Carlos Andres Gutierrez Nossa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.lambertf.com.co",
+  "direccion" : "Calle 73 No. 7-31 piso 6 Torre B Edificio El Camino",
+  "tipo_entidad" : "11",
+  "razon_social" : "UIB COLOMBIA S.A. CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "29",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8300086861",
+  "emailprincipal" : "carlos.villa@laequidadseguros.coop",
+  "representante_legal" : "Carlos Augusto Villa Rend�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9A No. 99-07 Piso 13 Edificio 100 Street Torre Equidad",
+  "tipo_entidad" : "14",
+  "razon_social" : "LA EQUIDAD SEGUROS DE VIDA ORGANISMO COOPERATIVO"
+}
+, {
+  "cod_entidad" : "134",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300103854",
+  "emailprincipal" : "carlos_rodriguez@ajg.com",
+  "representante_legal" : "Carlos Andres Rodriguez Angulo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida 19 No. 120 - 71 oficina 512",
+  "tipo_entidad" : "11",
+  "razon_social" : "ARTHUR J. GALLAGHER RE COLOMBIA LTDA. CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9000555715",
+  "emailprincipal" : "HCATERIANO@SEAFPERU.COM",
+  "representante_legal" : "Hector Manuel Cateriano Rondon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.seafcolombia.com",
+  "direccion" : "CR 12 89 28 OF 402",
+  "tipo_entidad" : "87",
+  "razon_social" : "SEAF COLOMBIA S.A. SOCIEDAD ADMINISTRADORA DE INVERSI�N"
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909000760",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Carlos Munir Falah Issa",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.cinecolombia.com.co",
+  "direccion" : "CR 13 A 38-76  Y/O  CR 13 38-85",
+  "tipo_entidad" : "80",
+  "razon_social" : "CINE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "100",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8000572186",
+  "emailprincipal" : "curibe@anpro.com.co",
+  "representante_legal" : "Camilo  Uribe Uribe",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 12 No. 40A - 261 Barrio Lalinde el Poblado",
+  "tipo_entidad" : "11",
+  "razon_social" : "ANPRO SEGUROS CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8903003832",
+  "emailprincipal" : "rparedes@fundacion-social.com.co",
+  "representante_legal" : "Rodrigo  Paredes Garcia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.capitalizadoracolmena.com",
+  "direccion" : "Avenida El Dorado No. 69C-03 Piso 6 Torre A Capital Center II",
+  "tipo_entidad" : "10",
+  "razon_social" : "CAPITALIZADORA COLMENA S.A."
+}
+, {
+  "cod_entidad" : "75",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8001525123",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "�scar Orlando Serna Restrepo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.cooasesores.com.co",
+  "direccion" : "CR  71 C4-22",
+  "tipo_entidad" : "88",
+  "razon_social" : "COOPERTIVA  DE ASESORES EN INVERSIONES COOASESORES"
+}
+, {
+  "cod_entidad" : "105",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001498166",
+  "emailprincipal" : "sergio.rivera@aonbenfield.com",
+  "representante_legal" : "Sergio  Rivera Jimenez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Carrera 9 No. 113-52 oficina 505 Torres Unidas II",
+  "tipo_entidad" : "11",
+  "razon_social" : "AON BENFIELD COLOMBIA LIMITADA CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "21",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8907019287",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luc�a  S�enz de Mart�nez",
+  "ciudad" : "ESPINAL",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "KM 2 VIA ESPINAL GIRARDOT",
+  "tipo_entidad" : "34",
+  "razon_social" : "TEXTILES ESPINAL  S.A. EN LIQUIDACI�N POR ADJUDICACI�N"
+}
+, {
+  "cod_entidad" : "35",
+  "nombrepublicocargo" : "Representante Principal para Colombia",
+  "numeroidentificacion" : "9011232074",
+  "emailprincipal" : "juanjota07@hotmail.com",
+  "representante_legal" : "Juan Jos� Pirateque Calder�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.starrcompanies.com",
+  "direccion" : "Carrera 11 No. 82 - 01 Of. 802",
+  "tipo_entidad" : "27",
+  "razon_social" : "STARR INDEMNITY & LIABILITY COMPANY"
+}
+, {
+  "cod_entidad" : "201",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9008482871",
+  "emailprincipal" : "rodrigo.alvarado@itaubba.com",
+  "representante_legal" : "Rodrigo  Alvarado Uriburu",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 84 - 09  Torre Norte oficina 308",
+  "tipo_entidad" : "20",
+  "razon_social" : "ITA� UNIBANCO S.A."
+}
+, {
+  "cod_entidad" : "23",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600111536",
+  "emailprincipal" : "ALVARO.VELEZ@POSITIVA.GOV.CO",
+  "representante_legal" : "Alvaro Hernan Velez Millan",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Carrera 45 (autopista norte) No. 94-72",
+  "tipo_entidad" : "14",
+  "razon_social" : "POSITIVA COMPA�IA DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "153",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9001658689",
+  "emailprincipal" : "diana.martinez@howdengroup.com",
+  "representante_legal" : "Diana Beatriz Martinez Buenaventura",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 32 - 33 Piso 23",
+  "tipo_entidad" : "11",
+  "razon_social" : "HOWDEN RE COLOMBIA CORREDORES DE REASEGUROS S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8904000837",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Vergara Munarriz",
+  "ciudad" : "SINCELEJO",
+  "uripaginaweb" : "sin reguistro.",
+  "direccion" : "CL 23  19 47 P-3 OF 308",
+  "tipo_entidad" : "43",
+  "razon_social" : "CALES Y CEMENTOS DE TOLUVIEJO S.A. (FUSION CEMENTOS CARIBE RES.1000 DEL 18/11/20"
+}
+, {
+  "cod_entidad" : "18",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110122713",
+  "emailprincipal" : "jkochoa@une.net.co",
+  "representante_legal" : "Juan Camilo Ochoa Restrepo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.gruposura.com.co",
+  "direccion" : "CL 49 # 63-146",
+  "tipo_entidad" : "66",
+  "razon_social" : "GRUPO DE INVERSIONES SURAMERICANA S.A."
+}
+, {
+  "cod_entidad" : "112",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8600299777",
+  "emailprincipal" : "juan.deyeregui@jpmorgan.com",
+  "representante_legal" : "Juan Carlos de Yeregui Guillen",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 84 - 09 oficinas 701 702 y 703",
+  "tipo_entidad" : "20",
+  "razon_social" : "JPMORGAN CHASE BANK NATIONAL ASSOCIATION"
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8901002510",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Vergara Munarriz",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.argos.com.co",
+  "direccion" : "CALLE 7D NO. 43A - 99",
+  "tipo_entidad" : "43",
+  "razon_social" : "CEMENTOS ARGOS S.A."
+}
+, {
+  "cod_entidad" : "89",
+  "nombrepublicocargo" : "PRIMER REPRESENTANTE LEGAL",
+  "numeroidentificacion" : "8600719814",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "H�ctor Julio Guti�rrez Lara",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 99-53 Piso 19",
+  "tipo_entidad" : "4",
+  "razon_social" : "BANSALEASING COLOMBIA S.A. COMPA��A DE FINANCIAMIENTO COMERCIAL EN LIQUIDACI�N"
+}
+, {
+  "cod_entidad" : "55",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600691955",
+  "emailprincipal" : "reasesor@cable.net.co",
+  "representante_legal" : "Camilo  Samper Gomez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 14 No. 86A-48   A.A. 57085",
+  "tipo_entidad" : "11",
+  "razon_social" : "REASESORES LTDA. CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "212",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "0",
+  "emailprincipal" : "maria.calderon@co.natixis.com",
+  "representante_legal" : "Maria Fernanda Calderon Ponce de Leon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Carrera 9 No. 115 - 06 oficina 2801 Edificio Tierra Firme",
+  "tipo_entidad" : "20",
+  "razon_social" : "NATIXIS"
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8600715621",
+  "emailprincipal" : "raparicio@accivalores.com",
+  "representante_legal" : "Rafael Tomas Aparicio Escallon",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.accivalores.com",
+  "direccion" : "CALLE 72 NO. 7 - 64 PISO 11",
+  "tipo_entidad" : "85",
+  "razon_social" : "ACCIONES Y VALORES S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "129",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8600487836",
+  "emailprincipal" : "cmorales@colamseg.com",
+  "representante_legal" : "Carlos Gilberto Morales Escobar",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 73-44 Oficina 808",
+  "tipo_entidad" : "11",
+  "razon_social" : "COLAMSEG CORREDORES DE SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "93",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9001256563",
+  "emailprincipal" : "agoqm@yahoo.com",
+  "representante_legal" : "Andres  Gomez Olaya",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.oldmutual.com.co",
+  "direccion" : "AV. 19 NO. 109 A - 30",
+  "tipo_entidad" : "85",
+  "razon_social" : "OLD MUTUAL VALORES S.A. SOCIEDAD COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "47",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "9008149161",
+  "emailprincipal" : "sylvialuzrincon1@gmail.com",
+  "representante_legal" : "Silvia Luz Rincon Lema",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 -21 Torre B oficina 1002",
+  "tipo_entidad" : "13",
+  "razon_social" : "BERKLEY COLOMBIA"
+}
+, {
+  "cod_entidad" : "5",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8605220562",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Oscar Mauricio Yepes Bustamante",
+  "ciudad" : "CARTAGENA",
+  "uripaginaweb" : "www.lamitech.com.co",
+  "direccion" : "VIA A MAMONAL KM 13",
+  "tipo_entidad" : "37",
+  "razon_social" : "LAMITECH S.A."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8914003788",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Antonio Ferrer de S.J.M.",
+  "ciudad" : "PEREIRA",
+  "uripaginaweb" : "www.papelesnacionales.com.co",
+  "direccion" : "PARAJE LA MARINA  VIA PEREIRA CARTAGO",
+  "tipo_entidad" : "37",
+  "razon_social" : "PAPELES NACIONALES S.A.(RESOLUCION CANCELACION 0261 DEL 29/12/2005)"
+}
+, {
+  "cod_entidad" : "89",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8050141830",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Luis Fernando Mahecha Tascsn",
+  "ciudad" : "CALI",
+  "uripaginaweb" : "www.gfs-sa.com",
+  "direccion" : "AVENIDA 5 A NORTE 17-98 OFIC.601",
+  "tipo_entidad" : "88",
+  "razon_social" : "GLOBAL FINANCIAL SERVICES S.A."
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909316099",
+  "emailprincipal" : "jtimerman@ad-cap.com",
+  "representante_legal" : "Javier Gustavo Timerman",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.ad-cap.com.co",
+  "direccion" : "CR.43A # 1-50 SAN FERNANDO PLAZA TORRE BVC OF 1201",
+  "tipo_entidad" : "85",
+  "razon_social" : "ADCAP COLOMBIA S.A.COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "148",
+  "nombrepublicocargo" : "Representante Legal",
+  "numeroidentificacion" : "8600662571",
+  "emailprincipal" : "norellan@multinalseguros.com.co",
+  "representante_legal" : "Norella Mercedes Novoa Gonzalez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.multinalseguros.com",
+  "direccion" : "Carrera 14 No. 95-47 Oficinas 201 a 205 403 y 503",
+  "tipo_entidad" : "11",
+  "razon_social" : "MULTINACIONAL S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "76",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8605226593",
+  "emailprincipal" : "jpachecor@cable.net.co",
+  "representante_legal" : "Jorge Enrique Pacheco Ramirez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 73-55 Piso 8",
+  "tipo_entidad" : "11",
+  "razon_social" : "FORTIUS S.A."
+}
+, {
+  "cod_entidad" : "202",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9004533099",
+  "emailprincipal" : "rodrigo.alvarado@itaubba.com",
+  "representante_legal" : "Rodrigo  Alvarado Uriburu",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 84 - 09 oficina 308",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO ITA� BBA S.A. (IBBA)"
+}
+, {
+  "cod_entidad" : "138",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8002471549",
+  "emailprincipal" : "johanna.blesgraeft@sc.com",
+  "representante_legal" : "Johanna  Blesgraeft G�mez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-52 Torre A oficina 702",
+  "tipo_entidad" : "20",
+  "razon_social" : "STANDARD CHARTERED BANK"
+}
+, {
+  "cod_entidad" : "52",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600523309",
+  "emailprincipal" : "Jose_Gonzalez@JLTRECOLOMBIA.COM",
+  "representante_legal" : "Jose Miguel Gonzales Garcia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71 - 21 Torre B Oficina 601 Edf Av chile",
+  "tipo_entidad" : "11",
+  "razon_social" : "JLT RE COLOMBIA CORREDORES COLOMBIANOS DE REASEGUROS S.A."
+}
+, {
+  "cod_entidad" : "62",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300361495",
+  "emailprincipal" : "eduardo.garciamurillo@credit-suisse.com",
+  "representante_legal" : "Eduardo Andres Garcia Murillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 7 No. 71-21 Torre B oficina 1302",
+  "tipo_entidad" : "20",
+  "razon_social" : "CREDIT SUISSE AG"
+}
+, {
+  "cod_entidad" : "181",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8300972240",
+  "emailprincipal" : "lrestrepob@bancodecredito.com.co",
+  "representante_legal" : "Lina Maria Restrepo Botero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 11 No. 82 -01 Piso 3 Centro de Negocios Andino",
+  "tipo_entidad" : "20",
+  "razon_social" : "ITA� (PANAMA) S.A."
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909001973",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Maria Luisa Mejia Arango",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.confeccionescolombia.com.co",
+  "direccion" : "CL 71  65-74",
+  "tipo_entidad" : "34",
+  "razon_social" : "C.I. CONFECCIONES COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "120",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "9006289306",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Boris Ivan Oduber Burillo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.lahipotecaria.com",
+  "direccion" : "Carrera 13 No. 93 - 40 oficina 210",
+  "tipo_entidad" : "4",
+  "razon_social" : "La Hipotecaria"
+}
+, {
+  "cod_entidad" : "45",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "9004881513",
+  "emailprincipal" : "jmotoya@cardinalseguros.com",
+  "representante_legal" : "Jose Miguel Otoya Grueso",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 98 No. 21 - 50 oficina 901",
+  "tipo_entidad" : "13",
+  "razon_social" : "JMALUCELLITRAVELERS SEGUROS S.A."
+}
+, {
+  "cod_entidad" : "151",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8301311531",
+  "emailprincipal" : "melchor.santos@WillisTowersWatson.com",
+  "representante_legal" : "Melchor  de los Santos Aguirre",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Calle 26 No. 59 -41 Piso 6",
+  "tipo_entidad" : "11",
+  "razon_social" : "WILLIS TOWERS WATSON COLOMBIA CORREDORES DE REASEGUROS S.A."
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8999993161",
+  "emailprincipal" : "aebalcazar@dnp.gov.co",
+  "representante_legal" : "Alvaro Edgar Balcazar Acero",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 26  No.13-19  Pisos 1 20 a 22 Edificio Fonade",
+  "tipo_entidad" : "22",
+  "razon_social" : "Fonade"
+}
+, {
+  "cod_entidad" : "121",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002165674",
+  "emailprincipal" : "ligia.forero@olsare.com",
+  "representante_legal" : "Edgar Jose Leal Rodr�guez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 15 No. 88-64 oficina 207 Edificio Torre Zimma",
+  "tipo_entidad" : "11",
+  "razon_social" : "SPECIALTY REINSURANCE BROKERS COLOMBIA LTDA CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "8",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600703749",
+  "emailprincipal" : "lrueda@confianza.com.co",
+  "representante_legal" : "Luis Alejandro Rueda Rodriguez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendiente.com.co",
+  "direccion" : "Calle 82 No. 11-37 Piso 7",
+  "tipo_entidad" : "13",
+  "razon_social" : "SEGUROS CONFIANZA S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8605286702",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Gloria Roa de Bernal",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "CL 72 BIS 6-20",
+  "tipo_entidad" : "88",
+  "razon_social" : "ASERFI ASESORES FINANCIEROS LTDA."
+}
+, {
+  "cod_entidad" : "25",
+  "nombrepublicocargo" : "Gerente General",
+  "numeroidentificacion" : "8001444676",
+  "emailprincipal" : "castilc@colpatria.com",
+  "representante_legal" : "Carlos Alejandro Castillo Almanza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com",
+  "direccion" : "Carrera 7 No.24-89 Torre Colpatria Piso 21",
+  "tipo_entidad" : "5",
+  "razon_social" : "FIDUCIARIA COLPATRIA S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8600025365",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Reinaldo Aragon Prada",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colceramica.com",
+  "direccion" : "CL 100  8A-55 TO C P 9",
+  "tipo_entidad" : "41",
+  "razon_social" : "COMPA�IA COLOMBIANA DE CERAMICA S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8110117798",
+  "emailprincipal" : "alvaro.correa@prebel.com.co",
+  "representante_legal" : "Alvaro  Correa Robledo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.rentingcolombia.com",
+  "direccion" : "CRA 52 14-30 CENTRO EMPRESARIAL OLAYA HERRERA  SEGUNDA ETAPA",
+  "tipo_entidad" : "67",
+  "razon_social" : "RENTING COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8604022722",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Carlos Duran Echeverri",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fng.gov.co",
+  "direccion" : "Calle 26 A No. 13 -97 pisos 2425 y 26",
+  "tipo_entidad" : "22",
+  "razon_social" : "Fondo Nacional de Garantias S.A."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8000529220",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Martha Cecilia Cispedes Jaramillo",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "N/A.",
+  "direccion" : "Cra 63 No. 49 A 31 Of.1002 Edif. Camacol",
+  "tipo_entidad" : "86",
+  "razon_social" : "CESPEDES JARAMILLO Y CIA. CORREDOR INDEPENDIENTE DE VALORES"
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8901074873",
+  "emailprincipal" : "achar@olimpica.com.co",
+  "representante_legal" : "Antonio  Char Chaljub",
+  "ciudad" : "BARRANQUILLA",
+  "uripaginaweb" : "www.olimpica.com.co",
+  "direccion" : "CALLE 53 NO. 46-192 LOCAL 3-01",
+  "tipo_entidad" : "58",
+  "razon_social" : "SUPERTIENDAS Y DROGUERIAS OLIMPICA S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8600284155",
+  "emailprincipal" : "carlos.villa@laequidadseguros.coop",
+  "representante_legal" : "Carlos Augusto Villa Rend�n",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9A No. 99-07 Piso 13 Edificio 100 Street Torre Equidad",
+  "tipo_entidad" : "15",
+  "razon_social" : "LA EQUIDAD SEGUROS GENERALES ORGANISMO COOPERATIVO"
+}
+, {
+  "cod_entidad" : "26",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600323303",
+  "emailprincipal" : "cvillegas@tarjetaexito.com.co",
+  "representante_legal" : "Carlos Ivan Villegas Rodriguez",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.tuya.com.co",
+  "direccion" : "Calle 4 Sur No.43 A-109 Torre Tuya Tercer Piso",
+  "tipo_entidad" : "4",
+  "razon_social" : "Tuya"
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Primer Representante Legal",
+  "numeroidentificacion" : "8600725894",
+  "emailprincipal" : "mmonteropinilla@corpbanca.com.co",
+  "representante_legal" : "Maria Susana Montero Pinilla",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.corpbancatrust.com.co",
+  "direccion" : "Carrera  7 No. 99-21 piso 17",
+  "tipo_entidad" : "5",
+  "razon_social" : "ITA� SECURITIES SERVICES"
+}
+, {
+  "cod_entidad" : "23",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8002161815",
+  "emailprincipal" : "COsorio@grupoaval.com",
+  "representante_legal" : "Luis Carlos Sarmiento Gutierrez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.grupoaval.com",
+  "direccion" : "CR 13   26A-47 P-26",
+  "tipo_entidad" : "66",
+  "razon_social" : "GRUPO AVAL ACCIONES Y VALORES S.A."
+}
+, {
+  "cod_entidad" : "157",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "8000000921",
+  "emailprincipal" : "gerencia@segurosbeta.com",
+  "representante_legal" : "Gladys Stella Mu�oz Moreno",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 63 No. 98 B -54 Barrio los Andes",
+  "tipo_entidad" : "11",
+  "razon_social" : "SEGUROS BETA S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600799810",
+  "emailprincipal" : "carlapatriciagallo@gmail.com",
+  "representante_legal" : "Carla Patricia Gallo Hoyos",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.valoralta.com.co",
+  "direccion" : "CL 78 NO. 10-71",
+  "tipo_entidad" : "85",
+  "razon_social" : "VALORALTA S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "16",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300373307",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Sergio Regueros Swonkin",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.movistar.com.co",
+  "direccion" : "TR 60 NO. 114 A -55",
+  "tipo_entidad" : "64",
+  "razon_social" : "TELEFONICA  MOVILES COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "42",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8600345941",
+  "emailprincipal" : "upeguij@colpatria.com",
+  "representante_legal" : "Jaime Alberto Upegui Cuartas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colpatria.com",
+  "direccion" : "Carrera 7 No. 24-89 Piso 10",
+  "tipo_entidad" : "1",
+  "razon_social" : "Colpatria Red Multibanca"
+}
+, {
+  "cod_entidad" : "39",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001599980",
+  "emailprincipal" : "FERNANDORIVERASARAZA@HOTMAIL.COM",
+  "representante_legal" : "Fernando  Rivera Saraza",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fiduagraria.gov.co",
+  "direccion" : "Calle 16 No.6-16 Piso 29 Edificio Avianca",
+  "tipo_entidad" : "5",
+  "razon_social" : "SOCIEDAD FIDUCIARIA DE DESARROLLO AGROPECUARIO S.A."
+}
+, {
+  "cod_entidad" : "1",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8903004063",
+  "emailprincipal" : "roberto.silca@smurfitkappa.com.co",
+  "representante_legal" : "Roberto  Silva Salamanca",
+  "ciudad" : "YUMBO",
+  "uripaginaweb" : "www.smurfitkappa.com.co",
+  "direccion" : "CL 15  18 109",
+  "tipo_entidad" : "37",
+  "razon_social" : "CARTON DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "118",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "9005157597",
+  "emailprincipal" : "cgarcia@opportunitycolombia.org",
+  "representante_legal" : "Camilo Enrique Garcia Pe�a",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 70 No. 7 - 30 Piso 9",
+  "tipo_entidad" : "4",
+  "razon_social" : "Oicolombia"
+}
+, {
+  "cod_entidad" : "204",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9005878300",
+  "emailprincipal" : "sribero@bcicolombia.com",
+  "representante_legal" : "Santiago  Ribero Parra",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Calle 93 No. 14-71 oficina 402",
+  "tipo_entidad" : "20",
+  "razon_social" : "BANCO DE CR�DITO E INVERSIONES"
+}
+, {
+  "cod_entidad" : "102",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8000678400",
+  "emailprincipal" : "luistrujillo@irisre.biz",
+  "representante_legal" : "Luis Ignacio Trujillo Echeverri",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 9 No. 123 - 76/86 oficina 202 y 203",
+  "tipo_entidad" : "11",
+  "razon_social" : "THB COLOMBIA S.A CORREDORES DE REASEGUROS"
+}
+, {
+  "cod_entidad" : "25",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8002261753",
+  "emailprincipal" : "rparedes@fundacion-social.com.co",
+  "representante_legal" : "Rodrigo  Paredes Garcia",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colmena-arl.com",
+  "direccion" : "Calle 26 No. 69C03 Piso 4 Correspondencia  /Calle 72 No. 10 - 71 P. 45 y 6",
+  "tipo_entidad" : "14",
+  "razon_social" : "COMPA��A DE SEGUROS DE VIDA COLMENA S.A."
+}
+, {
+  "cod_entidad" : "4",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8300854261",
+  "emailprincipal" : "jcordoba@bvc.com.co",
+  "representante_legal" : "Juan Pablo C�rdoba Garc�s",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bvc.com.co",
+  "direccion" : "CR 7 71-21 OF. 1201 TORRE B EDIF. AV. CHILE",
+  "tipo_entidad" : "82",
+  "razon_social" : "BOLSA DE VALORES DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "206",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "9006502070",
+  "emailprincipal" : "carlos.morales@lacaixa.es",
+  "representante_legal" : "Carlos  Morales Roviralta",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Carrera 15 No. 88 - 64 oficina 603 Torre Zimma",
+  "tipo_entidad" : "20",
+  "razon_social" : "CAIXABANK S.A."
+}
+, {
+  "cod_entidad" : "13",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8600030201",
+  "emailprincipal" : "oscar.cabrera.@bbva.com.co",
+  "representante_legal" : "Oscar  Cabrera Izquierdo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.bbva.com.co",
+  "direccion" : "Carrera 9 No. 72-21",
+  "tipo_entidad" : "1",
+  "razon_social" : "BBVA Colombia"
+}
+, {
+  "cod_entidad" : "22",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001287358",
+  "emailprincipal" : "JFGiraldo@ValoresBancolombia.com",
+  "representante_legal" : "Juan Felipe Giraldo Ospina",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.valoresbancolombia.com",
+  "direccion" : "CARRERA  48 # 26-85 ZONA INDUSTRIALES  TORRE NORTE",
+  "tipo_entidad" : "85",
+  "razon_social" : "VALORES BANCOLOMBIA S.A. COMISIONISTA DE BOLSA"
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909016044",
+  "emailprincipal" : "martinezh@willils.com",
+  "representante_legal" : "Hector Gonzalo Martinez Pati�o",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "Avenida Calle 26 No. 59 - 41 piso 6",
+  "tipo_entidad" : "11",
+  "razon_social" : "WILLIS TOWERS WATSON COLOMBIA"
+}
+, {
+  "cod_entidad" : "46",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8909270349",
+  "emailprincipal" : "hectorjorgecamargo@yahoo.com",
+  "representante_legal" : "Hector Jorge Camargo Salgar",
+  "ciudad" : "MEDELLIN",
+  "uripaginaweb" : "www.coltefinanciera.com.co",
+  "direccion" : "Calle 52 No. 47-42 Pisos 11 y 12",
+  "tipo_entidad" : "4",
+  "razon_social" : "Coltefinanciera"
+}
+, {
+  "cod_entidad" : "71",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8600230531",
+  "emailprincipal" : "cquinones@howdengroup.com",
+  "representante_legal" : "Carlos Alfredo Qui�ones Machler",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.wacolda.com",
+  "direccion" : "Carrera 7 No. 32-33 Piso 23",
+  "tipo_entidad" : "11",
+  "razon_social" : "HOWDEN WACOLDA S.A. CORREDORES DE SEGUROS"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "Presidente Ejecutivo",
+  "numeroidentificacion" : "8605246546",
+  "emailprincipal" : "cguzman@solidaria.com.co",
+  "representante_legal" : "Carlos Arturo Guzman Pelaez",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.solidaria.com.co",
+  "direccion" : "Calle 100 No. 9 A 45 piso 8 y 12",
+  "tipo_entidad" : "15",
+  "razon_social" : "ASEGURADORA SOLIDARIA DE COLOMBIA ENTIDAD COOPERATIVA"
+}
+, {
+  "cod_entidad" : "2",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8907041966",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Francisco Javier Giraldo R.",
+  "ciudad" : "IBAGUE",
+  "uripaginaweb" : "www.aires.aero",
+  "direccion" : "CR 5  30 43",
+  "tipo_entidad" : "61",
+  "razon_social" : "AEROVIAS DE INTEGRACION REGIONAL S.A."
+}
+, {
+  "cod_entidad" : "6",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8903004371",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Victor Manuel Lizarralde Aristizabal",
+  "ciudad" : "YUMBO",
+  "uripaginaweb" : "www.cementovalle.com",
+  "direccion" : "CR 19  12 132 BARRIO LAS AMERICAS",
+  "tipo_entidad" : "43",
+  "razon_social" : "CEMENTOS DEL VALLE S.A. (FUSION CEMENTOS CARIBE RES.1000 DEL 18/11/2005)"
+}
+, {
+  "cod_entidad" : "14",
+  "nombrepublicocargo" : "Gerente",
+  "numeroidentificacion" : "860005439",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Juan Orlando Penagos Urrego",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "No Registra",
+  "direccion" : "CRA.13A NO.29-24",
+  "tipo_entidad" : "14",
+  "razon_social" : "CYBERSEGUROS DE COLOMBIA S.A."
+}
+, {
+  "cod_entidad" : "78",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300369104",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Marma Consuelo Urbina Pinzsn",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "Cra 13 No.92-57 P-4",
+  "tipo_entidad" : "88",
+  "razon_social" : "COASCOL CORREDORES S.A."
+}
+, {
+  "cod_entidad" : "9",
+  "nombrepublicocargo" : "Director",
+  "numeroidentificacion" : "8300533192",
+  "emailprincipal" : "alvarovanegas@profesionalesdebolsa.com",
+  "representante_legal" : "Alvaro  Vanegas Manotas",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fogacoop.gov.co",
+  "direccion" : "Carrera 13 No. 32-51 int11/Cra 13A No. 32-30 local 23 Parque Residencial Baviera",
+  "tipo_entidad" : "22",
+  "razon_social" : "Fogacoop"
+}
+, {
+  "cod_entidad" : "7",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8909003077",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Maria Elena Velasquez Restrepo",
+  "ciudad" : "COPACABANA",
+  "uripaginaweb" : "www.imusa.com.co",
+  "direccion" : "CL 50   53-107",
+  "tipo_entidad" : "49",
+  "razon_social" : "INDUSTRIAS METALURGICAS UNIDAS S.A."
+}
+, {
+  "cod_entidad" : "10",
+  "nombrepublicocargo" : "Presidente",
+  "numeroidentificacion" : "8001494962",
+  "emailprincipal" : "afoucrier@colfondos.com.co",
+  "representante_legal" : "Alain Enrique Alfonso Foucrier Viana",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.colfondos.com.co",
+  "direccion" : "Calle 67 No. 7-94 Pisos 3 6 10 11 14 al PH",
+  "tipo_entidad" : "23",
+  "razon_social" : "COLFONDOS S.A. PENSIONES Y CESANTIAS"
+}
+, {
+  "cod_entidad" : "78",
+  "nombrepublicocargo" : "SUPERVALORES",
+  "numeroidentificacion" : "8300369104",
+  "emailprincipal" : "No Registra",
+  "representante_legal" : "Jose Antonio Amaya Angulo",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.pendienteincluir",
+  "direccion" : "Cra 13 No.92-57 P-4",
+  "tipo_entidad" : "88",
+  "razon_social" : "COASCOL CORREDORES S.A."
+}
+, {
+  "cod_entidad" : "3",
+  "nombrepublicocargo" : "Director General",
+  "numeroidentificacion" : "8999997347",
+  "emailprincipal" : "FRAMIREZ@FONPRECON.GOV.CO",
+  "representante_legal" : "Francisco Alvaro Ramirez Rivera",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.fonprecon.gov.co",
+  "direccion" : "Carrera 10 No. 24-55 Pisos 2 y 3",
+  "tipo_entidad" : "25",
+  "razon_social" : "FONPRECON"
+}
+, {
+  "cod_entidad" : "18",
+  "nombrepublicocargo" : "Representante para Colombia",
+  "numeroidentificacion" : "8301260637",
+  "emailprincipal" : "ramon.fernandez@istmore.com",
+  "representante_legal" : "Ram�n Enrique Fern�ndez Quijano",
+  "ciudad" : "BOGOT� D.C.",
+  "uripaginaweb" : "www.istmore.com",
+  "direccion" : "Autopista Medellin KM 3.4 Centro empresarial Metropolitano Modulo 1 Bodega E4",
+  "tipo_entidad" : "27",
+  "razon_social" : "ISTMO COMPA��A DE REASEGUROS INC. EP"
+}
+ ]

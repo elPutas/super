@@ -14,11 +14,17 @@ export class ServiceBankProvider {
     console.log('Hello ServiceBankProvider Provider');
   }
   
-  getCountries() {
-    return this.http.get<any>('assets/data/banks.json')
-      .toPromise()
-      .then(res => <any[]>res.data)
-      .then(data => { return data; });
+  getEntities() 
+  {
+        return new Promise((resolve, reject) => {
+            this.http.get('https://www.datos.gov.co/resource/sr9n-792w.json')
+              .subscribe(res => {
+
+                resolve(res);
+              }, (err) => {
+                reject(err);
+              });
+          });
     }
 
 }

@@ -9,6 +9,7 @@ import { TasasPage } from '../pages/tasas/tasas';
 import { EntidadesPage } from '../pages/entidades/entidades';
 import { RedesPage } from '../pages/redes/redes';
 import { EventosPage } from '../pages/eventos/eventos';
+import { DatosEntidadesPage } from '../pages/datos-entidades/datos-entidades';
 
 import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
 import { TasasActivasResultPage } from '../pages/tasas-activas-result/tasas-activas-result';
@@ -35,9 +36,10 @@ import { TrmProvider } from '../providers/trm/trm';
 
 // webpack-translate-loader.ts
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Component, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ServiceBankProvider } from '../providers/service-bank/service-bank';
+import { EntitiesInfoProvider } from '../providers/entities-info/entities-info';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -88,6 +90,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     TasasActivasPage,
     TasasActivasResultPage,
     AlertEventPage,
+    DatosEntidadesPage,
     TabsPage
   ],
   imports: [
@@ -117,6 +120,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     TasasActivasPage,
     TasasActivasResultPage,
     AlertEventPage,
+    DatosEntidadesPage,
     TabsPage
   ],
   providers: [
@@ -124,7 +128,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider,
-    TrmProvider
+    TrmProvider,
+    EntitiesInfoProvider
   ]
 })
 export class AppModule {}

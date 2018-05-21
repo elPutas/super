@@ -1,0 +1,55 @@
+<!--
+  Generated template for the DatosEntidadesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ENTIDADES FINANCIERAS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div text-center class="titlePage">Datos de entidad</div>
+    <div class="typePage">
+        <ion-icon ios="ios-cash-outline" md="md-cash"></ion-icon> BANCO </div>
+    
+    <ion-list class="list" >
+        <ion-item>
+            <h2>Representante Legal</h2>
+            <h3 #txt_representante></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Cargo</h2>
+            <h3 #txt_nombrepublicocargo></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Número de identificación</h2>
+            <h3 #txt_numeroidentificacion></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Email</h2>
+            <h3 #txt_emailprincipal></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Ciudad</h2>
+            <h3 #txt_ciudad></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Razón social</h2>
+            <h3 #txt_razon_social></h3>
+        </ion-item> 
+        <ion-item >
+            <h2>Dirección</h2>
+            <h3 #txt_direccion></h3>
+        </ion-item> 
+        
+        <button #txt_btnURL ion-button clear item-end>URL</button>
+    </ion-list>
+    
+</ion-content>

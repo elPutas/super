@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ServiceBankProvider} from '../../providers/service-bank/service-bank';
-import { Http } from '@angular/http';
- 
+
+import { DatosEntidadesPage } from '../datos-entidades/datos-entidades';
+import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
 /**
  * Generated class for the EntidadesPage page.
  *
@@ -17,10 +17,21 @@ import { Http } from '@angular/http';
 })
 export class EntidadesPage 
 {
-
+    
+    @ViewChild('list_options') myListRef: ElementRef;
+    @ViewChild('input_text') myInputRef: ElementRef;
     check = true;
     banks = [];
-    name = [];
+    razon_social = [];
+    _data = [];
+    
+    
+    filteredCountriesSingle: any[] =[];
+    
+    selectedEntity_te = "";
+    selectedEntity_ce = "";
+    
+    
     public autocompleteTags = [];
     public autocompleteItems = [
         'BANCO DE LA REPÚBLICA',
@@ -36,23 +47,33 @@ export class EntidadesPage
 
 
 
-    country: any;
-    countries: any[];
-    filteredCountriesSingle: any[];
 
     
-  constructor(public navCtrl: NavController, public navParams: NavParams, private serviceBankProvider: ServiceBankProvider) 
+  constructor(public navCtrl: NavController,public navParams: NavParams,private serviceBankProvider:ServiceBankProvider ) 
   {
+      console.log('EntidadesPage', this.serviceBankProvider);
+      
+     this.navParams = navParams 
+     this.navCtrl = navCtrl  
+  }
   
-    
+  itemSelected(data=[])
+  {
+      console.log(data)
+      this.selectedEntity_te = data.tipo_entidad
+      this.selectedEntity_ce = data.cod_entidad
+      this.myInputRef.inputEL.nativeElement.value = data.razon_social
   }
   
   filterCountrySingle(event) {
+      
         let query = event.query;
-        this.serviceBankProvider.getCountries().then(countries => {
+        this.serviceBankProvider.getEntities().then(countries => {
+        
             this.filteredCountriesSingle = this.filterCountry(query, countries);
             
         });
+        
     }
     
     filterCountry(query, countries: any[]):any[] {
@@ -61,36 +82,14 @@ export class EntidadesPage
         for(let i = 0; i < countries.length; i++) {
             let country = countries[i];
             
-            if(country.name.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-            
+            if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+                
                 filtered.push(country);
             }
         }
         return filtered;
     }
   
-  onInputTime (data)
-  {
-    console.log("onInputTime", data)
-  }
-  
-  onTagAdded(data)
-  {
-    console.log(data)
-  }
-  
-  
-  onSelectedTag (tagName) {
-    console.log("select")
-            
-    }
-          
-      onTagRemoved (tagName: string)
-      {
-        console.log("remove")
-        
-      }
-      
       
   showVal(data)
   {
@@ -114,18 +113,32 @@ export class EntidadesPage
     switch(key) {
       
       case 13: //Enter
-        this.autocompleteTags.push({name: this.name, banks: this.banks});
+        this.autocompleteTags.push({razon_social: this.razon_social, banks: this.razon_social});
         event.preventDefault();
         break;
         }
      
   }
   
+    getInfoEntity()
+    {
+        this.navCtrl.push(DatosEntidadesPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce}) 
+        /*
+        this.entitiesInfoProvider.getInfo("11","156").then(info => {
+            console.log("this", info)
+           
+        });
+        */
+    }
   
 
-  ionViewDidLoad() {
+    ionViewDidLoad() 
+    {
   
-    console.log('ionViewDidLoad EntidadesPage');
-  }
+        console.log('ionViewDidLoad EntidadesPage');
+        
+        this.country =[];
+        this.countries = [];
+    }
 
 }

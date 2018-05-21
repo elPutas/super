@@ -17,18 +17,18 @@
 <ion-content padding>
     <div text-center class="titlePage">Consultar entidad</div>
     
-    <p-autoComplete [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
-    placeholder="Countries" [minLength]="1"></p-autoComplete>
+    <p-autoComplete #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
+    placeholder="Entidades" [minLength]="3"></p-autoComplete>
     
     
-    <ion-list *ngIf="filteredCountriesSingle?.length < 3" >
-        <ion-item *ngFor="let c of filteredCountriesSingle">{{c.name}}</ion-item>
+    <ion-list #list_options *ngIf="filteredCountriesSingle?.length > 0" >
+        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.razon_social}}</ion-item>
+        
     </ion-list>
     
     
-
     
     <div text-center  >
-        <button ion-button color="succes" round>Consultar</button>
+        <button (click)="getInfoEntity()" ion-button color="succes" round>Consultar</button>
     </div>
 </ion-content>
