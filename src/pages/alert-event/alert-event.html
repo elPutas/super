@@ -13,21 +13,19 @@
         <div class="bg-btn"></div>
         <button class="button-close" (click)="dismiss()">
                <ion-icon large  ios="ios-arrow-dropdown-circle" md="md-arrow-dropdown-circle"></ion-icon>
-            </button>
+        </button>
         
-    <p class="title-date">Julio 04 2018 - 3:00pm a 4:00am <p>
-      <p class="title-event">titulo evento<p>
-      <p class="title-link">www.google.com<p>
-        <div class="line"></div> 
-    <p class="title-date">Julio 04 2018 - 3:00pm a 4:00am <p>
-      <p class="title-event">titulo evento<p>
-      <p class="title-link">www.google.com<p>
-        <div class="line"></div>
+        <ion-list #list_options >
+            <ion-item  *ngFor="let c of infoArray" (click)="itemSelected(c)">
+                
+                <p class="title-date">{{c.time_txt}}<p>
+                <p class="title-event">{{c.titulo}}<p>
+                <p class="title-link">{{c.link}}<p>
+            </ion-item>
+        </ion-list>
         
-    <p class="title-date">Julio 04 2018 - 3:00pm a 4:00am <p>
-      <p class="title-event">titulo evento<p>
-      <p class="title-link">www.google.com<p>
-        <div class="line"></div>
+
+        
          
     </div>
 </ion-content>

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { AlertEventPage } from '../alert-event/alert-event';
-
+import { ServiceEventsProvider } from '../../providers/service-events/service-events';
+                                             
 /**
  * Generated class for the EventosPage page.
  *
@@ -16,41 +17,55 @@ import { AlertEventPage } from '../alert-event/alert-event';
 })
 export class EventosPage 
 {
+    currentEvents = [];
+    newArray = []
+    justInfoEvent = []
 
-     currentEvents = [
+    constructor(public navCtrl: NavController,
+               public navParams: NavParams,
+               public modalCtrl: ModalController,
+               private serviceEventsProvider: ServiceEventsProvider
+              ) 
+    {
+        
+    }
+  
+    
+    //open bottom alert
+    presentModal() 
+    {
+        let modal = this.modalCtrl.create(AlertEventPage, {myData:this.justInfoEvent});
+        modal.present();
+    }
+    
+    onDaySelect(data)
+    {
+        //filer by date
+        let myDay = data.date
+        let myMonth = data.month
+        let myYear = data.year
+        
+        this.newArray = this.currentEvents.filter(item => item.date === myDay && item.month === myMonth && myYear === item.year)
+        
+        
+        
+        if(this.newArray[0] != undefined)
         {
-            year: 2018,
-            month: 4,
-            date: 15
-        },
-        {
-            year: 2018,
-            month: 4,
-            date: 13
-        }
-      ];
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
-  }
-  
-  presentModal() {
-    let modal = this.modalCtrl.create(AlertEventPage);
-    modal.present();
-  }
-  
-  
+            
+            this.justInfoEvent = this.newArray[0].info
+            this.presentModal()
+            console.log("filter",this.justInfoEvent)
+        }    
+        
+    }
     
-  onDaySelect(data)
-  {
-    console.log("click", data)
-    this.presentModal()
-  }
     
-
-  ionViewDidLoad() {
-    
-  }
-
+    ionViewDidLoad() 
+    {
+        this.serviceEventsProvider.getEvents().then(info => {
+              this.currentEvents = info;
+        });
+    }
 }
 
 

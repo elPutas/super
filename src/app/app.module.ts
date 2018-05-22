@@ -24,6 +24,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+
 import { CalendarModule } from 'ionic3-calendar-en';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,6 +41,7 @@ import { Injectable, Component, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ServiceBankProvider } from '../providers/service-bank/service-bank';
 import { EntitiesInfoProvider } from '../providers/entities-info/entities-info';
+import { ServiceEventsProvider } from '../providers/service-events/service-events';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -97,6 +99,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     RlTagInputModule,
     AutoCompleteModule,
     CalendarModule,
+    
     BrowserModule,
     IonicModule.forRoot(MyApp),
     
@@ -125,11 +128,13 @@ export class WebpackTranslateLoader implements TranslateLoader {
   ],
   providers: [
     StatusBar,
+    
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider,
     TrmProvider,
-    EntitiesInfoProvider
+    EntitiesInfoProvider,
+    ServiceEventsProvider
   ]
 })
 export class AppModule {}

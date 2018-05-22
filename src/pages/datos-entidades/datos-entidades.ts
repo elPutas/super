@@ -50,30 +50,33 @@ export class DatosEntidadesPage {
      
     }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DatosEntidadesPage');
+    ionViewDidLoad() 
+    {
+        console.log('ionViewDidLoad DatosEntidadesPage');
+        this.ce = "";
+        this.te = "";
       
-      this.entitiesInfoProvider.getInfo(this.te,this.ce).then(info => {
+        this.entitiesInfoProvider.getInfo(this.te,this.ce).then(info => {
           
-          //get info
-        this.ciudad = info[0].ciudad
-        this.direccion = info[0].direccion
-        this.emailprincipal = info[0].emailprincipal
-        this.nombrepublicocargo = info[0].nombrepublicocargo
-        this.numeroidentificacion = info[0].numeroidentificacion
-        this.razon_social = info[0].razon_social
-        this.representante_legal = info[0].representante_legal
-        this.btnURL = info[0].uripaginaweb
-     
-          //set info
-          this.txt_ciudad.nativeElement.textContent = this.ciudad
-          this.txt_direccion.nativeElement.textContent = this.direccion
-          this.txt_razon_social.nativeElement.textContent = this.razon_social
-          this.txt_emailprincipal.nativeElement.textContent = this.emailprincipal
-          this.txt_nombrepublicocargo.nativeElement.textContent = this.nombrepublicocargo
-          this.txt_representante.nativeElement.textContent = this.representante_legal
-          this.txt_numeroidentificacion.nativeElement.textContent = this.numeroidentificacion
-          this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+            //get info
+            this.ciudad = info[0].ciudad
+            this.direccion = info[0].direccion
+            this.emailprincipal = info[0].emailprincipal
+            this.nombrepublicocargo = info[0].nombrepublicocargo
+            this.numeroidentificacion = info[0].numeroidentificacion
+            this.razon_social = info[0].razon_social
+            this.representante_legal = info[0].representante_legal
+            this.btnURL = info[0].uripaginaweb
+
+            //set info
+            this.txt_ciudad.nativeElement.textContent = this.ciudad
+            this.txt_direccion.nativeElement.textContent = this.direccion
+            this.txt_razon_social.nativeElement.textContent = this.razon_social
+            this.txt_emailprincipal.nativeElement.textContent = this.emailprincipal
+            this.txt_nombrepublicocargo.nativeElement.textContent = this.nombrepublicocargo
+            this.txt_representante.nativeElement.textContent = this.representante_legal
+            this.txt_numeroidentificacion.nativeElement.textContent = this.numeroidentificacion
+            this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
           
         });
   }
