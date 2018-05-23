@@ -38,6 +38,7 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } fr
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ServiceBankProvider } from '../providers/service-bank/service-bank';
+import { Screenshot } from '@ionic-native/screenshot';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -124,6 +125,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider,
+    Screenshot,
     TrmProvider
   ]
 })

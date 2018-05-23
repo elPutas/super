@@ -5,6 +5,7 @@ import { Chart } from 'chart.js';
 
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
+import { Screenshot } from '@ionic-native/screenshot';
 
 
 @Component({
@@ -44,6 +45,7 @@ export class HomePage
         public navCtrl: NavController,
         public translate: TranslateService,
         public trmProvider: TrmProvider,
+        public screenshot: Screenshot,
         public statusBar: StatusBar
       ) {
 
@@ -312,7 +314,16 @@ export class HomePage
         }
 
         public regularShare(){
-          alert('pantalla capturada');
+          //alert('pantalla capturada');
+          this.screenshot.URI(80).then(
+            (res)=>{
+              console.log(res);
+              alert(res.URI);
+            },
+            (error)=>{
+              console.log(error);
+            }
+          );
         }
 
 }
