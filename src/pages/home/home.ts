@@ -202,51 +202,58 @@ export class HomePage
         }
 
         feedChart(choosed_day, start, end, end_real, index_line){
-          this.trmProvider.httpGetTrmGovco(
-            this.stringifyDateForQuery(new Date(start)),
-            this.stringifyDateForQuery(new Date(end))
-          ).then((data) =>{
-            //console.log(new Date(end_real));
-            var serie = [];
-            //var n = 0;
-            //var index = data.length;
-            var fecha_progress = end_real;
-            //console.log(new Date(fecha_progress));
-            for (let i = (data.length -1); i >= 0; i = i-1) {
+          try{
+            this.trmProvider.httpGetTrmGovco(
+              this.stringifyDateForQuery(new Date(start)),
+              this.stringifyDateForQuery(new Date(end))
+            ).then((data) =>{
+              //console.log(new Date(end_real));
+              var serie = [];
+              //var n = 0;
+              //var index = data.length;
+              var fecha_progress = end_real;
+              //console.log(new Date(fecha_progress));
+              for (let i = (data.length -1); i >= 0; i = i-1) {
 
-              if(serie.length == 10){
-                break;
-              }
-              var days_between_range = this.getAvlbleDaysForToday(new Date(data[i].vigenciadesde), new Date(data[i].vigenciahasta));
-              //console.log(days_between_range);
-              for(let j=0; j <= days_between_range; j++){
-                var r_sd = new Date(data[i].vigenciahasta).setHours(0,0,0,0);
-                var r_ed = new Date(data[i].vigenciadesde).setHours(0,0,0,0);
-                //console.log(new Date(r_sd));
-                //console.log(new Date(r_ed));
-                //console.log(new Date(fecha_progress));
-                if(
-                  r_sd >= fecha_progress &&
-                  r_ed <= fecha_progress &&
-                  serie.length <= 10
-                  ){
-                    serie.push( parseFloat(data[i].valor));
-                    /*if(choosed_day.getTime() ==  fecha_progress){
-                      index = serie.length - 1;
-                    }*/
-                    fecha_progress = fecha_progress - this.dayInMiliseconds();
-                    if(serie.length == 10){
-                      break;
-                    }
+                if(serie.length == 10){
+                  break;
+                }
+                var days_between_range = this.getAvlbleDaysForToday(new Date(data[i].vigenciadesde), new Date(data[i].vigenciahasta));
+                //console.log(days_between_range);
+                for(let j=0; j <= days_between_range; j++){
+                  var r_sd = new Date(data[i].vigenciahasta).setHours(0,0,0,0);
+                  var r_ed = new Date(data[i].vigenciadesde).setHours(0,0,0,0);
+                  //console.log(new Date(r_sd));
+                  //console.log(new Date(r_ed));
+                  //console.log(new Date(fecha_progress));
+                  if(
+                    r_sd >= fecha_progress &&
+                    r_ed <= fecha_progress &&
+                    serie.length <= 10
+                    ){
+                      serie.push( parseFloat(data[i].valor));
+                      /*if(choosed_day.getTime() ==  fecha_progress){
+                        index = serie.length - 1;
+                      }*/
+                      fecha_progress = fecha_progress - this.dayInMiliseconds();
+                      if(serie.length == 10){
+                        break;
+                      }
+                  }
                 }
               }
-            }
 
-            //var data_index = (serie.length-1) - index;
-            var data_ser = serie.reverse();
-            console.log(data_ser);
-            this.addData(this.lineChart, data_ser, index_line);
-          });
+              //var data_index = (serie.length-1) - index;
+              var data_ser = serie.reverse();
+              console.log(data_ser);
+              this.addData(this.lineChart, data_ser, index_line);
+            }).catch((error) => {
+              //console.log(error);
+              this.soapProgressserial(choosed_day ,start ,end_real ,index_line);
+            });
+          }catch(error){
+            this.soapProgressserial(choosed_day ,start ,end_real ,index_line);
+          }
         }
 
         public changeDatePicker(){
@@ -277,18 +284,31 @@ export class HomePage
 
           }
 
-          this.soapProgressserial(choosed_day ,start_real ,end_real ,index_line);
+          //this.soapProgressserial(choosed_day ,start_real ,end_real ,index_line);
 
-          //this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real, (index_line-1));
+          this.calculateEfectiveEnd(choosed_day, start_real, end_real, end_real, (index_line-1));
         }
 
         public soapProgressserial(choosed_day ,start_real ,end_real ,index_line){
+          var serie = [];
           var fecha_progress = end_real;
           for (let i = 0; i <10; i++) {
-            console.log(new Date(fecha_progress));
+            //console.log(new Date(fecha_progress));
+            this.trmProvider.httpGetTrmsuperFinc(this.stringifyDateForQuery(new Date(fecha_progress)))
+                .then((respo)=>{
+                  console.log(respo);
+                  serie.push(parseFloat(respo));
+                  if(serie.length == 10){
+                    var dataSerie = serie.reverse();
+                    this.addData(this.lineChart, dataSerie, index_line);
+                  }
+                });
             fecha_progress = fecha_progress - this.dayInMiliseconds();
           }
+
           console.log(new Date(start_real));
+          //console.log(dataSerie);
+
         }
 
         public regularShare(){
