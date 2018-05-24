@@ -6,7 +6,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="background-color: #0669eb !important;">
+  <!--<div style="background-color: #F9F9F9 !important; position:absolute; height: 85%;">
+  </div>-->
 
   <ion-icon ios="md-arrow-dropdown" md="md-arrow-dropdown" class="trm-arrow"></ion-icon>
 
@@ -14,6 +16,7 @@
 
     <div text-center class="trm-info">{{ 'trm_valid_today_label' | translate }} {{ label_day }} {{ label_month | translate }} {{ label_year }}</div>
 
+    <img id="imgCanvas" src="assets/imgs/logo.png" style="width:100%;display:none;position:absolute;bottom:129px;">
     <canvas #lineCanvas></canvas>
     <div class="gapChart"></div>
 
@@ -30,4 +33,7 @@
         </button>
         <p class="trm-float-txtminG">+0.35</p>
     </div>
+    <!--
+    <div class="gapChart"></div>
+    -->
 </ion-content>

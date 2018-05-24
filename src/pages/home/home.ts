@@ -1,11 +1,11 @@
 import { StatusBar } from '@ionic-native/status-bar';
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Events } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
-import { Screenshot } from '@ionic-native/screenshot';
+//import { Screenshot } from '@ionic-native/screenshot';
 
 
 @Component({
@@ -17,6 +17,8 @@ export class HomePage
 
 
     @ViewChild('lineCanvas') lineCanvas;
+    //@ViewChild('imgCanvas') imgCanvas;
+
     month_array:any = [
        'jan_month'
       ,'feb_month'
@@ -31,7 +33,8 @@ export class HomePage
       ,'nov_month'
       ,'dec_month'
     ];
-
+    pathcapture:any;
+    capture:boolean = false;
     lineChart: any;
     pickedDate:any;
     maxDate:any = new Date().toISOString();
@@ -45,7 +48,8 @@ export class HomePage
         public navCtrl: NavController,
         public translate: TranslateService,
         public trmProvider: TrmProvider,
-        public screenshot: Screenshot,
+        //public screenshot: Screenshot,
+        public events:Events,
         public statusBar: StatusBar
       ) {
 
@@ -135,6 +139,23 @@ export class HomePage
             var ctx = this.lineCanvas.nativeElement;
             this.lineChart = new Chart(ctx, config);
             this.changeDatePicker();
+
+            this.events.subscribe('tabs:unhide', (picture) => {
+              this.capture = false;
+              this.pathcapture = picture;
+              //alert(this.pathcapture);
+              var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+              if (tabBarElement.length != 0) {
+                for(let i = 0; i < tabBarElement.length; i++ ){
+                  tabBarElement[i].style.opacity = "1";
+                }
+              }
+
+              var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
+              auximg.style.display = 'none';
+
+
+            });
         }
 
         dayInMiliseconds(){
@@ -315,7 +336,7 @@ export class HomePage
 
         public regularShare(){
           //alert('pantalla capturada');
-          this.screenshot.URI(80).then(
+          /*this.screenshot.URI(80).then(
             (res)=>{
               console.log(res);
               alert(res.URI);
@@ -323,7 +344,34 @@ export class HomePage
             (error)=>{
               console.log(error);
             }
+          );*/
+          this.capture = true;
+          //var auximg = new Image();
+          var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
+          var cv = document.querySelector('canvas');
+          auximg.style.display = 'block';
+          /*auximg.style.position = 'abso';
+          auximg.style.bottom = '171px';*/
+          auximg.width = cv.width;
+          auximg.height = cv.height;
+          auximg.src = cv.toDataURL('image/png');
+          //this.imgCanvas.src = this.lineChart.toDataURL('image/png');
+          var instance = this;
+          auximg.onload = function() {
+            instance.events.publish('tabs:hide');
+          }
+          /*
+          this.screenshot.save('jpg', 80, 'myscreenshot_trm').then(
+            (res)=>{
+              console.log(res);
+              alert(res.filePath);
+              this.events.publish('tabs:unhide');
+            },
+            (err)=>{
+              console.log(err);
+            }
           );
+          */
         }
 
 }
