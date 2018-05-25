@@ -5,7 +5,8 @@ import { Chart } from 'chart.js';
 
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
-//import { Screenshot } from '@ionic-native/screenshot';
+import { SocialSharing } from '@ionic-native/social-sharing';
+//import { FilePath } from '@ionic-native/file-path';
 
 
 @Component({
@@ -48,7 +49,8 @@ export class HomePage
         public navCtrl: NavController,
         public translate: TranslateService,
         public trmProvider: TrmProvider,
-        //public screenshot: Screenshot,
+        public socialSharing: SocialSharing,
+        //public filePath: FilePath,
         public events:Events,
         public statusBar: StatusBar
       ) {
@@ -154,8 +156,39 @@ export class HomePage
               var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
               auximg.style.display = 'none';
 
+              //this.filePath.resolveNativePath(path)
+              //  .then(filePath => console.log(filePath))
+              //  .catch(err => console.log(err));
+              this.uriToBase64(this.pathcapture).then((pic64:string)=>{
+                console.log(pic64);
+                this.socialSharing.share("trm: $"+this.sel_trm, null, pic64, "https://www.superfinanciera.gov.co")
+                                  .then(() => {
+                                    // Success!
+                                  }).catch((error) => {
+                                    // Error!
+                                    console.log(error);
+                                  });
+
+              });
 
             });
+        }
+
+        uriToBase64(MY_URL){
+          return new Promise((resolve) => {
+            var request = new XMLHttpRequest();
+            request.open('GET', MY_URL, true);
+            request.responseType = 'blob';
+            request.onload = function() {
+                var reader = new FileReader();
+                reader.readAsDataURL(request.response);
+                reader.onload =  function(e){
+                    resolve(reader.result);
+                };
+            };
+            request.send();
+          });
+
         }
 
         dayInMiliseconds(){
