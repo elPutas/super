@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ENTIDADES VIGILADAS</ion-title>
+    <ion-title>{{ 'header_entidades_page' | translate }}</ion-title>
   </ion-navbar>
 
     
@@ -15,10 +15,10 @@
 
 
 <ion-content padding>
-    <div text-center class="titlePage">Consultar entidad</div>
+    <div text-center class="titlePage">{{ 'title_entidades_page' | translate }}</div>
     
     <p-autoComplete #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
-    placeholder="Entidades" [minLength]="3"></p-autoComplete>
+    placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4">{{text_select}}</p-autoComplete>
     
     
     <ion-list #list_options *ngIf="filteredCountriesSingle?.length > 0" >
@@ -29,6 +29,6 @@
     
     
     <div text-center  >
-        <button (click)="getInfoEntity()" ion-button color="succes" round>Consultar</button>
+        <button (click)="getInfoEntity()" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>
     </div>
 </ion-content>

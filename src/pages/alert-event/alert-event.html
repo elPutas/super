@@ -16,7 +16,7 @@
         </button>
         
         <ion-list #list_options >
-            <ion-item  *ngFor="let c of infoArray" (click)="itemSelected(c)">
+            <ion-item  *ngFor="let c of infoArray">
                 
                 <p class="title-date">{{c.time_txt}}<p>
                 <p class="title-event">{{c.titulo}}<p>

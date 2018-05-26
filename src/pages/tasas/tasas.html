@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>TASAS DE INTERÉS</ion-title>
+    <ion-title>{{ 'header_tasas_page' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,12 +16,12 @@
 <ion-content no-padding>
     
     <div class="contained"> 
-        <div [navPush]="tasasActivasPage" text-center class="titlebtn tasas-btn">Tasa Activa</div>   
+        <div [navPush]="tasasActivasPage" text-center class="titlebtn tasas-btn">{{ 'tasa_activa_tasas_page' | translate }}</div>   
         
     </div>
     
     <div class="contained"> 
-        <div text-center class="titlebtn tasas-btn">Tasa Pasiva</div>
+        <div text-center class="titlebtn tasas-btn">{{ 'tasa_pasiva_tasas_page' | translate }}</div>
     </div>
     
     

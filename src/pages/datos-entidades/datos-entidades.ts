@@ -26,17 +26,20 @@ export class DatosEntidadesPage {
     @ViewChild('txt_numeroidentificacion') txt_numeroidentificacion: ElementRef;
     @ViewChild('txt_btnURL') txt_btnURL: ElementRef;
     
-    tc: string;
-    te: string;
+    ce: string ="";
+    te: string ="";
     
-    ciudad: string
-    direccion: string
-    razon_social: string
-    emailprincipal: string
-    nombrepublicocargo: string
-    representante_legal: string
-    numeroidentificacion: string
+    ciudad: string = ""
+    direccion: string = ""
+    razon_social: string = ""
+    emailprincipal: string = ""
+    nombrepublicocargo: string = ""
+    representante_legal: string = ""
+    numeroidentificacion: string = ""
     btnURL: string
+    
+    
+    text;
     
   constructor(
      public navCtrl: NavController,
@@ -53,8 +56,7 @@ export class DatosEntidadesPage {
     ionViewDidLoad() 
     {
         console.log('ionViewDidLoad DatosEntidadesPage');
-        this.ce = "";
-        this.te = "";
+        
       
         this.entitiesInfoProvider.getInfo(this.te,this.ce).then(info => {
           
@@ -76,7 +78,11 @@ export class DatosEntidadesPage {
             this.txt_nombrepublicocargo.nativeElement.textContent = this.nombrepublicocargo
             this.txt_representante.nativeElement.textContent = this.representante_legal
             this.txt_numeroidentificacion.nativeElement.textContent = this.numeroidentificacion
-            this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+            
+            this.text = this.btnURL;
+            
+            
+            //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
           
         });
   }

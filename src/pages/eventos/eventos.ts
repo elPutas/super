@@ -17,9 +17,11 @@ import { ServiceEventsProvider } from '../../providers/service-events/service-ev
 })
 export class EventosPage 
 {
-    currentEvents = [];
+    currentEvents:any = [];
     newArray = []
     justInfoEvent = []
+    data:any=[]
+    
 
     constructor(public navCtrl: NavController,
                public navParams: NavParams,
@@ -30,6 +32,10 @@ export class EventosPage
         
     }
   
+    itemSelected(data)
+    {
+        console.log(data)
+    }
     
     //open bottom alert
     presentModal() 

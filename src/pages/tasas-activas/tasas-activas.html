@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>TASAS DE INTERÉS</ion-title>
+    <ion-title>{{ 'header_tasas_page' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,7 +15,7 @@
 
 <ion-content no-padding>
     
-    <div text-center class="titlePage">Tasa Activa</div>
+    <div text-center class="titlePage">{{ 'tasa_activa_tasas_page' | translate }}</div>
     
     <rl-tag-input
     
@@ -31,7 +31,7 @@
     </ion-list> 
     
     <ion-item text-center class="creditBox">
-      <ion-label>Tipo de credito</ion-label>
+      <ion-label>{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-label>
       <ion-select [(ngModel)]="popover" interface="popover">
         <ion-option value="1">credito 1</ion-option>
         <ion-option value="2">credito 2</ion-option>
@@ -43,7 +43,7 @@
     
     
     <div text-center >
-        <button class="btnNext" [navPush]="tasasActivasResultPage" ion-button color="succes" round>Consultar</button>
+        <button class="btnNext" [navPush]="tasasActivasResultPage" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>
     </div>
     
     

@@ -22,51 +22,49 @@ export class EntidadesPage
     @ViewChild('input_text') myInputRef: ElementRef;
     check = true;
     banks = [];
-    razon_social = [];
+    razon_social:any = [];
     _data = [];
     
+    text_select = ""
     
     filteredCountriesSingle: any[] =[];
     
-    selectedEntity_te = "";
-    selectedEntity_ce = "";
+    selectedEntity_te :any  = [];
+    selectedEntity_ce :any = [];
+    
+    tipo_entidad:any[] = [];
+    cod_entidad:any[] = [];
+    countries:any[] = [];
     
     
     public autocompleteTags = [];
-    public autocompleteItems = [
-        'BANCO DE LA REPÚBLICA',
-        'BANCO DE BOGOTÁ',
-        'BANCO POPULAR',
-        'BANCO CORPBANCA COLOMBIA S.A.',
-        'BANCOLOMBIA',
-        'CITIBANK COLOMBIA',
-        'BANCO GNB SUDAMERIS COLOMBIA',
-        'BBVA COLOMBIA'
-      ];
-
-
-
 
 
     
-  constructor(public navCtrl: NavController,public navParams: NavParams,private serviceBankProvider:ServiceBankProvider ) 
-  {
-      console.log('EntidadesPage', this.serviceBankProvider);
-      
-     this.navParams = navParams 
-     this.navCtrl = navCtrl  
-  }
+    constructor(public navCtrl: NavController,public navParams: NavParams,private serviceBankProvider:ServiceBankProvider ) 
+    {
+        console.log('EntidadesPage', this.serviceBankProvider);
+
+        this.navParams = navParams 
+        this.navCtrl = navCtrl  
+    }
   
-  itemSelected(data=[])
-  {
-      console.log(data)
-      this.selectedEntity_te = data.tipo_entidad
-      this.selectedEntity_ce = data.cod_entidad
-      this.myInputRef.inputEL.nativeElement.value = data.razon_social
-  }
+    itemSelected(data)
+    {
+        console.log("data", data)
+        this.filteredCountriesSingle = []
+        
+        this.selectedEntity_te = data.tipo_entidad
+        this.selectedEntity_ce = data.cod_entidad
+        console.log("this.selectedEntity_ce", this.selectedEntity_ce)
+        console.log("this.selectedEntity_te", this.selectedEntity_te)
+        this.text_select = data.razon_social
+        //this.myInputRef.inputEL.nativeElement.value = data.razon_social
+    }
   
-  filterCountrySingle(event) {
-      
+    filterCountrySingle(event) 
+    {
+        
         let query = event.query;
         this.serviceBankProvider.getEntities().then(countries => {
         
@@ -90,35 +88,32 @@ export class EntidadesPage
         return filtered;
     }
   
-      
-  showVal(data)
-  {
-    data.target.style.display = "none"
-    this.check = false
-    console.log("showVal", data.target.style.display)
-    
-    setTimeout(function () 
+    /* 
+    showVal(data)
     {
-        console.log("showVal", data.target.style.display);
         data.target.style.display = "none"
-        console.log("onInputTime", data)
-    }, 1000);
-  }
+        this.check = false
+        console.log("showVal", data.target.style.display)
+
+        setTimeout(function () 
+        {
+            console.log("showVal", data.target.style.display);
+            data.target.style.display = "none"
+            console.log("onInputTime", data)
+        }, 1000);
+    }
+    */
   
-  inputChanged(event) 
-  {
-  
-    let key = event.keyCode;
-    
-    switch(key) {
-      
-      case 13: //Enter
-        this.autocompleteTags.push({razon_social: this.razon_social, banks: this.razon_social});
-        event.preventDefault();
-        break;
+    inputChanged(event) 
+    {
+        let key = event.keyCode;
+        switch(key) {
+          case 13: //Enter
+            this.autocompleteTags.push({razon_social: this.razon_social, banks: this.razon_social});
+            event.preventDefault();
+            break;
         }
-     
-  }
+    }
   
     getInfoEntity()
     {
@@ -137,8 +132,8 @@ export class EntidadesPage
   
         console.log('ionViewDidLoad EntidadesPage');
         
-        this.country =[];
-        this.countries = [];
+        //this.country =[];
+        //this.countries = [];
     }
 
 }
