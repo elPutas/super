@@ -44,7 +44,6 @@ import { EntitiesInfoProvider } from '../providers/entities-info/entities-info';
 import { ServiceEventsProvider } from '../providers/service-events/service-events';
 import { Screenshot } from '@ionic-native/screenshot';
 import { SocialSharing } from '@ionic-native/social-sharing';
-import { FilePath } from '@ionic-native/file-path';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -141,7 +140,6 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ServiceEventsProvider,
     Screenshot,
     SocialSharing,
-    FilePath,
     TrmProvider
 
   ]
