@@ -42,6 +42,10 @@ import { Observable } from 'rxjs/Observable';
 import { ServiceBankProvider } from '../providers/service-bank/service-bank';
 import { EntitiesInfoProvider } from '../providers/entities-info/entities-info';
 import { ServiceEventsProvider } from '../providers/service-events/service-events';
+import { Screenshot } from '@ionic-native/screenshot';
+import { SocialSharing } from '@ionic-native/social-sharing';
+import { FilePath } from '@ionic-native/file-path';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -102,7 +106,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    
+
     HttpClientModule,
     TranslateModule.forRoot({
         loader: {
@@ -134,7 +138,12 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ServiceBankProvider,
     TrmProvider,
     EntitiesInfoProvider,
-    ServiceEventsProvider
+    ServiceEventsProvider,
+    Screenshot,
+    SocialSharing,
+    FilePath,
+    TrmProvider
+
   ]
 })
 export class AppModule {}
