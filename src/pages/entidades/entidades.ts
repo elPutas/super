@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Response } from '@angular/http';
 
 import { DatosEntidadesPage } from '../datos-entidades/datos-entidades';
 import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
