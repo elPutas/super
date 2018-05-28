@@ -1,19 +1,24 @@
 page-home
 {
+    
+    .ion-datetime
+    {
+        color: #1364f4;
+    }
     .scroll-content{
-      background-color: #F9F9F9 !important;
+      background-color: #F3F3F3 !important;
     }
 
     canvas {
         position: absolute;
-        bottom: 170px;
+        bottom: 100px;
     }
     .gapChart{
         background-color: map-get($colors, primary);
         width: 100%;
         bottom: 0px;
         position: absolute;
-        height: 171px;
+        height: 101px;
     }
 
     .trm-title{
@@ -42,7 +47,7 @@ page-home
 
     .trm-floating{
         position: absolute;
-        bottom: 80px;
+        bottom: 35px;
         left: 150px;
     }
 

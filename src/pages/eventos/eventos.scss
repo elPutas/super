@@ -1,5 +1,34 @@
 page-eventos {
     
+    .grid{
+        margin-top: 70px;
+    }
+    
+    .grid .row{
+        font-size: 25pt;
+        font-weight: bolder;
+        
+    }
+    
+    [col-auto]{
+        color: map-get($colors, primary);
+    }
+    
+    page-eventos ion-calendar .calendar-row .calendar-col
+    {
+        color: map-get($colors, primary);
+    }
+    
+    ion-calendar .calendar-header-col
+    {
+        color: map-get($colors, primary);
+    }
+    
+    .grid ion-icon{
+        font-size: 15pt;
+        margin-bottom: 70px;
+    }
+    
     ion-calendar .calendar-row .calendar-col {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11,14 +40,14 @@ page-eventos {
       justify-content: center;
       padding: 1rem;
       font-size: 1.2rem;
-      border-left: 1px solid map-get($colors, secondary);
-      border-top: 1px solid map-get($colors, secondary);
+      border-left: 1px solid map-get($colors, bgContent);
+      border-top: 1px solid map-get($colors, bgContent);
     }
     
     ion-calendar {
       font-family: Helvetica, Arial, sans-serif;
         font-size: 20pt;
-        color: map-get($colors, primary);
+        color: map-get($colors, secondaryBlue);
         
     }
     
@@ -28,11 +57,11 @@ page-eventos {
       color: #fff;
       -webkit-box-shadow: inset 0 0 10px #aaa;
       box-shadow: inset 0 0 10px #aaa;
-      background: map-get($colors, primary);
+      background: map-get($colors, secondaryBlue);
     }
 
     ion-calendar .calendar-row .eventBlip {
-      background: map-get($colors, primary);
+      background: map-get($colors, secondaryBlue);
       width: 6.5px;
       height: 6.5px;
       display: inline-block;

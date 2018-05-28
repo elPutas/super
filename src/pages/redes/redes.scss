@@ -1,11 +1,23 @@
 page-redes {
     
     div.contained {
-        height: 45vh;
+        height: 70vh;
         
     }
     div.contained:first-child {
         background: white;
     }
+    
+    .header_tw{
+        position: absolute;
+        z-index: 3;
+        top: 0px;
+    }
 
+    .header_fb{
+        position: absolute;
+        z-index: 3;
+        top: 322px;
+    }
+    
 }
