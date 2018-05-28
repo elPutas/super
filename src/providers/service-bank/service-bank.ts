@@ -16,10 +16,9 @@ export class ServiceBankProvider {
   
   getEntities() 
   {
-        return new Promise((resolve, reject) => {
+        return new Promise<any>((resolve, reject) => {
             this.http.get('https://www.datos.gov.co/resource/sr9n-792w.json')
               .subscribe(res => {
-
                 resolve(res);
               }, (err) => {
                 reject(err);
