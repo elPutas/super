@@ -12,6 +12,7 @@ import { EventosPage } from '../pages/eventos/eventos';
 import { DatosEntidadesPage } from '../pages/datos-entidades/datos-entidades';
 
 import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
+import { TasasPasivasPage } from '../pages/tasas-pasivas/tasas-pasivas';
 import { TasasActivasResultPage } from '../pages/tasas-activas-result/tasas-activas-result';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -44,6 +45,7 @@ import { EntitiesInfoProvider } from '../providers/entities-info/entities-info';
 import { ServiceEventsProvider } from '../providers/service-events/service-events';
 import { Screenshot } from '@ionic-native/screenshot';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { ActiveRateProvider } from '../providers/active-rate/active-rate';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -93,6 +95,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     RedesPage,
     EventosPage,
     TasasActivasPage,
+    TasasPasivasPage,
     TasasActivasResultPage,
     AlertEventPage,
     DatosEntidadesPage,
@@ -124,6 +127,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     RedesPage,
     EventosPage,
     TasasActivasPage,
+    TasasPasivasPage,
     TasasActivasResultPage,
     AlertEventPage,
     DatosEntidadesPage,
@@ -140,7 +144,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ServiceEventsProvider,
     Screenshot,
     SocialSharing,
-    TrmProvider
+    TrmProvider,
+    ActiveRateProvider
 
   ]
 })

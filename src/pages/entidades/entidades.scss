@@ -216,7 +216,9 @@ page-entidades {
         box-shadow: none;
     }
     
-    
+    .marginTop{
+        margin-top: 20px;
+    }
     .titlePage{
         font-size: 20pt;
         padding: 20px;
@@ -224,7 +226,4 @@ page-entidades {
         color: map-get($colors, primary);
     }
     
-    .ion-button{
-        color: #fff;
-    }
 }

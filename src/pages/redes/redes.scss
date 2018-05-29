@@ -1,7 +1,7 @@
 page-redes {
     
     div.contained {
-        height: 70vh;
+        height: 40vh;
         
     }
     div.contained:first-child {
@@ -17,7 +17,13 @@ page-redes {
     .header_fb{
         position: absolute;
         z-index: 3;
-        top: 322px;
+        top: 330px;
+    }
+    
+    .twitter-timeline{
+        width: 103%;
+        height: 56%;
+        left: -5px;
     }
     
 }

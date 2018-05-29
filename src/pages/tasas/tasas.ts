@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TasasActivasPage } from '../tasas-activas/tasas-activas';
-
+import { TasasPasivasPage } from '../tasas-pasivas/tasas-pasivas';
 /**
  * Generated class for the TasasPage page.
  *
@@ -17,6 +17,7 @@ import { TasasActivasPage } from '../tasas-activas/tasas-activas';
 export class TasasPage 
 {
     tasasActivasPage = TasasActivasPage
+    tasasPasivasPage = TasasPasivasPage
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

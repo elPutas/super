@@ -8,7 +8,7 @@ page-tasas {
     }
     
     div.contained {
-        height: 45vh;
+        height: 40vh;
         
     }
     div.contained:first-child {
@@ -17,5 +17,16 @@ page-tasas {
     
     .tasas-btn{
         padding-top: 30%;
+    }
+    
+    .divisor{
+        margin-top: -31px;
+        position: absolute;
+    }
+    
+    .line {
+      border: 0;
+      background-color: #000;
+      height: 3px;
     }
 }
