@@ -2,9 +2,16 @@ page-tasas {
     
     .titlebtn{
         font-size: 20pt;
-        padding: 20px;
+        padding: 10px;
         font-weight: bolder;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        
         color: map-get($colors, primary);
+        border-left: 1px solid map-get($colors, danger);
+        border-right: 1px solid map-get($colors, danger);
     }
     
     div.contained {

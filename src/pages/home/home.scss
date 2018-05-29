@@ -3,10 +3,10 @@ page-home
 
     .ion-datetime
     {
-        color: #1364f4;
+        color: map-get($colors, primary);
     }
     .scroll-content{
-      background-color: #F3F3F3 !important;
+      background-color: map-get($colors, bgContent);
     }
 
     canvas {
@@ -15,7 +15,7 @@ page-home
     }
     .gapChart{
         /*background-color: map-get($colors, primary);*/
-        background-color: #00278c;
+        background-color: map-get($colors, primary);
         width: 100%;
         bottom: 0px;
         position: absolute;
@@ -26,7 +26,7 @@ page-home
       margin-top: 13pt;
         font-size: 20pt;
         /*color: map-get($colors, primary);*/
-        color: #02278c;
+        color: map-get($colors, primary);
     }
     .trm-info{
         font-size: 7pt;
@@ -42,11 +42,11 @@ page-home
 
     .last-ten-days{
       display: block;
-      color: #162a90;
+      color: map-get($colors, secondaryBlue);
       margin: auto;
-      margin-top: 10px;
-      width: 150px;
-      font-size: 14pt;
+      margin-top: 50px;
+      width: 200px;
+      font-size: 16pt;
       text-align: center;
     }
 

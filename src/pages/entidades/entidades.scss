@@ -7,9 +7,12 @@ page-entidades {
     }
     
     
-    
+    .ui-autocomplete input{
+        border: transparent !important;
+    }
     
     .ui-autocomplete {
+        
         padding: 20px;
         font-size: 12pt;
         width: auto;
@@ -221,9 +224,16 @@ page-entidades {
     }
     .titlePage{
         font-size: 20pt;
-        padding: 20px;
+        padding: 10px;
         font-weight: bolder;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        margin-top: 30px;
         color: map-get($colors, primary);
+        border-left: 1px solid map-get($colors, danger);;
+        border-right: 1px solid map-get($colors, danger);;
     }
     
 }

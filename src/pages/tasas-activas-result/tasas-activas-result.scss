@@ -1,11 +1,16 @@
 page-tasas-activas-result {
     .titlePage{
         font-size: 20pt;
-        padding: 30px;
+        padding: 10px;
         font-weight: bolder;
-        background-color: white;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        
         color: map-get($colors, primary);
-        height: 110px;
+        border-left: 1px solid map-get($colors, danger);
+        border-right: 1px solid map-get($colors, danger);
     }
     
     .bankPage{
@@ -62,6 +67,13 @@ page-tasas-activas-result {
         position: absolute;
     }
     
+    .bgHeader{
+        padding-top: 30px;
+        background-color: white;
+        
+        height: 140px;
+        width: 100%;
+    }
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a94d6+0,7db9e8+100 */
 
     

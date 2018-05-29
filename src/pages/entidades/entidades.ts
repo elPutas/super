@@ -61,6 +61,7 @@ export class EntidadesPage
         console.log("this.selectedEntity_te", this.selectedEntity_te)
         this.text_select = data.razon_social
         //this.myInputRef.inputEL.nativeElement.value = data.razon_social
+        
     }
   
     filterCountrySingle(event) 

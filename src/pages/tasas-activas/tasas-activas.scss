@@ -1,13 +1,21 @@
 page-tasas-activas {
     .titlePage{
-            font-size: 20pt;
-            padding: 30px;
-            font-weight: bolder;
-            background-color: white;
-            color: map-get($colors, primary);
-            height: 110px;
-        }
+        font-size: 20pt;
+        padding: 10px;
+        font-weight: bolder;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        
+        color: map-get($colors, primary);
+        border-left: 1px solid map-get($colors, danger);
+        border-right: 1px solid map-get($colors, danger);
+    }
     
+    .ui-autocomplete input{
+        border: transparent !important;
+    }
     
     .ui-autocomplete {
         padding: 20px;
@@ -222,6 +230,8 @@ page-tasas-activas {
         margin: 0 auto;
         border-radius: 7px;
         margin-top: -30px;
+        padding-left: 20px;
+        text-align: left !important;
     }
     .btnNext{
         margin-top: 30px;
@@ -236,5 +246,13 @@ page-tasas-activas {
     }
     .marginTop{
         margin-top: 20px;
+    }
+    
+    .bgHeader{
+        padding-top: 30px;
+        background-color: white;
+        
+        height: 140px;
+        width: 100%;
     }
 }
