@@ -43,6 +43,7 @@ export class HomePage
     label_day:string = '';
     label_year:string = '';
     sel_trm:string = '';
+    show_last_ten_d:boolean = true;
     //chart:any;
 
       constructor(
@@ -96,8 +97,8 @@ export class HomePage
                             label: "",
                             fill: true,
                             lineTension: 0,
-                            backgroundColor: "#1878bc",
-                            borderColor: "#1878bc",
+                            backgroundColor: "#00278c",
+                            borderColor: "#00278c",
                             borderCapStyle: 'butt',
                             borderDash: [],
                             borderDashOffset: 0.0,
@@ -313,9 +314,15 @@ export class HomePage
         }
 
         public changeDatePicker(){
-          //var date_today = new Date();
+          var date_today = new Date();
+          date_today.setHours(0,0,0,0);
           var choosed_day = new Date(this.pickedDate);
           choosed_day.setHours(0,0,0,0);
+          if(date_today.getTime() == choosed_day.getTime() ){
+            this.show_last_ten_d = true;
+          }else{
+            this.show_last_ten_d = false;
+          }
           this.label_month =  this.month_array[choosed_day.getMonth()];
           this.label_day = choosed_day.getDate().toString();
           this.label_year = choosed_day.getFullYear().toString();

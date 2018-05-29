@@ -1,6 +1,6 @@
 page-home
 {
-    
+
     .ion-datetime
     {
         color: #1364f4;
@@ -14,7 +14,8 @@ page-home
         bottom: 100px;
     }
     .gapChart{
-        background-color: map-get($colors, primary);
+        /*background-color: map-get($colors, primary);*/
+        background-color: #00278c;
         width: 100%;
         bottom: 0px;
         position: absolute;
@@ -22,8 +23,10 @@ page-home
     }
 
     .trm-title{
+      margin-top: 13pt;
         font-size: 20pt;
-        color: map-get($colors, primary);
+        /*color: map-get($colors, primary);*/
+        color: #02278c;
     }
     .trm-info{
         font-size: 7pt;
@@ -37,6 +40,16 @@ page-home
         margin-right: auto;
     }
 
+    .last-ten-days{
+      display: block;
+      color: #162a90;
+      margin: auto;
+      margin-top: 10px;
+      width: 150px;
+      font-size: 14pt;
+      text-align: center;
+    }
+
     .trm-arrow{
         font-size: 25pt;
         color: limegreen;
@@ -48,7 +61,8 @@ page-home
     .trm-floating{
         position: absolute;
         bottom: 35px;
-        left: 150px;
+        /*left: 150px;*/
+        right: 13px;
     }
 
     .trm-float-txt{
