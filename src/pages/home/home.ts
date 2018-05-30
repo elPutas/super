@@ -392,8 +392,11 @@ export class HomePage
           auximg.style.display = 'block';
           /*auximg.style.position = 'abso';
           auximg.style.bottom = '171px';*/
-          auximg.width = cv.width;
-          auximg.height = cv.height;
+          //auximg.width = cv.width;
+          //auximg.height = cv.height;
+          auximg.style.width = cv.style.width;
+          auximg.style.height = cv.style.height;
+
           auximg.src = cv.toDataURL('image/png');
           //this.imgCanvas.src = this.lineChart.toDataURL('image/png');
           var instance = this;
