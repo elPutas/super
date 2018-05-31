@@ -44,6 +44,7 @@ export class HomePage
     label_year:string = '';
     sel_trm:string = '';
     show_last_ten_d:boolean = true;
+    shareTmr:boolean = false;
     //chart:any;
 
       constructor(
@@ -144,34 +145,40 @@ export class HomePage
             this.changeDatePicker();
 
             this.events.subscribe('tabs:unhide', (picture) => {
-              this.capture = false;
-              this.pathcapture = picture;
-              //alert(this.pathcapture);
-              var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
-              if (tabBarElement.length != 0) {
-                for(let i = 0; i < tabBarElement.length; i++ ){
-                  tabBarElement[i].style.opacity = "1";
+
+              if(this.shareTmr == true){
+
+                this.capture = false;
+                this.pathcapture = picture;
+                //alert(this.pathcapture);
+                var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+                if (tabBarElement.length != 0) {
+                  for(let i = 0; i < tabBarElement.length; i++ ){
+                    tabBarElement[i].style.opacity = "1";
+                  }
                 }
+
+                var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
+                auximg.style.display = 'none';
+
+                //this.filePath.resolveNativePath(path)
+                //  .then(filePath => console.log(filePath))
+                //  .catch(err => console.log(err));
+                this.uriToBase64(this.pathcapture).then((pic64:string)=>{
+                  //console.log(pic64);
+                  this.socialSharing.share("trm: $"+this.sel_trm, null, pic64, "https://www.superfinanciera.gov.co")
+                                    .then(() => {
+                                      // Success!
+                                    }).catch((error) => {
+                                      // Error!
+                                      console.log(error);
+                                    });
+
+                });
+
+                this.shareTmr = false;
+
               }
-
-              var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
-              auximg.style.display = 'none';
-
-              //this.filePath.resolveNativePath(path)
-              //  .then(filePath => console.log(filePath))
-              //  .catch(err => console.log(err));
-              this.uriToBase64(this.pathcapture).then((pic64:string)=>{
-                console.log(pic64);
-                this.socialSharing.share("trm: $"+this.sel_trm, null, pic64, "https://www.superfinanciera.gov.co")
-                                  .then(() => {
-                                    // Success!
-                                  }).catch((error) => {
-                                    // Error!
-                                    console.log(error);
-                                  });
-
-              });
-
             });
         }
 
@@ -399,6 +406,7 @@ export class HomePage
 
           auximg.src = cv.toDataURL('image/png');
           //this.imgCanvas.src = this.lineChart.toDataURL('image/png');
+          this.shareTmr = true;
           var instance = this;
           auximg.onload = function() {
             instance.events.publish('tabs:hide');
