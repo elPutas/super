@@ -1,5 +1,8 @@
 page-home
 {
+    ion-content{
+      background-color: map-get($colors, primary) !important;
+    }
 
     .ion-datetime
     {
@@ -28,6 +31,14 @@ page-home
         /*color: map-get($colors, primary);*/
         color: map-get($colors, primary);
     }
+
+    #imgCanvas{
+      width:100%;
+      display:none;
+      position:absolute;
+      bottom:92px;
+    }
+
     .trm-info{
         font-size: 7pt;
         color: map-get($colors, dark);

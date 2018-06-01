@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { Response } from '@angular/http';
 
 import { DatosEntidadesPage } from '../datos-entidades/datos-entidades';
@@ -16,87 +16,91 @@ import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
   selector: 'page-entidades',
   templateUrl: 'entidades.html',
 })
-export class EntidadesPage 
+export class EntidadesPage
 {
-    
+
     @ViewChild('list_options') myListRef: ElementRef;
     @ViewChild('input_text') myInputRef: ElementRef;
     check = true;
     banks = [];
     razon_social:any = [];
     _data = [];
-    
+
     text_select = ""
-    
+
     filteredCountriesSingle: any[] =[];
-    
+
     selectedEntity_te :any  = [];
     selectedEntity_ce :any = [];
-    
+
     tipo_entidad:any[] = [];
     cod_entidad:any[] = [];
     countries:any[] = [];
-    
-    
+
+
     public autocompleteTags = [];
 
 
-    
-    constructor(public navCtrl: NavController,public navParams: NavParams,private serviceBankProvider:ServiceBankProvider ) 
+
+    constructor(
+      public navCtrl: NavController,
+      public navParams: NavParams,
+      private serviceBankProvider:ServiceBankProvider
+    )
     {
         console.log('EntidadesPage', this.serviceBankProvider);
 
-        this.navParams = navParams 
-        this.navCtrl = navCtrl  
+        this.navParams = navParams
+        this.navCtrl = navCtrl
     }
-  
+
     itemSelected(data)
     {
         console.log("data", data)
         this.filteredCountriesSingle = []
-        
+
         this.selectedEntity_te = data.tipo_entidad
         this.selectedEntity_ce = data.cod_entidad
         console.log("this.selectedEntity_ce", this.selectedEntity_ce)
         console.log("this.selectedEntity_te", this.selectedEntity_te)
         this.text_select = data.razon_social
         //this.myInputRef.inputEL.nativeElement.value = data.razon_social
-        
+
     }
-  
-    filterCountrySingle(event) 
+
+    filterCountrySingle(event)
     {
-        
+
         let query = event.query;
         this.serviceBankProvider.getEntities().then(countries => {
-        
+
             this.filteredCountriesSingle = this.filterCountry(query, countries);
-            
+
         });
-        
+
     }
-    
+
     filterCountry(query, countries: any[]):any[] {
-        
+
         let filtered : any[] = [];
         for(let i = 0; i < countries.length; i++) {
             let country = countries[i];
-            
+
             if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
                 filtered.push(country);
             }
         }
         return filtered;
     }
-  
-    /* 
+
+    /*
     showVal(data)
     {
         data.target.style.display = "none"
         this.check = false
         console.log("showVal", data.target.style.display)
 
-        setTimeout(function () 
+        setTimeout(function ()
         {
             console.log("showVal", data.target.style.display);
             data.target.style.display = "none"
@@ -104,8 +108,8 @@ export class EntidadesPage
         }, 1000);
     }
     */
-  
-    inputChanged(event) 
+
+    inputChanged(event)
     {
         let key = event.keyCode;
         switch(key) {
@@ -115,24 +119,26 @@ export class EntidadesPage
             break;
         }
     }
-  
+
+
+
     getInfoEntity()
     {
-        this.navCtrl.push(DatosEntidadesPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce}) 
+        this.navCtrl.push(DatosEntidadesPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce})
         /*
         this.entitiesInfoProvider.getInfo("11","156").then(info => {
             console.log("this", info)
-           
+
         });
         */
     }
-  
 
-    ionViewDidLoad() 
+
+    ionViewDidLoad()
     {
-  
+
         console.log('ionViewDidLoad EntidadesPage');
-        
+
         //this.country =[];
         //this.countries = [];
     }

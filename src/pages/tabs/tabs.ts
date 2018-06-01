@@ -26,7 +26,7 @@ export class TabsPage {
     public events: Events,
     public screenshot: Screenshot
   ) {
-    
+
     this.events.subscribe('tabs:hide', () => {
 
       var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
