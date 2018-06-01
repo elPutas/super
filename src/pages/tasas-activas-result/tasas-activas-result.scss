@@ -35,8 +35,11 @@ page-tasas-activas-result {
         margin-right: auto;
     }
     
-    
     .item{
+        background-color: transparent;
+    }
+    
+    .items{
         margin-top: 5px;
         width: 70%;
         height: 30px;
@@ -60,6 +63,7 @@ page-tasas-activas-result {
         height: 26px;
         margin-left: 18px;
         padding-top: 5px;
+        font-size: 8pt;
     }
     
     .divisor{

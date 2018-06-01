@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
 /**
  * Generated class for the TasasActivasResultPage page.
  *
@@ -14,12 +14,64 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tasas-activas-result.html',
 })
 export class TasasActivasResultPage {
+    
+    type: type ="";
+    ce: string ="";
+    te: string ="";
+    
+    myInfo:any =[]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider) 
+    {
+        this.ce = navParams.get('ce');
+        this.te = navParams.get('te');
+        this.type = navParams.get('type');
+        
+        console.log("this.ce", this.ce);
+        console.log("this.te", this.te);
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TasasActivasResultPage');
-  }
+    ionViewDidLoad() 
+    {
+        
+        console.log('ionViewDidLoad TasasActivasResultPage');
+        this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
+        
+            
+        let myArr = []    
+        var size = 0, key;
+        for (key in info[0]) 
+        {
+            if (info[0].hasOwnProperty(key)) 
+            {
+                // items hidden
+                let codeHide = info[0][key] != "-2.00"
+                let typeHide = key != "modalidad_de_credito"
+                let nameHide = key != "sigla"
+                let ceHide = key != "codigo_entidad"
+                let teHide = key != "tipo_entidad"
+                let dateHide = key != "fecha_corte"
+                
+                let infoName1 = key.replace(/i_n/g, 'ión');
+                let infoName2 = infoName1.replace(/_/g, ' ');
+                
+                
+                
+                if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
+                {
+                    if(codeHide == "-1.00")
+                        codeHide = "--"
+                    myArr.push({"name":infoName2, "value":info[0][key]})
+                } 
+                size++;
+            }
+        }
+            
+        this.myInfo = myArr
+        console.log("info", myArr)
+        //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+          
+        });
+    }
 
 }

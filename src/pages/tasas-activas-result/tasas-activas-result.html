@@ -20,16 +20,33 @@
     <img class="divisor" src="assets/imgs/bar.png">
     <div class="bankPage"><ion-icon ios="ios-briefcase-outline" md="md-briefcase"></ion-icon> | Banco Caja Social</div>
     <div class="typePage"><ion-icon ios="ios-cash-outline" md="md-cash"></ion-icon> | Credito de consumo</div>
-    <ion-grid>
-        <ion-row class="item">
+    
+        
+        
+            <ion-grid>
+                <ion-item  *ngFor="let c of myInfo" (click)="itemTypeSelected(c)">
+                    <ion-row  class="items">
+                        <ion-col col-8>
+                            <div class="itemText">{{c.name}}</div>
+                        </ion-col>    
+                        <ion-col col-4>
+                            <div class="itemNum">{{c.value}}</div>
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+            </ion-grid>
+        
+        
+        <!--ion-row  class="item">
             <ion-col col-8>
                 <div class="itemText">Entre 32 y 34 años</div>
             </ion-col>    
             <ion-col col-4>
                 <div class="itemNum">233%</div>
             </ion-col>
-        </ion-row>
-    </ion-grid>
+        </ion-row-->
+        
+    
     
     
     

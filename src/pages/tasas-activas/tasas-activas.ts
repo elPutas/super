@@ -23,12 +23,18 @@ export class TasasActivasPage
 
     @ViewChild('list_options') myListRef: ElementRef;
     @ViewChild('input_text') myInputRef: ElementRef;
-    check = true;
+    @ViewChild("creditSelect") myCreditSelectRef: ElementRef;
+    
+    showCredit:Boolean = false;
+    showCreditList:Boolean = false;
     banks = [];
     sigla:any = [];
     _data = [];
     
+    typesCredit:any = [];
+    
     text_select = ""
+    credit_select = ""
     
     filteredCountriesSingle: any[] =[];
     
@@ -37,57 +43,143 @@ export class TasasActivasPage
     
     tipo_entidad:any[] = [];
     cod_entidad:any[] = [];
+    type_credit:any[] = [];
+    
+    
     countries:any[] = [];
     public autocompleteTags = [];
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TasasActivasPage');
-  }
+    ionViewDidLoad() 
+    {
+        console.log('ionViewDidLoad TasasActivasPage');
+    }
     
     
+    //
+    openList()
+    {
+        console.log("open")
+        this.showCreditList = true
+    }
     
+    //credit selected
+    itemTypeSelected(data)
+    {
+        //close it
+        //this.typesCredit = []
+        
+        this.selectedEntity_te = data.tipo_entidad
+        this.selectedEntity_ce = data.codigo_entidad
+        
+        this.credit_select = data.modalidad_de_credito
+        //this.myCreditSelectRef.nativeElement.value = data.modalidad_de_credito
+        //console.log("data credit", this.myCreditSelectRef.nativeElement.value)
+        this.showCreditList = false
+    }
+    
+    
+    //bank selected
     itemSelected(data)
     {
-        console.log("data", data)
+        console.log("data bank", data)
+        //close it
         this.filteredCountriesSingle = []
         
         this.selectedEntity_te = data.tipo_entidad
-        this.selectedEntity_ce = data.cod_entidad
-        console.log("this.selectedEntity_ce", this.selectedEntity_ce)
-        console.log("this.selectedEntity_te", this.selectedEntity_te)
+        this.selectedEntity_ce = data.codigo_entidad
         this.text_select = data.sigla
-        //this.myInputRef.inputEL.nativeElement.value = data.razon_social
+        
+        //this.myInputRef.inputEL.nativeElement.value = data.sigla
+        this.showCredit = true;
+        this.showCreditList = true
     }
   
+    
+    //filter access from view
     filterCountrySingle(event) 
     {
-        
         let query = event.query;
-        this.activeRateProvider.getEntities().then(countries => {
         
-            this.filteredCountriesSingle = this.filterCountry(query, countries);
-            
-        });
-        
+        this.activeRateProvider.getEntities().then(countries => 
+        {
+            this.filteredCountriesSingle = this.filterByName(query, countries);
+            this.typesCredit = this.filterByType(query, countries); 
+        });   
     }
     
-    filterCountry(query, countries: any[]):any[] {
-        
+    
+    //filter by credit type
+    filterByType(query, banks: any[]):any[] 
+    {
         let filtered : any[] = [];
-        for(let i = 0; i < countries.length; i++) {
-            let country = countries[i];
+        
+        let letPushType = true;
+        let lastType = "";
+        
+        let letPush = true;   
+        let lastSigla = ""
+        
+        for(let i = 0; i < banks.length; i++) 
+        {
+            let bank = banks[i];
             
-            if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+            if(bank.sigla.toLowerCase().indexOf(query.toLowerCase()) == 0) 
+            {
                 
-                filtered.push(country);
+                if(bank.sigla == lastSigla)
+                    letPush = false
+                else
+                    letPush = true
+                lastSigla = bank.sigla
+                
+                if(letPush)
+                {
+                    
+                    if(bank.modalidad_de_credito == lastType)
+                        letPushType = false
+                    else
+                        letPushType = true
+                    lastType = bank.modalidad_de_credito
+                    
+                    if(letPushType)
+                        filtered.push(bank);
+                }
+                    
+            }   
+        }
+        return filtered;
+    }
+    
+    //filter by name bank
+    filterByName(query, banks: any[]):any[] 
+    {
+        let filtered : any[] = [];
+        let letPush = true;   
+        let lastSigla = ""
+        
+        for(let i = 0; i < banks.length; i++) {
+            let bank = banks[i];
+            
+            if(bank.sigla.toLowerCase().indexOf(query.toLowerCase()) == 0) 
+            {
+                if(bank.sigla == lastSigla)
+                    letPush = false
+                else
+                    letPush = true
+                   
+                lastSigla = bank.sigla
+                
+                if(letPush)
+                    filtered.push(bank);
             }
         }
         return filtered;
     }
 
+    //autocomplete change
     inputChanged(event) 
     {
         let key = event.keyCode;
@@ -99,9 +191,15 @@ export class TasasActivasPage
         }
     }
   
+    
+    //goto 
     getInfoEntity()
     {
-        this.navCtrl.push(TasasActivasResultPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce}) 
+        console.log("this.selectedEntity_ce", this.selectedEntity_ce)
+        console.log("this.selectedEntity_te", this.selectedEntity_te)
+        console.log("this.credit_select", this.credit_select)
+        
+        this.navCtrl.push(TasasActivasResultPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce, type:this.credit_select}) 
         
     }
 

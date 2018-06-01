@@ -1,4 +1,12 @@
 page-tasas-activas {
+    .list_options {
+        height: 150px;
+        overflow: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 45px;
+    }
+    
     .titlePage{
         font-size: 20pt;
         padding: 10px;
@@ -229,9 +237,12 @@ page-tasas-activas {
         width: 78%;
         margin: 0 auto;
         border-radius: 7px;
-        margin-top: -30px;
         padding-left: 20px;
         text-align: left !important;
+        background-color: white;
+        font-size: 12pt;
+        padding-top: 5px;
+        height: 50px;
     }
     .btnNext{
         margin-top: 30px;
@@ -254,5 +265,9 @@ page-tasas-activas {
         
         height: 140px;
         width: 100%;
+    }
+    
+    .creditBox .popover-content {
+      width: 300px !important;
     }
 }

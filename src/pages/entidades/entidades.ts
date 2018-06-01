@@ -83,7 +83,6 @@ export class EntidadesPage
             let country = countries[i];
             
             if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-                
                 filtered.push(country);
             }
         }
