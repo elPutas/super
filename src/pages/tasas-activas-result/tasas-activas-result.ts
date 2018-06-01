@@ -15,9 +15,12 @@ import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
 })
 export class TasasActivasResultPage {
     
-    type: type ="";
+    type: string ="";
     ce: string ="";
     te: string ="";
+    
+    nameBank:String = ""
+    typeCredit:String = ""
     
     myInfo:any =[]
 
@@ -37,39 +40,41 @@ export class TasasActivasResultPage {
         console.log('ionViewDidLoad TasasActivasResultPage');
         this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
         
+            let myArr = []    
+            var size = 0, key;
             
-        let myArr = []    
-        var size = 0, key;
-        for (key in info[0]) 
-        {
-            if (info[0].hasOwnProperty(key)) 
+            this.nameBank = " | " + info[0].sigla
+            this.typeCredit = " | " + info[0].modalidad_de_credito
+            
+            for (key in info[0]) 
             {
-                // items hidden
-                let codeHide = info[0][key] != "-2.00"
-                let typeHide = key != "modalidad_de_credito"
-                let nameHide = key != "sigla"
-                let ceHide = key != "codigo_entidad"
-                let teHide = key != "tipo_entidad"
-                let dateHide = key != "fecha_corte"
-                
-                let infoName1 = key.replace(/i_n/g, 'ión');
-                let infoName2 = infoName1.replace(/_/g, ' ');
-                
-                
-                
-                if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
+                if (info[0].hasOwnProperty(key)) 
                 {
-                    if(codeHide == "-1.00")
-                        codeHide = "--"
-                    myArr.push({"name":infoName2, "value":info[0][key]})
-                } 
-                size++;
+                    // items hidden
+                    let codeHide = info[0][key] != "-2.00"
+                    let typeHide = key != "modalidad_de_credito"
+                    let nameHide = key != "sigla"
+                    let ceHide = key != "codigo_entidad"
+                    let teHide = key != "tipo_entidad"
+                    let dateHide = key != "fecha_corte"
+
+                    let infoName1 = key.replace(/i_n/g, 'ión');
+                    let infoName2 = infoName1.replace(/_/g, ' ');
+
+
+
+                    if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
+                    {
+
+                        myArr.push({"name":infoName2, "value":info[0][key]})
+                    } 
+                    size++;
+                }
             }
-        }
-            
-        this.myInfo = myArr
-        console.log("info", myArr)
-        //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+
+            this.myInfo = myArr
+            console.log("info", myArr)
+            //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
           
         });
     }

@@ -14,18 +14,18 @@ page-tasas-activas-result {
     }
     
     .bankPage{
-        font-size: 17pt;
+        font-size: 16pt;
         margin-top: 30px;
-        font-weight: 100;
+        font-weight: 300;
         color: #0669eb;
         margin-bottom: 15px;
         margin-left: 50px;
     }
     
     .typePage{
-        font-size: 15pt;
+        font-size: 14pt;
         padding: 10px;
-        font-weight: 100;
+        font-weight: 300;
         background: linear-gradient(to right, #2a94d6 0%, #7db9e8 100%);
         color: white;
         height: 45px;
@@ -40,7 +40,7 @@ page-tasas-activas-result {
     }
     
     .items{
-        margin-top: 5px;
+        margin-top: 0px;
         width: 70%;
         height: 30px;
         margin-right: auto;
@@ -55,15 +55,20 @@ page-tasas-activas-result {
         font-size: 9pt;
     }
     .itemNum{
-        background: linear-gradient(to top, #2840c9 0%,#778ad6 100%);
+        background: linear-gradient(to top, #2840c9 0%, #778ad6 100%);
         color: white;
         width: 60px;
         text-align: center;
         margin-top: -8px;
-        height: 26px;
-        margin-left: 18px;
+        height: 27px;
+        margin-left: 13px;
         padding-top: 5px;
         font-size: 8pt;
+        border-radius: 10px;
+    }
+    
+    .label {
+        margin: 0px;
     }
     
     .divisor{
