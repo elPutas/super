@@ -6,7 +6,6 @@ import { Chart } from 'chart.js';
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
 import { SocialSharing } from '@ionic-native/social-sharing';
-//import { FilePath } from '@ionic-native/file-path';
 
 
 @Component({
@@ -52,7 +51,6 @@ export class HomePage
         public translate: TranslateService,
         public trmProvider: TrmProvider,
         public socialSharing: SocialSharing,
-        //public filePath: FilePath,
         public events:Events,
         public statusBar: StatusBar
       ) {
@@ -161,9 +159,6 @@ export class HomePage
                 var auximg = document.getElementById('imgCanvas') as HTMLImageElement;
                 auximg.style.display = 'none';
 
-                //this.filePath.resolveNativePath(path)
-                //  .then(filePath => console.log(filePath))
-                //  .catch(err => console.log(err));
                 this.uriToBase64(this.pathcapture).then((pic64:string)=>{
                   //console.log(pic64);
                   this.socialSharing.share("trm: $"+this.sel_trm, null, pic64, "https://www.superfinanciera.gov.co")
@@ -411,18 +406,7 @@ export class HomePage
           auximg.onload = function() {
             instance.events.publish('tabs:hide');
           }
-          /*
-          this.screenshot.save('jpg', 80, 'myscreenshot_trm').then(
-            (res)=>{
-              console.log(res);
-              alert(res.filePath);
-              this.events.publish('tabs:unhide');
-            },
-            (err)=>{
-              console.log(err);
-            }
-          );
-          */
+          
         }
 
 }
