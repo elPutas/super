@@ -7,12 +7,12 @@ page-tasas-activas-result {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        
+
         color: map-get($colors, primary);
         border-left: 1px solid map-get($colors, danger);
         border-right: 1px solid map-get($colors, danger);
     }
-    
+
     .bankPage{
         font-size: 16pt;
         margin-top: 30px;
@@ -21,9 +21,9 @@ page-tasas-activas-result {
         margin-bottom: 15px;
         margin-left: 50px;
     }
-    
+
     .typePage{
-        font-size: 14pt;
+        font-size: 12pt;
         padding: 10px;
         font-weight: 300;
         background: linear-gradient(to right, #2a94d6 0%, #7db9e8 100%);
@@ -34,11 +34,11 @@ page-tasas-activas-result {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .item{
         background-color: transparent;
     }
-    
+
     .items{
         margin-top: 0px;
         width: 70%;
@@ -66,24 +66,24 @@ page-tasas-activas-result {
         font-size: 8pt;
         border-radius: 10px;
     }
-    
+
     .label {
         margin: 0px;
     }
-    
+
     .divisor{
         margin-top: -31px;
         position: absolute;
     }
-    
+
     .bgHeader{
         padding-top: 30px;
         background-color: white;
-        
+
         height: 140px;
         width: 100%;
     }
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a94d6+0,7db9e8+100 */
 
-    
+
 }

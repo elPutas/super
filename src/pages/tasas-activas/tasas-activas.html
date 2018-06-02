@@ -14,45 +14,45 @@
 
 
 <ion-content no-padding>
-    
+
     <div class="bgHeader">
         <div text-center class="titlePage">{{ 'tasa_activa_tasas_page' | translate }}</div>
     </div>
-    
+
     <img class="divisor" src="assets/imgs/bar.png">
-    
+
     <div text-center class="marginTopInit">
         <p-autoComplete text-center #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
         placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4" [(ngModel)]="text_select" >{{text_select}}</p-autoComplete>
     </div>
-    
+
     <ion-list class="list_options" #list_options *ngIf="filteredCountriesSingle?.length > 0" >
         <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.sigla}}</ion-item>
     </ion-list>
-    
-    
+
+
         <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
-        
-    <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
+
+        <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
             <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.modalidad_de_credito}}</ion-item>
         </ion-list>
-    
-    
+
+
     <!--ion-item text-center class="creditBox">
       <ion-label>{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-label>
       <ion-select  [(ngModel)]="popover" interface="popover" class="popoverFix" (ngModelChange)="itemTypeSelected($event)">
           <ion-option  *ngFor="let c of typesCredit" [selected]="typesCredit">{{c.modalidad_de_credito}}</ion-option>
       </ion-select>
     </ion-item-->
-    
-    
+
+
     <div text-center class="marginTop">
         <button (click)="getInfoEntity()" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>
     </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 </ion-content>

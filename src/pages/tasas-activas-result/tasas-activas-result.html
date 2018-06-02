@@ -14,40 +14,44 @@
 
 
 <ion-content no-padding>
-    <div class="bgHeader">
+    <div class="bgHeader" *ngIf="hideHead==false">
         <div text-center class="titlePage">{{ 'tasa_activa_tasas_page' | translate }}</div>
     </div>
     <img class="divisor" src="assets/imgs/bar.png">
-    <div class="bankPage"><ion-icon ios="ios-briefcase-outline" md="md-briefcase"></ion-icon>{{nameBank}}</div>
+    <div class="bankPage" *ngIf="hideHead==false"><ion-icon ios="ios-briefcase-outline" md="md-briefcase"></ion-icon>{{nameBank}}</div>
     <div class="typePage"><ion-icon ios="ios-cash-outline" md="md-cash"></ion-icon>{{typeCredit}}</div>
-    
-        
-        
+
+
+
             <ion-grid>
                 <ion-item  *ngFor="let c of myInfo" (click)="itemTypeSelected(c)">
                     <ion-row  class="items">
                         <ion-col col-8>
                             <div class="itemText">{{c.name}}</div>
-                        </ion-col>    
+                        </ion-col>
                         <ion-col col-4>
                             <div class="itemNum">{{c.value}}</div>
                         </ion-col>
                     </ion-row>
                 </ion-item>
             </ion-grid>
-        
-        
+
+      <button ion-button clear (click)="regularShare()" *ngIf="hideHead==false">
+        <ion-icon name="cloud-download" style="font-size: 30px;"></ion-icon>
+      </button>
+
+
         <!--ion-row  class="item">
             <ion-col col-8>
                 <div class="itemText">Entre 32 y 34 años</div>
-            </ion-col>    
+            </ion-col>
             <ion-col col-4>
                 <div class="itemNum">233%</div>
             </ion-col>
         </ion-row-->
-        
-    
-    
-    
-    
+
+
+
+
+
 </ion-content>

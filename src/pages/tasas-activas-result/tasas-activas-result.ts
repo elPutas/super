@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 /**
  * Generated class for the TasasActivasResultPage page.
  *
@@ -14,41 +16,50 @@ import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
   templateUrl: 'tasas-activas-result.html',
 })
 export class TasasActivasResultPage {
-    
+
     type: string ="";
     ce: string ="";
     te: string ="";
-    
-    nameBank:String = ""
-    typeCredit:String = ""
-    
-    myInfo:any =[]
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider) 
+    nameBank:String = "";
+    typeCredit:String = "";
+
+    myInfo:any =[];
+
+    tasaShare: boolean = false;
+    hideHead: boolean = false;
+
+    constructor(
+      public navCtrl: NavController,
+      public navParams: NavParams,
+      public events:Events,
+      public socialSharing: SocialSharing,
+      private activeRateProvider:ActiveRateProvider
+    )
     {
         this.ce = navParams.get('ce');
         this.te = navParams.get('te');
         this.type = navParams.get('type');
-        
+
         console.log("this.ce", this.ce);
         console.log("this.te", this.te);
     }
 
-    ionViewDidLoad() 
+    ionViewDidLoad()
     {
-        
+
         console.log('ionViewDidLoad TasasActivasResultPage');
         this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
-        
-            let myArr = []    
+
+            let myArr = []
             var size = 0, key;
-            
+
             this.nameBank = " | " + info[0].sigla
             this.typeCredit = " | " + info[0].modalidad_de_credito
-            
-            for (key in info[0]) 
+
+            for (key in info[0])
             {
-                if (info[0].hasOwnProperty(key)) 
+                if (info[0].hasOwnProperty(key))
                 {
                     // items hidden
                     let codeHide = info[0][key] != "-2.00"
@@ -67,7 +78,7 @@ export class TasasActivasResultPage {
                     {
 
                         myArr.push({"name":infoName2, "value":info[0][key]})
-                    } 
+                    }
                     size++;
                 }
             }
@@ -75,8 +86,115 @@ export class TasasActivasResultPage {
             this.myInfo = myArr
             console.log("info", myArr)
             //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
-          
+
+            this.events.subscribe('tabs:unhide', (picture) => {
+              if(this.tasaShare == true){
+                this.uriToBase64(picture).then((pic64:string)=>{
+                  var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+
+                  if (tabBarElement.length != 0) {
+                    for(let i = 0; i < tabBarElement.length; i++ ){
+                      tabBarElement[i].style.opacity = "1";
+                    }
+                  }
+
+                  this.unhideHeader();
+                  this.socialSharing.share(this.nameBank.toString()+"\r "+this.typeCredit.toString(), null, pic64, "https://www.superfinanciera.gov.co")
+                                    .then(() => {
+                                      // Success!
+                                    }).catch((error) => {
+                                      // Error!
+                                      console.log(error);
+                                    });
+
+
+
+                });
+
+              }
+            });
+
         });
+    }
+
+    hideHeader(){
+      this.hideHead = true;
+      var headerElement = document.getElementsByClassName('header') as HTMLCollectionOf<HTMLElement>;
+      for(let i = 0; i < headerElement.length; i++ ){
+        headerElement[i].style.display = "none";
+        if((headerElement.length-1) == i){
+          var scrollElement = document.getElementsByClassName('scroll-content') as HTMLCollectionOf<HTMLElement>;
+          for(let j = 0; j < scrollElement.length; j++ ){
+            scrollElement[j].style.marginTop = "0px";//ori 56px
+            scrollElement[j].scrollTop = 0;
+
+            if((scrollElement.length-1) == j){
+              var contentElement = document.getElementsByClassName('content') as HTMLCollectionOf<HTMLElement>;
+
+              for(let n = 0; n < contentElement.length; n++ ){
+                contentElement[n].style.padding = "0px";
+                if((contentElement.length-1) == n){
+
+                  this.events.publish('tabs:hide');
+
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+
+    unhideHeader(){
+      this.hideHead = false;
+      var headerElement = document.getElementsByClassName('header') as HTMLCollectionOf<HTMLElement>;
+      for(let i = 0; i < headerElement.length; i++ ){
+        headerElement[i].style.display = "block";
+        if((headerElement.length-1) == i){
+
+          var scrollElement = document.getElementsByClassName('scroll-content') as HTMLCollectionOf<HTMLElement>;
+          for(let j = 0; j < scrollElement.length; j++ ){
+            scrollElement[j].style.marginTop = "56px";//ori 56px
+            scrollElement[j].scrollTop = 0;
+
+            if((scrollElement.length-1) == j){
+              var contentElement = document.getElementsByClassName('content') as HTMLCollectionOf<HTMLElement>;
+
+              for(let n = 0; n < contentElement.length; n++ ){
+                contentElement[n].style.padding = "16px";
+
+              }
+
+            }
+          }
+
+        }
+      }
+
+    }
+
+    uriToBase64(MY_URL){
+      return new Promise((resolve) => {
+        var request = new XMLHttpRequest();
+        request.open('GET', MY_URL, true);
+        request.responseType = 'blob';
+        request.onload = function() {
+            var reader = new FileReader();
+            reader.readAsDataURL(request.response);
+            reader.onload =  function(e){
+                resolve(reader.result);
+            };
+        };
+        request.send();
+      });
+
+    }
+
+    public regularShare(){
+      this.tasaShare = true;
+      this.hideHeader();
     }
 
 }

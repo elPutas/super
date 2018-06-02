@@ -88,7 +88,7 @@ export class DatosEntidadesPage {
             this.events.subscribe('tabs:unhide', (picture) => {
               if(this.shareEntidad == true){
                 this.uriToBase64(picture).then((pic64:string)=>{
-                  
+
                   var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
                   if (tabBarElement.length != 0) {
                     for(let i = 0; i < tabBarElement.length; i++ ){
@@ -125,6 +125,7 @@ export class DatosEntidadesPage {
         var scrollElement = document.getElementsByClassName('scroll-content') as HTMLCollectionOf<HTMLElement>;
         for(let j = 0; j < scrollElement.length; j++ ){
           scrollElement[j].style.marginTop = "0px";//ori 56px
+          scrollElement[j].style.marginBottom = "0px";
           scrollElement[j].style.padding = "0px";// ori 16px
           scrollElement[j].scrollTop = 0;
 
@@ -137,7 +138,7 @@ export class DatosEntidadesPage {
 
                 var listElement = document.getElementsByClassName('list') as HTMLCollectionOf<HTMLElement>;
                 for(let m = 0; m < listElement.length; m++ ){
-                  listElement[m].style.marginTop = "0px";//ori 20px
+                  listElement[m].style.marginTop = "1px";//ori 20px
                   if((listElement.length-1) == m){
 
                     this.events.publish('tabs:hide');
@@ -168,6 +169,7 @@ export class DatosEntidadesPage {
         var scrollElement = document.getElementsByClassName('scroll-content') as HTMLCollectionOf<HTMLElement>;
         for(let j = 0; j < scrollElement.length; j++ ){
           scrollElement[j].style.marginTop = "56px";
+          scrollElement[j].style.marginBottom = "56px";
           scrollElement[j].style.padding = "16px";
           //scrollElement[j].scrollTop = 0;
 
