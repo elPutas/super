@@ -1,7 +1,15 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events, Platform } from 'ionic-angular';
 import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
 import { SocialSharing } from '@ionic-native/social-sharing';
+
+import { File } from '@ionic-native/file';
+import { FileOpener } from '@ionic-native/file-opener';
+
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts';
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
+
 
 /**
  * Generated class for the TasasActivasResultPage page.
@@ -29,11 +37,16 @@ export class TasasActivasResultPage {
     tasaShare: boolean = false;
     hideHead: boolean = false;
 
+    pdfObj = null;
+
     constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
       public events:Events,
       public socialSharing: SocialSharing,
+      public plt:Platform,
+      public file:File,
+      public fileOpener: FileOpener,
       private activeRateProvider:ActiveRateProvider
     )
     {
@@ -192,9 +205,102 @@ export class TasasActivasResultPage {
 
     }
 
-    public regularShare(){
+    picShare(){
       this.tasaShare = true;
       this.hideHeader();
+    }
+
+    createPdf(share) {
+      //myInfo
+      var obj_content:any = [];
+      for(let i = 0; i < this.myInfo.length; i++ ){
+        //var trama  = { text:this.myInfo[i].name +" "+ this.myInfo[i].value , alignment: 'center' };
+        obj_content.push(
+          this.myInfo[i].name +" "+ this.myInfo[i].value
+        );
+      }
+      var docDefinition = {
+        content: [
+          { text: this.nameBank, style: 'header' },
+          { text: this.typeCredit, style: 'subheader' },
+          {
+            ul: obj_content
+          }
+        /*
+        { text: new Date().toTimeString(), alignment: 'right' },
+
+        { text: 'From', style: 'subheader' },
+        { text: this.letterObj.from },
+
+        { text: 'To', style: 'subheader' },
+        this.letterObj.to,
+
+        { text: this.letterObj.text, style: 'story', margin: [0, 20, 0, 20] },
+
+        {
+          ul: [
+            'Bacon',
+            'Rips',
+            'BBQ',
+          ]
+        }
+        */
+        ],
+        styles: {
+          header: {
+            fontSize: 18,
+            bold: true,
+          },
+          subheader: {
+            fontSize: 14,
+            bold: true,
+            margin: [0, 15, 0, 0]
+          },
+          story: {
+            italic: true,
+            alignment: 'center',
+            width: '50%',
+          }
+        }
+      }
+      this.pdfObj = pdfMake.createPdf(docDefinition);
+      if(share==true){
+        this.downloadPdf(true);
+      }else{
+        this.downloadPdf(false);
+      }
+    }
+
+    downloadPdf(share) {
+      if (this.plt.is('cordova')) {
+        this.pdfObj.getBuffer((buffer) => {
+          var blob = new Blob([buffer], { type: 'application/pdf' });
+
+          // Save the PDF to the data Directory of our App
+          this.file.writeFile(this.file.dataDirectory, 'tasaToShare.pdf', blob, { replace: true }).then(fileEntry => {
+            // Open the PDf with the correct OS tools
+            if(share==false){
+              this.fileOpener.open(this.file.dataDirectory + 'tasaToShare.pdf', 'application/pdf');
+            }else{
+              this.socialSharing.share(this.nameBank.toString()+"\r "+this.typeCredit.toString(), null, this.file.dataDirectory + 'tasaToShare.pdf', "https://www.superfinanciera.gov.co")
+                                .then(() => {
+                                  // Success!
+                                }).catch((error) => {
+                                  // Error!
+                                  console.log(error);
+                                });
+            }
+          })
+        });
+      } else {
+        // On a browser simply use download!
+        this.pdfObj.download();
+      }
+    }
+
+    public regularShare(){
+      //this.picShare();
+      this.createPdf(true);
     }
 
 }

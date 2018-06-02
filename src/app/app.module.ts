@@ -47,6 +47,8 @@ import { Screenshot } from '@ionic-native/screenshot';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { ActiveRateProvider } from '../providers/active-rate/active-rate';
 
+import { File } from '@ionic-native/file';
+import { FileOpener } from '@ionic-native/file-opener';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -105,7 +107,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     RlTagInputModule,
     AutoCompleteModule,
     CalendarModule,
-    
+
     BrowserModule,
     IonicModule.forRoot(MyApp),
 
@@ -135,7 +137,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
   ],
   providers: [
     StatusBar,
-    
+
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider,
@@ -144,6 +146,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ServiceEventsProvider,
     Screenshot,
     SocialSharing,
+    File,
+    FileOpener,
     TrmProvider,
     ActiveRateProvider
 
