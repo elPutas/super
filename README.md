@@ -10,3 +10,7 @@ por
 ```
 cordova.system.library.1=com.android.support:support-v4:27.1.0
 ```
+referencia:
+```
+https://forum.ionicframework.com/t/build-break-with-aapt-error-message-why/123955/6
+```
