@@ -14,32 +14,54 @@
 
 
 <ion-content no-padding>
-    
-    <img class="header_tw" src="assets/imgs/bar_tw.png"> 
-    <img class="header_fb" src="assets/imgs/bar_fb.png"> 
-    
+
+<!--
+    <img class="header_tw" src="assets/imgs/bar_tw.png">
+    <img class="header_fb" src="assets/imgs/bar_fb.png">
+
     <ion-scroll scrollY="true" style="width: 103%; height: 56%; left: -5px;">
     <ion-grid >
         <ion-row>
-            <!--Timeline Twitter -->
-            
+
+
             <a id="twitter" class="twitter-timeline"
-               
+
                data-chrome="noscrollbar nofooter"
                href="https://twitter.com/SFCsupervisor"></a>
         </ion-row>
-        
+
     </ion-grid>
     </ion-scroll>
-    
-    
-    
-    
+
+
+
+
     <ion-scroll scrollY="true" style="width: 100%; height: 50%; margin-top: 0px; background-color: white;">
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsuperintendencia.financiera&tabs=timeline&width=370&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="390" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </ion-scroll>
-    
-    
-    
-    
+-->
+<ion-grid style="height: 100%;">
+  <ion-row style="height: 50%;">
+    <ion-col col-12>
+      <img class="header_tw" src="assets/imgs/bar_tw.png">
+      <ion-scroll scrollY="true" style="width: 100%; height: 106%; left: 0px;">
+        <a id="twitter" class="twitter-timeline"
+           data-chrome="noscrollbar nofooter"
+           href="https://twitter.com/SFCsupervisor">
+        </a>
+      </ion-scroll>
+    </ion-col>
+  </ion-row>
+  <ion-row style="height: 50%;">
+    <ion-col col-12>
+      <img class="header_fb" src="assets/imgs/bar_fb.png">
+      <ion-scroll scrollY="true" style="width: 100%; height: 106%; left: 0px;">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsuperintendencia.financiera&tabs=timeline&width=370&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="390" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+        </iframe>
+      </ion-scroll>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
 </ion-content>

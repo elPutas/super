@@ -1,29 +1,32 @@
 page-redes {
-    
+
     div.contained {
         height: 40vh;
-        
+
     }
     div.contained:first-child {
         background: white;
     }
-    
+
     .header_tw{
         position: absolute;
         z-index: 3;
         top: 0px;
+        left: 0px;
     }
 
     .header_fb{
         position: absolute;
         z-index: 3;
-        top: 288px;
+        /*top: 288px;*/
+        top: 0px;  
+        left: 0px;
     }
-    
+
     .twitter-timeline{
         width: 103%;
         height: 56%;
         left: -5px;
     }
-    
+
 }
