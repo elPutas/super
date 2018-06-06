@@ -17,12 +17,12 @@ export class TrmProvider {
 
   httpGetTrmGovco(start, end): any{
       //let apiUrl = Enums.DATOSGOVCO_BASE+'/g3ab-sax9.json?$where=vigenciahasta%20BETWEEN%20%27';
-      let apiUrl = "https:\//www.datos.gov.co/resource/g3ab-sax9.json?$where=vigenciahasta%20BETWEEN%20%27"
+      let apiUrl = "https://www.datos.gov.co/resource/g3ab-sax9.json?$where=vigenciahasta%20BETWEEN%20%27"
       let from = start;
       let to = end;
 
       return new Promise((resolve, reject) => {
-        this.http.get(apiUrl+from+'%27%20AND%20%27'+end+'%27')
+        this.http.get(apiUrl+from+'%27AND%27'+end+'%27')
           .subscribe(res => {
             resolve(res);
           }, (err: HttpErrorResponse) => {

@@ -62,7 +62,7 @@ export class HomePage
       ionViewDidLoad()
       {
             this.pickedDate = new Date().toISOString();
-
+            console.log("start TRM")
             var originalLineDraw = Chart.controllers.line.prototype.draw;
             Chart.helpers.extend(Chart.controllers.line.prototype, {
               draw: function() {
@@ -238,6 +238,7 @@ export class HomePage
         }
 
         calculateEfectiveEnd(choosed_day, start_real, end_real, end_graph, index_line){
+            console.log("calculateEfectiveEnd")
           //return new Promise((resolve) => {
             var real_en_datetime = end_real;
             //var adjusted_end = false;
@@ -246,8 +247,17 @@ export class HomePage
                 this.stringifyDateForQuery(new Date(real_en_datetime-5*this.dayInMiliseconds())),
                 this.stringifyDateForQuery(new Date(real_en_datetime))
               ).then((data) =>{
+                  
                   var start_ = new Date(data[data.length-1].vigenciadesde).getTime();
                   var end_ = new Date(data[data.length-1].vigenciahasta).getTime();
+                  
+                  console.log("calculateEfectiveEnd then", data)
+                  console.log("condition", start_ <= real_en_datetime && end_ >= real_en_datetime)
+                  console.log("start_", start_)
+                  console.log("real_en_datetime",real_en_datetime)
+                  console.log("end_",  end_)
+                  
+                  
                   if(start_ <= real_en_datetime && end_ >= real_en_datetime ){
                     //adjusted_end = true;
                     this.feedChart(choosed_day, start_real, real_en_datetime, end_real, index_line);
@@ -261,12 +271,14 @@ export class HomePage
         }
 
         feedChart(choosed_day, start, end, end_real, index_line){
+            console.log("feedChart")
           try{
             this.trmProvider.httpGetTrmGovco(
               this.stringifyDateForQuery(new Date(start)),
               this.stringifyDateForQuery(new Date(end))
             ).then((data) =>{
               //console.log(new Date(end_real));
+                console.log("data",data)
               var serie = [];
               //var n = 0;
               //var index = data.length;
@@ -307,10 +319,11 @@ export class HomePage
               console.log(data_ser);
               this.addData(this.lineChart, data_ser, index_line);
             }).catch((error) => {
-              //console.log(error);
+              console.log("error",error)
               this.soapProgressserial(choosed_day ,start ,end_real ,index_line);
             });
           }catch(error){
+              console.log("error",error)
             this.soapProgressserial(choosed_day ,start ,end_real ,index_line);
           }
         }
