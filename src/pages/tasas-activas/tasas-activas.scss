@@ -23,12 +23,13 @@ page-tasas-activas {
     
     .ui-autocomplete input{
         border: transparent !important;
+        background: transparent !important;
     }
     
     .ui-autocomplete {
         padding: 20px;
         font-size: 12pt;
-        width: auto;
+        width: 78%;
         zoom: 1;
         cursor: pointer;
         -webkit-box-shadow: none;

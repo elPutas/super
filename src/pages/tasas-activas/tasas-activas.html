@@ -22,8 +22,8 @@
     <img class="divisor" src="assets/imgs/bar.png">
 
     <div text-center class="marginTopInit">
-        <p-autoComplete text-center #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
-        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4" [(ngModel)]="text_select" >{{text_select}}</p-autoComplete>
+        <p-autoComplete text-center #input_text [(ngModel)]="text_select" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" [size]="30"
+        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4" ></p-autoComplete>
     </div>
 
     <ion-list class="list_options" #list_options *ngIf="filteredCountriesSingle?.length > 0" >

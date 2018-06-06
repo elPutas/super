@@ -18,8 +18,8 @@
     <div text-center class="titlePage">{{ 'title_entidades_page' | translate }}</div>
 
     <div text-center class="marginTop">
-        <p-autoComplete #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
-        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4">{{text_select}}</p-autoComplete>
+        <p-autoComplete #input_text [(ngModel)]="text_select" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" [size]="30"
+        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4"></p-autoComplete>
     </div>
 
 
