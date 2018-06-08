@@ -36,7 +36,12 @@ page-tasas-activas-result {
     }
 
     .item{
+        padding-left: 0px;
+        
         background-color: transparent;
+    }
+    .item-inner{
+        padding-right: 0px !important;
     }
 
     .items{
@@ -64,9 +69,12 @@ page-tasas-activas-result {
         margin-left: 13px;
         padding-top: 5px;
         font-size: 8pt;
-        border-radius: 10px;
+        //border-radius: 10px;
     }
 
+    .grid{
+        padding: 0px;
+    }
     .label {
         margin: 0px;
     }
@@ -83,7 +91,10 @@ page-tasas-activas-result {
         height: 140px;
         width: 100%;
     }
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a94d6+0,7db9e8+100 */
-
+    
+    .btnDwn{
+        float: right;
+        padding-right: 15%;
+    }
 
 }
