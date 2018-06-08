@@ -247,17 +247,30 @@ export class HomePage
                 this.stringifyDateForQuery(new Date(real_en_datetime-5*this.dayInMiliseconds())),
                 this.stringifyDateForQuery(new Date(real_en_datetime))
               ).then((data) =>{
-                  
-                  var start_ = new Date(data[data.length-1].vigenciadesde).getTime();
-                  var end_ = new Date(data[data.length-1].vigenciahasta).getTime();
-                  
-                  console.log("calculateEfectiveEnd then", data)
-                  console.log("condition", start_ <= real_en_datetime && end_ >= real_en_datetime)
-                  console.log("start_", start_)
-                  console.log("real_en_datetime",real_en_datetime)
-                  console.log("end_",  end_)
-                  
-                  
+                  var start_date = (data[data.length-1].vigenciadesde).split("T");
+                  var end_date = (data[data.length-1].vigenciahasta).split("T");
+                  var dtsp = start_date[0].split("-");
+                  var dtep = end_date[0].split("-");
+                  /*console.log("start_date ",dtsp);
+                  console.log("end_date ",end_date[0]);*/
+                  var s_o = new Date(parseInt(dtsp[0]), (parseInt(dtsp[1])-1), parseInt(dtsp[2]), 0, 0, 0, 0);
+                  var e_o = new Date(parseInt(dtep[0]), (parseInt(dtep[1])-1), parseInt(dtep[2]), 0, 0, 0, 0);
+                  /*console.log("s_o ",s_o);
+                  console.log("e_o ",e_o);*/
+                  var start_ = s_o.getTime();
+                  var end_ = e_o.getTime();
+
+                  /*console.log("data.length: ", data.length);
+                  console.log("data.length - 1: ", data.length - 1);
+                  console.log("data[data.length-1].vigenciadesde: ", data[data.length-1].vigenciadesde);
+                  console.log("data[data.length-1].vigenciahasta: ", data[data.length-1].vigenciahasta);
+                  console.log("calculateEfectiveEnd then", data);
+                  console.log("condition", start_ <= real_en_datetime && end_ >= real_en_datetime);
+                  console.log("start_", start_);
+                  console.log("real_en_datetime",real_en_datetime);
+                  console.log("end_",  end_);*/
+
+
                   if(start_ <= real_en_datetime && end_ >= real_en_datetime ){
                     //adjusted_end = true;
                     this.feedChart(choosed_day, start_real, real_en_datetime, end_real, index_line);
@@ -268,6 +281,13 @@ export class HomePage
                   }
 
               });
+        }
+
+        datefyStr(strDate){
+          var fase1_date = strDate.split("T");
+          var fase2_date = fase1_date[0].split("-");
+          var fase3_date = new Date(parseInt(fase2_date[0]), (parseInt(fase2_date[1])-1), parseInt(fase2_date[2]), 0, 0, 0, 0);
+          return fase3_date;
         }
 
         feedChart(choosed_day, start, end, end_real, index_line){
@@ -289,14 +309,27 @@ export class HomePage
                 if(serie.length == 10){
                   break;
                 }
-                var days_between_range = this.getAvlbleDaysForToday(new Date(data[i].vigenciadesde), new Date(data[i].vigenciahasta));
-                //console.log(days_between_range);
+                var days_between_range = this.getAvlbleDaysForToday(this.datefyStr(data[i].vigenciadesde), this.datefyStr(data[i].vigenciahasta));
+                console.log(days_between_range);
                 for(let j=0; j <= days_between_range; j++){
+
+                  /*var start_date = (data[i].vigenciadesde).split("T");
+                  var end_date = (data[i].vigenciahasta).split("T");
+                  var dtsp = start_date[0].split("-");
+                  var dtep = end_date[0].split("-");*/
+                  /*
+                  var r_sd = new Date(parseInt(dtsp[0]), (parseInt(dtsp[1])-1), parseInt(dtsp[2]), 0, 0, 0, 0);
+                  var r_ed = new Date(parseInt(dtep[0]), (parseInt(dtep[1])-1), parseInt(dtep[2]), 0, 0, 0, 0);
+                  */
+                  var r_sd = this.datefyStr(data[i].vigenciahasta).getTime();
+                  var r_ed = this.datefyStr(data[i].vigenciadesde).getTime();
+                  /*
                   var r_sd = new Date(data[i].vigenciahasta).setHours(0,0,0,0);
                   var r_ed = new Date(data[i].vigenciadesde).setHours(0,0,0,0);
-                  //console.log(new Date(r_sd));
-                  //console.log(new Date(r_ed));
-                  //console.log(new Date(fecha_progress));
+                  */
+                  console.log(r_sd);
+                  console.log(r_ed);
+                  console.log(new Date(fecha_progress));
                   if(
                     r_sd >= fecha_progress &&
                     r_ed <= fecha_progress &&
@@ -419,7 +452,7 @@ export class HomePage
           auximg.onload = function() {
             instance.events.publish('tabs:hide');
           }
-          
+
         }
 
 }
