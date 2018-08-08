@@ -8,9 +8,9 @@ page-tasas-activas-result {
         margin-right: auto;
         margin-bottom: 60px;
 
-        color: map-get($colors, primary);
-        border-left: 1px solid map-get($colors, danger);
-        border-right: 1px solid map-get($colors, danger);
+        color: map-get($colors, redSuperfinac);
+        border-left: 1px solid map-get($colors, dangerlf);
+        border-right: 1px solid map-get($colors, dangerri);
     }
 
     .bankPage{
@@ -23,7 +23,7 @@ page-tasas-activas-result {
     }
 
     .typePage{
-        font-size: 12pt;
+        font-size: 11pt;
         padding: 10px;
         font-weight: 300;
         background: linear-gradient(to right, #2a94d6 0%, #7db9e8 100%);
@@ -37,7 +37,7 @@ page-tasas-activas-result {
 
     .item{
         padding-left: 0px;
-        
+
         background-color: transparent;
     }
     .item-inner{
@@ -91,7 +91,7 @@ page-tasas-activas-result {
         height: 140px;
         width: 100%;
     }
-    
+
     .btnDwn{
         float: right;
         padding-right: 15%;

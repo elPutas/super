@@ -14,3 +14,32 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-navbar ion-title .toolbar-title-md, ion-navbar ion-title .toolbar-title-ios {
+  text-align: center;
+  font-size: 102% !important;
+}
+
+/*custom Ionicon icon*/
+ion-icon {
+  &[class*="custom-"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+  &[class*="custom-dollar"] {
+    mask-image: url(../assets/icon/dollar.svg);
+  }
+  &[class*="custom-percent"] {
+    mask-image: url(../assets/icon/percent.svg);
+  }&[class*="custom-bank"] {
+    mask-image: url(../assets/icon/bank.svg);
+  }&[class*="custom-cloud"] {
+    mask-image: url(../assets/icon/cloud.svg);
+  }&[class*="custom-schedule"] {
+    mask-image: url(../assets/icon/schedule.svg);
+  }
+}

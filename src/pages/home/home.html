@@ -14,7 +14,7 @@
   -->
 
 
-  <div text-center class="trm-title">$ {{ sel_trm }}</div>
+  <div text-center class="trm-title">{{ sel_trm | currency }}</div>
 
     <div text-center class="trm-info">{{ 'trm_valid_today_label' | translate }} {{ label_day }} {{ label_month | translate }} {{ label_year }}</div>
 
@@ -23,8 +23,8 @@
     <div class="gapChart"></div>
 
     <ion-item class="btn-date">
-      <ion-label style="color: #5166b0;">Buscar por fecha</ion-label>
-      <ion-datetime displayFormat="MMM DD YYYY" [max]="maxDate" (ionBlur)="changeDatePicker();" [(ngModel)]="pickedDate" style="color: #5166b0;"></ion-datetime>>
+      <ion-label style="color: #00278c;">Buscar por fecha</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [max]="maxDate" (ionBlur)="changeDatePicker();" [(ngModel)]="pickedDate" style="color: #00278c;"></ion-datetime>>
     </ion-item>
 
     <h4 class="last-ten-days" *ngIf="show_last_ten_d == true">Últimos 10 días</h4>

@@ -1,5 +1,5 @@
 page-tasas {
-    
+
     .titlebtn{
         font-size: 20pt;
         padding: 10px;
@@ -8,29 +8,29 @@ page-tasas {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        
-        color: map-get($colors, primary);
-        border-left: 1px solid map-get($colors, danger);
-        border-right: 1px solid map-get($colors, danger);
+
+        color: map-get($colors, redSuperfinac);
+        border-left: 1px solid map-get($colors, dangerlf);
+        border-right: 1px solid map-get($colors, dangerri);
     }
-    
+
     div.contained {
         height: 40vh;
-        
+
     }
     div.contained:first-child {
         background: white;
     }
-    
+
     .tasas-btn{
         padding-top: 30%;
     }
-    
+
     .divisor{
         margin-top: -31px;
         position: absolute;
     }
-    
+
     .line {
       border: 0;
       background-color: #000;

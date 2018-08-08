@@ -1,22 +1,22 @@
 page-tasas-pasivas {
 
     .titlePage{
-            font-size: 20pt;
+        font-size: 20pt;
         padding: 10px;
         font-weight: bolder;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        
-        color: map-get($colors, primary);
-        border-left: 1px solid map-get($colors, danger);
-        border-right: 1px solid map-get($colors, danger);
+
+        color: map-get($colors, redSuperfinac);
+        border-left: 1px solid map-get($colors, dangerlf);
+        border-right: 1px solid map-get($colors, dangerri);
         }
     .ui-autocomplete input{
         border: transparent !important;
     }
-    
+
     .ui-autocomplete {
         padding: 20px;
         font-size: 12pt;
@@ -40,7 +40,7 @@ page-tasas-pasivas {
     }
 
     .ui-autocomplete .ui-autocomplete-input {
-        
+
     }
 
     .ui-autocomplete-loader {
@@ -152,7 +152,7 @@ page-tasas-pasivas {
 
     .ui-autocomplete-dd input.ui-corner-all ,
     .ui-autocomplete-dd .ui-autocomplete-multiple-container.ui-corner-all {
-         -moz-border-radius-topright: 0px; 
+         -moz-border-radius-topright: 0px;
          -webkit-border-top-right-radius: 0px;
          border-top-right-radius: 0px;
          -moz-border-radius-bottomright: 0px;
@@ -161,7 +161,7 @@ page-tasas-pasivas {
      }
 
     .ui-autocomplete-dd .ui-autocomplete-dropdown.ui-corner-all {
-         -moz-border-radius-topleft: 0px; 
+         -moz-border-radius-topleft: 0px;
          -webkit-border-top-left-radius: 0px;
          border-top-left-radius: 0px;
          -moz-border-radius-bottomleft: 0px;
@@ -184,9 +184,9 @@ page-tasas-pasivas {
     .ui-fluid .ui-autocomplete .ui-autocomplete-dropdown.ui-button {
         width: 2em;
     }
-    
-    
-    
+
+
+
     [_nghost-c1] {
         background-color: color($colors, primary);
         border-radius: 40px;
@@ -201,7 +201,7 @@ page-tasas-pasivas {
         width: 20px;
         line-height: 20px;
     }
-    
+
     [_nghost-c0] .ng2-tag-input-field[_ngcontent-c0] {
         font-family: "Roboto", "Helvetica Neue", sans-serif;
         font-size: 16px;
@@ -214,8 +214,8 @@ page-tasas-pasivas {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
-    
+
+
     [_nghost-c0] {
         font-family: "Roboto", "Helvetica Neue", sans-serif;
         font-size: 16px;
@@ -223,8 +223,8 @@ page-tasas-pasivas {
         padding: 8px;
         box-shadow: none;
     }
-    
-    
+
+
     .creditBox{
         width: 78%;
         margin: 0 auto;
@@ -250,7 +250,7 @@ page-tasas-pasivas {
     .bgHeader{
         padding-top: 30px;
         background-color: white;
-        
+
         height: 140px;
         width: 100%;
     }
