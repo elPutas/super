@@ -24,7 +24,7 @@
 
 
     <ion-list #list_options *ngIf="filteredCountriesSingle?.length > 0" >
-        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.razon_social}}</ion-item>
+        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{getentityName(c)}}</ion-item>
 
     </ion-list>
 

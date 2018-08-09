@@ -36,6 +36,7 @@ export class EntidadesPage
     tipo_entidad:any[] = [];
     cod_entidad:any[] = [];
     countries:any[] = [];
+    server_entidades:string = "superfinanc";
 
 
     public autocompleteTags = [];
@@ -56,14 +57,20 @@ export class EntidadesPage
 
     itemSelected(data)
     {
-        console.log("data", data)
-        this.filteredCountriesSingle = []
+        console.log("data", data);
+        this.filteredCountriesSingle = [];
 
-        this.selectedEntity_te = data.tipo_entidad
-        this.selectedEntity_ce = data.cod_entidad
-        console.log("this.selectedEntity_ce", this.selectedEntity_ce)
-        console.log("this.selectedEntity_te", this.selectedEntity_te)
-        this.text_select = data.razon_social
+        console.log("this.selectedEntity_ce", this.selectedEntity_ce);
+        console.log("this.selectedEntity_te", this.selectedEntity_te);
+        if(this.server_entidades == "superfinanc"){
+          this.selectedEntity_te = data.tipoEntidad;
+          this.selectedEntity_ce = data.codigoEntidad;
+          this.text_select = data.nombreEntidad;
+        }else{
+          this.selectedEntity_te = data.tipo_entidad;
+          this.selectedEntity_ce = data.cod_entidad;
+          this.text_select = data.razon_social;
+        }
         //this.myInputRef.inputEL.nativeElement.value = data.razon_social
 
     }
@@ -72,10 +79,16 @@ export class EntidadesPage
     {
 
         let query = event.query;
-        this.serviceBankProvider.getEntities().then(countries => {
-
+        this.serviceBankProvider.getEntitiesSuperFinanc().then(countries => {
+            this.server_entidades = "superfinanc";
             this.filteredCountriesSingle = this.filterCountry(query, countries);
 
+        },err=>{
+          this.serviceBankProvider.getEntities().then(countries => {
+              this.server_entidades = "datosgov";
+              this.filteredCountriesSingle = this.filterCountry(query, countries);
+
+          });
         });
 
     }
@@ -85,12 +98,26 @@ export class EntidadesPage
         let filtered : any[] = [];
         for(let i = 0; i < countries.length; i++) {
             let country = countries[i];
-
-            if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+            if(this.server_entidades == "superfinanc"){
+              if(country.nombreEntidad.toLowerCase().indexOf(query.toLowerCase()) == 0) {
                 filtered.push(country);
+              }
+            }else{
+              if(country.razon_social.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+                filtered.push(country);
+              }
             }
         }
         return filtered;
+    }
+
+
+    getentityName(entity){
+      if(this.server_entidades == "superfinanc" ){
+        return entity.nombreEntidad;
+      }else{
+        return entity.razon_social;
+      }
     }
 
     /*

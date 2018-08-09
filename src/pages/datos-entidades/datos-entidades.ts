@@ -29,6 +29,7 @@ export class DatosEntidadesPage {
 
     ce: string ="";
     te: string ="";
+    origin:string ="";
 
     ciudad: string = "";
     direccion: string = "";
@@ -54,6 +55,7 @@ export class DatosEntidadesPage {
     {
         this.ce = navParams.get('ce');
         this.te = navParams.get('te');
+        //this.origin = navParams.get('origin');
 
     }
 
@@ -61,59 +63,72 @@ export class DatosEntidadesPage {
     {
         console.log('ionViewDidLoad DatosEntidadesPage');
 
-
-        this.entitiesInfoProvider.getInfo(this.te,this.ce).then(info => {
+        this.entitiesInfoProvider.getInfoSuperFinanc(this.te,this.ce).then(ent => {
 
             //get info
-            this.ciudad = info[0].ciudad
-            this.direccion = info[0].direccion
-            this.emailprincipal = info[0].emailprincipal
-            this.nombrepublicocargo = info[0].nombrepublicocargo
-            this.numeroidentificacion = info[0].numeroidentificacion
-            this.razon_social = info[0].razon_social
-            this.representante_legal = info[0].representante_legal
-            this.btnURL = info[0].uripaginaweb
+            this.ciudad = ent.nombreCiudadEntidad;
+            this.direccion = ent.direccionEntidad;
+            this.emailprincipal = '';
+            this.nombrepublicocargo = '';
+            this.numeroidentificacion = ent.numeroIdentificacionEntidad;
+            this.razon_social = ent.nombreEntidad;
+            this.representante_legal = ent.nombreRepresentanteLegal;
+            this.btnURL = ent.paginaWebEntidad != "null" ? ent.paginaWebEntidad : "";
 
-            //set info
-            this.txt_ciudad.nativeElement.textContent = this.ciudad
-            this.txt_direccion.nativeElement.textContent = this.direccion
-            this.txt_razon_social.nativeElement.textContent = this.razon_social
-            this.txt_emailprincipal.nativeElement.textContent = this.emailprincipal
-            this.txt_nombrepublicocargo.nativeElement.textContent = this.nombrepublicocargo
-            this.txt_representante.nativeElement.textContent = this.representante_legal
-            this.txt_numeroidentificacion.nativeElement.textContent = this.numeroidentificacion
+            this.setInfoEntidad();
+        }, err=>{
+          this.entitiesInfoProvider.getInfo(this.te,this.ce).then(info => {
 
-            this.text = this.btnURL;
+              //get info
+              this.ciudad = info[0].ciudad
+              this.direccion = info[0].direccion
+              this.emailprincipal = info[0].emailprincipal
+              this.nombrepublicocargo = info[0].nombrepublicocargo
+              this.numeroidentificacion = info[0].numeroidentificacion
+              this.razon_social = info[0].razon_social
+              this.representante_legal = info[0].representante_legal
+              this.btnURL = info[0].uripaginaweb
 
-            this.events.subscribe('tabs:unhide', (picture) => {
-              if(this.shareEntidad == true){
-                this.uriToBase64(picture).then((pic64:string)=>{
-
-                  var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
-                  if (tabBarElement.length != 0) {
-                    for(let i = 0; i < tabBarElement.length; i++ ){
-                      tabBarElement[i].style.opacity = "1";
-                    }
-                  }
-
-                  this.unhideHeader();
-                  this.socialSharing.share("entidad", null, pic64, "https://www.superfinanciera.gov.co")
-                                    .then(() => {
-                                      // Success!
-                                    }).catch((error) => {
-                                      // Error!
-                                      console.log(error);
-                                    });
-
-                });
-
-              }
-            });
-
-
-            //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
-
+              this.setInfoEntidad();
+          });
         });
+  }
+
+  setInfoEntidad(){
+    this.txt_ciudad.nativeElement.textContent = this.ciudad
+    this.txt_direccion.nativeElement.textContent = this.direccion
+    this.txt_razon_social.nativeElement.textContent = this.razon_social
+    this.txt_emailprincipal.nativeElement.textContent = this.emailprincipal
+    this.txt_nombrepublicocargo.nativeElement.textContent = this.nombrepublicocargo
+    this.txt_representante.nativeElement.textContent = this.representante_legal
+    this.txt_numeroidentificacion.nativeElement.textContent = this.numeroidentificacion
+
+    this.text = this.btnURL;
+
+    this.events.subscribe('tabs:unhide', (picture) => {
+      if(this.shareEntidad == true){
+        this.uriToBase64(picture).then((pic64:string)=>{
+
+          var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+          if (tabBarElement.length != 0) {
+            for(let i = 0; i < tabBarElement.length; i++ ){
+              tabBarElement[i].style.opacity = "1";
+            }
+          }
+
+          this.unhideHeader();
+          this.socialSharing.share("entidad", null, pic64, "https://www.superfinanciera.gov.co")
+          .then(() => {
+            // Success!
+          }).catch((error) => {
+          // Error!
+          console.log(error);
+        });
+
+      });
+
+    }
+    });
   }
 
   hideHeader(){
