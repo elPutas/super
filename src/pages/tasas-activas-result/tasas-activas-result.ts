@@ -29,6 +29,9 @@ export class TasasActivasResultPage {
     ce: string ="";
     te: string ="";
     tasaori:string ="";
+    server_entidades:string ="";
+    nameBank_s:string ="";
+    typeCredit_s:string ="";
 
     nameBank:String = "";
     typeCredit:String = "";
@@ -55,6 +58,9 @@ export class TasasActivasResultPage {
         this.te = navParams.get('te');
         this.type = navParams.get('type');
         this.tasaori = navParams.get('tasaori');
+        this.server_entidades = navParams.get("server_entidades");
+        this.nameBank_s = navParams.get("nameBank");
+        this.typeCredit_s = navParams.get("typeCredit");
 
         console.log("this.ce", this.ce);
         console.log("this.te", this.te);
@@ -64,24 +70,43 @@ export class TasasActivasResultPage {
     {
 
         console.log('ionViewDidLoad TasasActivasResultPage');
-
-        if(this.tasaori == "activa"){
-          this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
-            this.initdatosGov(info);
-          });
+        if(this.server_entidades == "superfinanc"){
+          this.getDataBySuperFinanc();
         }else{
-          this.activeRateProvider.getEntitiesFilteredPasivas(this.te,this.ce, this.type).then(info => {
-            this.initdatosGov(info);
-          });
+          this.getDataByDatosGov();
         }
+
+    }
+
+    getDataBySuperFinanc(){
+      this.activeRateProvider.getEntitiesFilteredSuperfinanc(this.te,this.ce, this.type).then(info => {
+        this.initdatosGov(info);
+      });
+    }
+
+    getDataByDatosGov(){
+      if(this.tasaori == "activa"){
+        this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
+          this.initdatosGov(info);
+        });
+      }else{
+        this.activeRateProvider.getEntitiesFilteredPasivas(this.te,this.ce, this.type).then(info => {
+          this.initdatosGov(info);
+        });
+      }
     }
 
     initdatosGov(info){
       let myArr = []
       var size = 0, key;
 
-      this.nameBank = " | " + info[0].sigla;
-      this.typeCredit = this.tasaori == "activa" ? " | " + info[0].modalidad_de_credito : " | " + info[0].tipo;
+      if(this.server_entidades == "superfinanc"){
+        this.nameBank = " | " + this.nameBank_s;
+        this.typeCredit = " | " + this.typeCredit_s;
+      }else{
+        this.nameBank = " | " + info[0].sigla;
+        this.typeCredit = this.tasaori == "activa" ? " | " + info[0].modalidad_de_credito : " | " + info[0].tipo;
+      }
 
       for (key in info[0])
       {
@@ -90,6 +115,7 @@ export class TasasActivasResultPage {
               // items hidden
               let codeHide = info[0][key] != "-2.00";
               let typeHide = key != "modalidad_de_credito";
+              let type2hide = key != "tipo";
               let nameHide = key != "sigla";
               let ceHide = key != "codigo_entidad";
               let teHide = key != "tipo_entidad";
@@ -99,11 +125,14 @@ export class TasasActivasResultPage {
               let infoName2 = infoName1.replace(/_/g, ' ');
 
 
-
-              if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
-              {
+              if(this.server_entidades == "superfinanc"){
+                myArr.push({"name":infoName2, "value":info[0][key]})
+              }else{
+                if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide && type2hide)
+                {
 
                   myArr.push({"name":infoName2, "value":info[0][key]})
+                }
               }
               size++;
           }

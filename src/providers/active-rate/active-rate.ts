@@ -90,4 +90,19 @@ export class ActiveRateProvider {
         });
     }
 
+    getEntitiesFilteredSuperfinanc(_te, _ce, _type)
+    {
+        let apiUrl = "https://www.superfinanciera.gov.co/RestTasas/rest/TasasCredito/"+_type+"/"+_te+"/"+_ce;
+
+
+        return new Promise<any>((resolve, reject) => {
+            this.http.get(apiUrl)
+              .subscribe(res => {
+                resolve(res);
+              }, (err) => {
+                reject(err);
+              });
+        });
+    }
+
 }

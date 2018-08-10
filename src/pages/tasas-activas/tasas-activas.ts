@@ -35,8 +35,9 @@ export class TasasActivasPage
 
     typesCredit:any = [];
 
-    text_select = ""
-    credit_select = ""
+    text_select = "";
+    credit_select = "";
+    credit_select_id = 0;
 
     filteredCountriesSingle: any[] =[];
 
@@ -76,6 +77,7 @@ export class TasasActivasPage
         //close it
         //this.typesCredit = []
         if(this.server_entidades == "superfinanc"){
+          this.credit_select_id = data.id;
           this.credit_select = data.nombretipocred;
         }else{
           this.selectedEntity_te = data.tipo_entidad;
@@ -249,7 +251,15 @@ export class TasasActivasPage
         console.log("this.selectedEntity_te", this.selectedEntity_te)
         console.log("this.credit_select", this.credit_select)
 
-        this.navCtrl.push(TasasActivasResultPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce, type:this.credit_select, tasaori:'activa'})
+        this.navCtrl.push(TasasActivasResultPage, {
+          te:this.selectedEntity_te,
+          ce:this.selectedEntity_ce,
+          type: this.server_entidades == "superfinanc" ? this.credit_select_id : this.credit_select,
+          tasaori:'activa',
+          server_entidades:this.server_entidades,
+          nameBank:this.text_select,
+          typeCredit:this.credit_select
+        })
 
     }
 
