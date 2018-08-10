@@ -1,257 +1,275 @@
 page-tasas-pasivas {
 
-    .titlePage{
-        font-size: 20pt;
-        padding: 10px;
-        font-weight: bolder;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
+  .list_options {
+      height: 150px;
+      overflow: auto;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 45px;
+  }
 
-        color: map-get($colors, redSuperfinac);
-        border-left: 1px solid map-get($colors, dangerlf);
-        border-right: 1px solid map-get($colors, dangerri);
-        }
-    .ui-autocomplete input{
-        border: transparent !important;
-    }
+  .titlePage{
+      font-size: 20pt;
+      padding: 10px;
+      font-weight: bolder;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
 
-    .ui-autocomplete {
-        padding: 20px;
-        font-size: 12pt;
-        width: auto;
-        zoom: 1;
-        cursor: pointer;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        position: relative;
-        display: inline-block;
-        background-color: white;
-        border-radius: 5px;
-        margin: 10px;
-    }
+      color: map-get($colors, redSuperfinac);
+      border-left: 1px solid map-get($colors, dangerlf);
+      border-right: 1px solid map-get($colors, dangerri);
+  }
 
-    .ui-autocomplete .ui-autocomplete-dropdown {
-        height: 100%;
-        width: 2em;
-        margin-right: 0;
-        vertical-align: top;
-    }
+  .ui-autocomplete input{
+      border: transparent !important;
+      background: transparent !important;
+  }
 
-    .ui-autocomplete .ui-autocomplete-input {
+  .ui-autocomplete {
+      padding: 20px;
+      font-size: 12pt;
+      width: 78%;
+      zoom: 1;
+      cursor: pointer;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      position: relative;
+      display: inline-block;
+      background-color: white;
+      border-radius: 5px;
+      margin: 10px;
+  }
 
-    }
+  .ui-autocomplete .ui-autocomplete-dropdown {
+      height: 100%;
+      width: 2em;
+      margin-right: 0;
+      vertical-align: top;
+  }
 
-    .ui-autocomplete-loader {
-        position: absolute;
-        right: .25em;
-        top: 50%;
-        margin-top: -.5em;
-    }
+  .ui-autocomplete .ui-autocomplete-input {
 
-    .ui-autocomplete-query {
-        font-weight: bold;
-    }
+  }
 
-    .ui-autocomplete .ui-autocomplete-panel {
-        min-width: 100%;
-    }
+  .ui-autocomplete-loader {
+      position: absolute;
+      right: .25em;
+      top: 50%;
+      margin-top: -.5em;
+  }
 
-    .ui-autocomplete-panel {
-        position: absolute;
-        overflow: auto;
-    }
+  .ui-autocomplete-query {
+      font-weight: bold;
+  }
 
-    .ui-autocomplete-panel .ui-autocomplete-list {
-        padding: 0.4em;
-        border: 0 none;
-    }
+  .ui-autocomplete .ui-autocomplete-panel {
+      min-width: 100%;
+  }
 
-    .ui-autocomplete-panel .ui-autocomplete-list-item {
-        border: 0 none;
-        cursor: pointer;
-        font-weight: normal;
-        margin: 1px 0;
-        padding: 0.186em 0.313em;
-        text-align: left;
-    }
+  .ui-autocomplete-panel {
+      position: absolute;
+      overflow: auto;
+  }
 
-    .ui-autocomplete .ui-button-icon-only,
-    .ui-autocomplete .ui-button-icon-only:enabled:hover,
-    .ui-autocomplete .ui-button-icon-only:enabled:focus,
-    .ui-autocomplete .ui-button-icon-only:enabled:active {
-        border-left: 0 none;
-    }
+  .ui-autocomplete-panel .ui-autocomplete-list {
+      padding: 0.4em;
+      border: 0 none;
+  }
 
-    /* Multiple Selection */
-    .ui-autocomplete-multiple-container {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  .ui-autocomplete-panel .ui-autocomplete-list-item {
+      border: 0 none;
+      cursor: pointer;
+      font-weight: normal;
+      margin: 1px 0;
+      padding: 0.186em 0.313em;
+      text-align: left;
+  }
 
-    .ui-autocomplete-multiple-container.ui-inputtext {
-        clear: left;
-        cursor: text;
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0 1.5em 0 .25em;
-    }
+  .ui-autocomplete .ui-button-icon-only,
+  .ui-autocomplete .ui-button-icon-only:enabled:hover,
+  .ui-autocomplete .ui-button-icon-only:enabled:focus,
+  .ui-autocomplete .ui-button-icon-only:enabled:active {
+      border-left: 0 none;
+  }
 
-    .ui-autocomplete-token {
-        cursor: default;
-        display: inline-block;
-        vertical-align: middle;
-        overflow: hidden;
-        padding: .125em .5em;
-        white-space: nowrap;
-        position: relative;
-        margin-right: .125em;
-        border: 0 none;
-        font-size: .9em;
-    }
+  /* Multiple Selection */
+  .ui-autocomplete-multiple-container {
+      display: inline-block;
+      vertical-align: middle;
+  }
 
-    .ui-autocomplete-token-label {
-        display: block;
-        margin-right: 2em;
-    }
+  .ui-autocomplete-multiple-container.ui-inputtext {
+      clear: left;
+      cursor: text;
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0 1.5em 0 .25em;
+  }
 
-    .ui-autocomplete-token-icon {
-        margin-top: -.5em;
-        position: absolute;
-        right: 0.2em;
-        top: 50%;
-        cursor: pointer;
-    }
+  .ui-autocomplete-token {
+      cursor: default;
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
+      padding: .125em .5em;
+      white-space: nowrap;
+      position: relative;
+      margin-right: .125em;
+      border: 0 none;
+      font-size: .9em;
+  }
 
-    .ui-autocomplete-input-token {
-        display: inline-block;
-        vertical-align: middle;
-        list-style-type: none;
-        margin: 0 0 0 .125em;
-        padding: .25em .25em .25em 0;
-    }
+  .ui-autocomplete-token-label {
+      display: block;
+      margin-right: 2em;
+  }
 
-    .ui-autocomplete-input-token input {
-        border: 0 none;
-        width: 10em;
-        outline: medium none;
-        background-color: transparent;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        border-radius: 0;
-    }
+  .ui-autocomplete-token-icon {
+      margin-top: -.5em;
+      position: absolute;
+      right: 0.2em;
+      top: 50%;
+      cursor: pointer;
+  }
 
-    .ui-autocomplete-dd .ui-autocomplete-loader {
-        right: 2.25em;
-    }
+  .ui-autocomplete-input-token {
+      display: inline-block;
+      vertical-align: middle;
+      list-style-type: none;
+      margin: 0 0 0 .125em;
+      padding: .25em .25em .25em 0;
+  }
 
-    .ui-autocomplete-dd input.ui-corner-all ,
-    .ui-autocomplete-dd .ui-autocomplete-multiple-container.ui-corner-all {
-         -moz-border-radius-topright: 0px;
-         -webkit-border-top-right-radius: 0px;
-         border-top-right-radius: 0px;
-         -moz-border-radius-bottomright: 0px;
-         -webkit-border-bottom-right-radius: 0px;
-         border-bottom-right-radius: 0px;
-     }
+  .ui-autocomplete-input-token input {
+      border: 0 none;
+      width: 10em;
+      outline: medium none;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+  }
 
-    .ui-autocomplete-dd .ui-autocomplete-dropdown.ui-corner-all {
-         -moz-border-radius-topleft: 0px;
-         -webkit-border-top-left-radius: 0px;
-         border-top-left-radius: 0px;
-         -moz-border-radius-bottomleft: 0px;
-         -webkit-border-bottom-left-radius: 0px;
-         border-bottom-left-radius: 0px;
-    }
+  .ui-autocomplete-dd .ui-autocomplete-loader {
+      right: 2.25em;
+  }
 
-    /** AutoComplete **/
-    .ui-fluid p-autocomplete,
-    .ui-fluid .ui-autocomplete,
-    .ui-fluid .ui-autocomplete-input {
-        width: 100%;
-    }
+  .ui-autocomplete-dd input.ui-corner-all ,
+  .ui-autocomplete-dd .ui-autocomplete-multiple-container.ui-corner-all {
+       -moz-border-radius-topright: 0px;
+       -webkit-border-top-right-radius: 0px;
+       border-top-right-radius: 0px;
+       -moz-border-radius-bottomright: 0px;
+       -webkit-border-bottom-right-radius: 0px;
+       border-bottom-right-radius: 0px;
+   }
 
-    .ui-fluid .ui-autocomplete.ui-autocomplete-dd .ui-autocomplete-input,
-    .ui-fluid .ui-autocomplete.ui-autocomplete-dd .ui-autocomplete-multiple-container {
-        width: calc(100% - 2em);
-    }
+  .ui-autocomplete-dd .ui-autocomplete-dropdown.ui-corner-all {
+       -moz-border-radius-topleft: 0px;
+       -webkit-border-top-left-radius: 0px;
+       border-top-left-radius: 0px;
+       -moz-border-radius-bottomleft: 0px;
+       -webkit-border-bottom-left-radius: 0px;
+       border-bottom-left-radius: 0px;
+  }
 
-    .ui-fluid .ui-autocomplete .ui-autocomplete-dropdown.ui-button {
-        width: 2em;
-    }
+  /** AutoComplete **/
+  .ui-fluid p-autocomplete,
+  .ui-fluid .ui-autocomplete,
+  .ui-fluid .ui-autocomplete-input {
+      width: 100%;
+  }
 
+  .ui-fluid .ui-autocomplete.ui-autocomplete-dd .ui-autocomplete-input,
+  .ui-fluid .ui-autocomplete.ui-autocomplete-dd .ui-autocomplete-multiple-container {
+      width: calc(100% - 2em);
+  }
 
-
-    [_nghost-c1] {
-        background-color: color($colors, primary);
-        border-radius: 40px;
-        font-size: 14px;
-        color: #fff;
-        margin-top: 1px;
-    }
-    [_nghost-c1] .ng2-tag-input-remove[_ngcontent-c1] {
-        color: color($colors, primary);
-        background: #fff;
-        height: 20px;
-        width: 20px;
-        line-height: 20px;
-    }
-
-    [_nghost-c0] .ng2-tag-input-field[_ngcontent-c0] {
-        font-family: "Roboto", "Helvetica Neue", sans-serif;
-        font-size: 16px;
-        display: inline-block;
-        width: 100%;
-        box-shadow: none;
-        border: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+  .ui-fluid .ui-autocomplete .ui-autocomplete-dropdown.ui-button {
+      width: 2em;
+  }
 
 
-    [_nghost-c0] {
-        font-family: "Roboto", "Helvetica Neue", sans-serif;
-        font-size: 16px;
-        display: block;
-        padding: 8px;
-        box-shadow: none;
-    }
+
+  [_nghost-c1] {
+      background-color: color($colors, primary);
+      border-radius: 40px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 1px;
+  }
+  [_nghost-c1] .ng2-tag-input-remove[_ngcontent-c1] {
+      color: color($colors, primary);
+      background: #fff;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+  }
+
+  [_nghost-c0] .ng2-tag-input-field[_ngcontent-c0] {
+      font-family: "Roboto", "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      display: inline-block;
+      width: 100%;
+      box-shadow: none;
+      border: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
 
 
-    .creditBox{
-        width: 78%;
-        margin: 0 auto;
-        border-radius: 7px;
-        margin-top: -30px;
-        padding-left: 20px;
-        text-align: left !important;
-    }
-    .btnNext{
-        margin-top: 30px;
-        width: 50%;
-    }
-    .divisor{
-        margin-top: -31px;
-        position: absolute;
-    }
-    .marginTopInit{
-        margin-top: 50px;
-    }
-    .marginTop{
-        margin-top: 20px;
-    }
-    .bgHeader{
-        padding-top: 30px;
-        background-color: white;
+  [_nghost-c0] {
+      font-family: "Roboto", "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      display: block;
+      padding: 8px;
+      box-shadow: none;
+  }
 
-        height: 140px;
-        width: 100%;
-    }
+
+  .creditBox{
+      width: 78%;
+      margin: 0 auto;
+      border-radius: 7px;
+      padding-left: 20px;
+      text-align: left !important;
+      background-color: white;
+      font-size: 12pt;
+      padding-top: 5px;
+      height: 58px;
+  }
+  .btnNext{
+      margin-top: 30px;
+      width: 50%;
+  }
+  .divisor{
+      margin-top: -31px;
+      position: absolute;
+  }
+  .marginTopInit{
+      margin-top: 50px;
+  }
+  .marginTop{
+      margin-top: 20px;
+  }
+
+  .bgHeader{
+      padding-top: 30px;
+      background-color: white;
+
+      height: 140px;
+      width: 100%;
+  }
+
+  .creditBox .popover-content {
+    width: 300px !important;
+  }
 }

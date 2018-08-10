@@ -18,36 +18,25 @@
         <div text-center class="titlePage">{{ 'tasa_pasiva_tasas_page' | translate }}</div>
     </div>
     <img class="divisor" src="assets/imgs/bar.png">
-    
+
     <div text-center class="marginTopInit">
-        <p-autoComplete text-center #input_text [(ngModel)]="country" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
-        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="10">{{text_select}}</p-autoComplete>
+        <p-autoComplete text-center #input_text [(ngModel)]="text_select" [suggestions]="filterCountrySingle" (completeMethod)="filterCountrySingle($event)" [size]="30"
+        placeholder="{{ 'entidades_entidades_page' | translate }}" [minLength]="4" ></p-autoComplete>
     </div>
-    
-    <ion-list #list_options *ngIf="filteredCountriesSingle?.length > 0" >
-        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.razon_social}}</ion-item>
-        
+
+    <ion-list class="list_options" #list_options *ngIf="filteredCountriesSingle?.length > 0" >
+        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.sigla}}</ion-item>
     </ion-list>
-    
-    
 
-    <ion-list>
 
-    </ion-list> 
-    
-    <ion-item text-center class="creditBox">
-      <ion-label>{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-label>
-      <ion-select [(ngModel)]="popover" interface="popover">
-        <ion-option value="1">credito 1</ion-option>
-        <ion-option value="2">credito 2</ion-option>
-        <ion-option value="3">credito 3</ion-option>
-        <ion-option value="4">credito 4</ion-option>
-        <ion-option value="5">credito 5</ion-option>
-      </ion-select>
-    </ion-item>
-    
+    <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
+
+    <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
+        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.tipo}}</ion-item>
+    </ion-list>
+
     <div text-center class="marginTop">
-        <button [navPush]="tasasActivasResultPage" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>
+        <button (click)="getInfoEntity()" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>
     </div>
-    
+
 </ion-content>

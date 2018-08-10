@@ -28,6 +28,7 @@ export class TasasActivasResultPage {
     type: string ="";
     ce: string ="";
     te: string ="";
+    tasaori:string ="";
 
     nameBank:String = "";
     typeCredit:String = "";
@@ -53,6 +54,7 @@ export class TasasActivasResultPage {
         this.ce = navParams.get('ce');
         this.te = navParams.get('te');
         this.type = navParams.get('type');
+        this.tasaori = navParams.get('tasaori');
 
         console.log("this.ce", this.ce);
         console.log("this.te", this.te);
@@ -62,72 +64,79 @@ export class TasasActivasResultPage {
     {
 
         console.log('ionViewDidLoad TasasActivasResultPage');
-        this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
 
-            let myArr = []
-            var size = 0, key;
+        if(this.tasaori == "activa"){
+          this.activeRateProvider.getEntitiesFiltered(this.te,this.ce, this.type).then(info => {
+            this.initdatosGov(info);
+          });
+        }else{
+          this.activeRateProvider.getEntitiesFilteredPasivas(this.te,this.ce, this.type).then(info => {
+            this.initdatosGov(info);
+          });
+        }
+    }
 
-            this.nameBank = " | " + info[0].sigla
-            this.typeCredit = " | " + info[0].modalidad_de_credito
+    initdatosGov(info){
+      let myArr = []
+      var size = 0, key;
 
-            for (key in info[0])
-            {
-                if (info[0].hasOwnProperty(key))
-                {
-                    // items hidden
-                    let codeHide = info[0][key] != "-2.00"
-                    let typeHide = key != "modalidad_de_credito"
-                    let nameHide = key != "sigla"
-                    let ceHide = key != "codigo_entidad"
-                    let teHide = key != "tipo_entidad"
-                    let dateHide = key != "fecha_corte"
+      this.nameBank = " | " + info[0].sigla;
+      this.typeCredit = this.tasaori == "activa" ? " | " + info[0].modalidad_de_credito : " | " + info[0].tipo;
 
-                    let infoName1 = key.replace(/i_n/g, 'ión');
-                    let infoName2 = infoName1.replace(/_/g, ' ');
+      for (key in info[0])
+      {
+          if (info[0].hasOwnProperty(key))
+          {
+              // items hidden
+              let codeHide = info[0][key] != "-2.00";
+              let typeHide = key != "modalidad_de_credito";
+              let nameHide = key != "sigla";
+              let ceHide = key != "codigo_entidad";
+              let teHide = key != "tipo_entidad";
+              let dateHide = key != "fecha_corte";
+
+              let infoName1 = key.replace(/i_n/g, 'ión');
+              let infoName2 = infoName1.replace(/_/g, ' ');
 
 
 
-                    if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
-                    {
+              if(codeHide && nameHide && typeHide && ceHide && teHide && dateHide)
+              {
 
-                        myArr.push({"name":infoName2, "value":info[0][key]})
-                    }
-                    size++;
-                }
+                  myArr.push({"name":infoName2, "value":info[0][key]})
+              }
+              size++;
+          }
+      }
+
+      this.myInfo = myArr
+      console.log("info", myArr)
+      //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+
+      this.events.subscribe('tabs:unhide', (picture) => {
+        if(this.tasaShare == true){
+          this.uriToBase64(picture).then((pic64:string)=>{
+            var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+
+            if (tabBarElement.length != 0) {
+              for(let i = 0; i < tabBarElement.length; i++ ){
+                tabBarElement[i].style.opacity = "1";
+              }
             }
 
-            this.myInfo = myArr
-            console.log("info", myArr)
-            //this.txt_btnURL._elementRef.nativeElement.textContent = this.btnURL
+            this.unhideHeader();
+            this.socialSharing.share(this.nameBank.toString()+"\r "+this.typeCredit.toString(), null, pic64, "https://www.superfinanciera.gov.co")
+                              .then(() => {
+                                // Success!
+                              }).catch((error) => {
+                                // Error!
+                                console.log(error);
+                              });
 
-            this.events.subscribe('tabs:unhide', (picture) => {
-              if(this.tasaShare == true){
-                this.uriToBase64(picture).then((pic64:string)=>{
-                  var tabBarElement = document.getElementsByClassName('tabbar') as HTMLCollectionOf<HTMLElement>;
+          });
 
-                  if (tabBarElement.length != 0) {
-                    for(let i = 0; i < tabBarElement.length; i++ ){
-                      tabBarElement[i].style.opacity = "1";
-                    }
-                  }
-
-                  this.unhideHeader();
-                  this.socialSharing.share(this.nameBank.toString()+"\r "+this.typeCredit.toString(), null, pic64, "https://www.superfinanciera.gov.co")
-                                    .then(() => {
-                                      // Success!
-                                    }).catch((error) => {
-                                      // Error!
-                                      console.log(error);
-                                    });
-
-
-
-                });
-
-              }
-            });
-
-        });
+        }
+      });
     }
 
     hideHeader(){
@@ -226,25 +235,6 @@ export class TasasActivasResultPage {
           {
             ul: obj_content
           }
-        /*
-        { text: new Date().toTimeString(), alignment: 'right' },
-
-        { text: 'From', style: 'subheader' },
-        { text: this.letterObj.from },
-
-        { text: 'To', style: 'subheader' },
-        this.letterObj.to,
-
-        { text: this.letterObj.text, style: 'story', margin: [0, 20, 0, 20] },
-
-        {
-          ul: [
-            'Bacon',
-            'Rips',
-            'BBQ',
-          ]
-        }
-        */
         ],
         styles: {
           header: {

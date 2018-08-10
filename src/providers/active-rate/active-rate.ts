@@ -14,7 +14,7 @@ export class ActiveRateProvider {
     console.log('Hello ActiveRateProvider Provider');
   }
 
-    getEntities() 
+    getEntities()
     {
         return new Promise<any>((resolve, reject) => {
             this.http.get('https://www.datos.gov.co/resource/wnsa-ce2u.json')
@@ -25,17 +25,29 @@ export class ActiveRateProvider {
               });
           });
     }
-    
-    getEntitiesFiltered(_te, _ce, _type) 
+
+    getEntitiesSuperfinanc()
+    {
+        return new Promise<any>((resolve, reject) => {
+            this.http.get('https://www.datos.gov.co/resource/wnsa-ce2u.json')
+              .subscribe(res => {
+                resolve(res);
+              }, (err) => {
+                reject(err);
+              });
+          });
+    }
+
+    getEntitiesFiltered(_te, _ce, _type)
     {
         let apiUrl = "https://www.datos.gov.co/resource/wnsa-ce2u.json?"
         let te = "tipo_entidad="+_te;
         let ce = "codigo_entidad="+_ce;
         let type = "modalidad_de_credito="+_type;
-        
-        
+
+
         console.log("URL", apiUrl+te+"&"+ce+"&"+type)
-        
+
         return new Promise<any>((resolve, reject) => {
             this.http.get(apiUrl+te+"&"+ce+"&"+type)
               .subscribe(res => {
@@ -45,5 +57,37 @@ export class ActiveRateProvider {
               });
         });
     }
-    
+
+    getEntitiesPasivas()
+    {
+        return new Promise<any>((resolve, reject) => {
+            this.http.get('https://www.datos.gov.co/resource/k5ms-eavc.json')
+              .subscribe(res => {
+                resolve(res);
+              }, (err) => {
+                reject(err);
+              });
+          });
+    }
+
+    getEntitiesFilteredPasivas(_te, _ce, _type)
+    {
+        let apiUrl = "https://www.datos.gov.co/resource/k5ms-eavc.json?"
+        let te = "tipo_entidad="+_te;
+        let ce = "codigo_entidad="+_ce;
+        let type = "tipo="+_type;
+
+
+        console.log("URL", apiUrl+te+"&"+ce+"&"+type)
+
+        return new Promise<any>((resolve, reject) => {
+            this.http.get(apiUrl+te+"&"+ce+"&"+type)
+              .subscribe(res => {
+                resolve(res);
+              }, (err) => {
+                reject(err);
+              });
+        });
+    }
+
 }

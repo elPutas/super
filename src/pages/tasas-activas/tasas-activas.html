@@ -31,11 +31,11 @@
     </ion-list>
 
 
-        <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
+    <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
 
-        <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
-            <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.modalidad_de_credito}}</ion-item>
-        </ion-list>
+    <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
+        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.modalidad_de_credito}}</ion-item>
+    </ion-list>
 
 
     <!--ion-item text-center class="creditBox">

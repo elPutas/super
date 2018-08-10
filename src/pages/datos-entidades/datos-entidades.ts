@@ -63,7 +63,7 @@ export class DatosEntidadesPage {
     {
         console.log('ionViewDidLoad DatosEntidadesPage');
 
-        this.entitiesInfoProvider.getInfoSuperFinanc(this.te,this.ce).then(ent => {
+        this.entitiesInfoProvider.getInfoSuperFinanc(this.te,this.ce).then((ent:any) => {
 
             //get info
             this.ciudad = ent.nombreCiudadEntidad;
