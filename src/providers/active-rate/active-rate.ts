@@ -26,10 +26,10 @@ export class ActiveRateProvider {
           });
     }
 
-    getEntitiesSuperfinanc()
+    getEntitiesTiposCreditoSuperfinanc()
     {
         return new Promise<any>((resolve, reject) => {
-            this.http.get('https://www.datos.gov.co/resource/wnsa-ce2u.json')
+            this.http.get('https://www.superfinanciera.gov.co/RestTasas/rest/TiposCredito')
               .subscribe(res => {
                 resolve(res);
               }, (err) => {

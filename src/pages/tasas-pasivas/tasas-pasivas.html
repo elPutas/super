@@ -25,14 +25,14 @@
     </div>
 
     <ion-list class="list_options" #list_options *ngIf="filteredCountriesSingle?.length > 0" >
-        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.sigla}}</ion-item>
+        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{getNameEntidad(c)}}</ion-item>
     </ion-list>
 
 
     <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
 
     <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
-        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.tipo}}</ion-item>
+        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{getNameType(c)}}</ion-item>
     </ion-list>
 
     <div text-center class="marginTop">

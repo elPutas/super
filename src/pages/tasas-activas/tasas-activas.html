@@ -27,24 +27,15 @@
     </div>
 
     <ion-list class="list_options" #list_options *ngIf="filteredCountriesSingle?.length > 0" >
-        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{c.sigla}}</ion-item>
+        <ion-item  *ngFor="let c of filteredCountriesSingle" (click)="itemSelected(c)">{{getNameEntidad(c)}}</ion-item>
     </ion-list>
 
 
     <ion-input placeholder="{{ 'tipo_credito_tasas_activas_page' | translate }}" class="creditBox" #creditSelect [(ngModel)]="credit_select" (click)="openList()">{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-input>
 
     <ion-list *ngIf="showCreditList" class="list_options" #listCredit >
-        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{c.modalidad_de_credito}}</ion-item>
+        <ion-item  *ngFor="let c of typesCredit" (click)="itemTypeSelected(c)">{{getNameType(c)}}</ion-item>
     </ion-list>
-
-
-    <!--ion-item text-center class="creditBox">
-      <ion-label>{{ 'tipo_credito_tasas_activas_page' | translate }}</ion-label>
-      <ion-select  [(ngModel)]="popover" interface="popover" class="popoverFix" (ngModelChange)="itemTypeSelected($event)">
-          <ion-option  *ngFor="let c of typesCredit" [selected]="typesCredit">{{c.modalidad_de_credito}}</ion-option>
-      </ion-select>
-    </ion-item-->
-
 
     <div text-center class="marginTop">
         <button (click)="getInfoEntity()" ion-button color="succes" round>{{ 'consultar_entidades_page' | translate }}</button>

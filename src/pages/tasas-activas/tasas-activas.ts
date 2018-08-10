@@ -4,6 +4,8 @@ import { Response } from '@angular/http';
 
 import { TasasActivasResultPage } from '../tasas-activas-result/tasas-activas-result';
 import { ActiveRateProvider } from '../../providers/active-rate/active-rate';
+import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
+
 /**
  * Generated class for the TasasActivasPage page.
  *
@@ -52,7 +54,7 @@ export class TasasActivasPage
 
     public autocompleteTags = [];
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, private activeRateProvider:ActiveRateProvider, public serviceBankProvider:ServiceBankProvider) {
     }
 
     ionViewDidLoad()
@@ -73,11 +75,14 @@ export class TasasActivasPage
     {
         //close it
         //this.typesCredit = []
+        if(this.server_entidades == "superfinanc"){
+          this.credit_select = data.nombretipocred;
+        }else{
+          this.selectedEntity_te = data.tipo_entidad;
+          this.selectedEntity_ce = data.codigo_entidad;
+          this.credit_select = data.modalidad_de_credito;
+        }
 
-        this.selectedEntity_te = data.tipo_entidad
-        this.selectedEntity_ce = data.codigo_entidad
-
-        this.credit_select = data.modalidad_de_credito
         //this.myCreditSelectRef.nativeElement.value = data.modalidad_de_credito
         //console.log("data credit", this.myCreditSelectRef.nativeElement.value)
         this.showCreditList = false
@@ -87,17 +92,24 @@ export class TasasActivasPage
     //bank selected
     itemSelected(data)
     {
-        console.log("data bank", data)
+        console.log("data bank", data);
         //close it
-        this.filteredCountriesSingle = []
+        this.filteredCountriesSingle = [];
 
-        this.selectedEntity_te = data.tipo_entidad
-        this.selectedEntity_ce = data.codigo_entidad
-        this.text_select = data.sigla
+
+        if(this.server_entidades == "superfinanc"){
+          this.selectedEntity_te = data.tipoEntidad;
+          this.selectedEntity_ce = data.codigoEntidad;
+          this.text_select = data.nombreEntidad;
+        }else{
+          this.selectedEntity_te = data.tipo_entidad;
+          this.selectedEntity_ce = data.codigo_entidad;
+          this.text_select = data.sigla;
+        }
 
         //this.myInputRef.inputEL.nativeElement.value = data.sigla
         this.showCredit = true;
-        this.showCreditList = true
+        this.showCreditList = true;
     }
 
 
@@ -106,11 +118,31 @@ export class TasasActivasPage
     {
         let query = event.query;
 
-        this.activeRateProvider.getEntities().then(countries =>
-        {
+
+
+        this.serviceBankProvider.getEntitiesSuperFinanc().then(countries => {
+            this.server_entidades = "superfinanc";
+            this.filteredCountriesSingle = this.filterByName(query, countries);
+            this.activeRateProvider.getEntitiesTiposCreditoSuperfinanc().then((types:any)=>{
+              let instance = this;
+              this.typesCredit = [];
+              types.forEach(function (value) {
+                if(value.nombretipocred.toLowerCase().indexOf("pasiva") === -1){
+                  instance.typesCredit.push(value);
+                }
+              });
+            });
+        },err=>{
+          this.activeRateProvider.getEntities().then(countries =>
+          {
+            this.server_entidades = "datosgov";
             this.filteredCountriesSingle = this.filterByName(query, countries);
             this.typesCredit = this.filterByType(query, countries);
+          });
+
         });
+
+
     }
 
 
@@ -165,19 +197,34 @@ export class TasasActivasPage
 
         for(let i = 0; i < banks.length; i++) {
             let bank = banks[i];
+            if(this.server_entidades == "superfinanc"){
+              if(bank.nombreEntidad.toLowerCase().indexOf(query.toLowerCase()) == 0)
+              {
+                  if(bank.nombreEntidad == lastSigla)
+                      letPush = false
+                  else
+                      letPush = true
 
-            if(bank.sigla.toLowerCase().indexOf(query.toLowerCase()) == 0)
-            {
-                if(bank.sigla == lastSigla)
-                    letPush = false
-                else
-                    letPush = true
+                  lastSigla = bank.sigla
 
-                lastSigla = bank.sigla
+                  if(letPush)
+                      filtered.push(bank);
+              }
+            }else{
+              if(bank.sigla.toLowerCase().indexOf(query.toLowerCase()) == 0)
+              {
+                  if(bank.sigla == lastSigla)
+                      letPush = false
+                  else
+                      letPush = true
 
-                if(letPush)
-                    filtered.push(bank);
+                  lastSigla = bank.sigla
+
+                  if(letPush)
+                      filtered.push(bank);
+              }
             }
+
         }
         return filtered;
     }
@@ -204,6 +251,22 @@ export class TasasActivasPage
 
         this.navCtrl.push(TasasActivasResultPage, {te:this.selectedEntity_te, ce:this.selectedEntity_ce, type:this.credit_select, tasaori:'activa'})
 
+    }
+
+    getNameEntidad(obj){
+      if(this.server_entidades == "superfinanc"){
+        return obj.nombreEntidad;
+      }else{
+        return obj.sigla;
+      }
+    }
+
+    getNameType(obj){
+      if(this.server_entidades == "superfinanc"){
+        return obj.nombretipocred;
+      }else{
+        return obj.modalidad_de_credito;
+      }
     }
 
 }
