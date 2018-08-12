@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { AlertEventPage } from '../alert-event/alert-event';
 import { ServiceEventsProvider } from '../../providers/service-events/service-events';
-
+import { TageoProvider } from '../../providers/tageo/tageo';
 /**
  * Generated class for the EventosPage page.
  *
@@ -26,6 +26,7 @@ export class EventosPage
     constructor(public navCtrl: NavController,
                public navParams: NavParams,
                public modalCtrl: ModalController,
+               public tageoProvider:TageoProvider,
                private serviceEventsProvider: ServiceEventsProvider
               )
     {
@@ -83,5 +84,13 @@ export class EventosPage
           });
 
         });
+
+        this.tageoProvider.tagSection(5).then(
+          (done:any)=>{
+          },
+          (err:any)=>{
+          }
+        );
+        
     }
 }

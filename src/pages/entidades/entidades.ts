@@ -4,6 +4,7 @@ import { Response } from '@angular/http';
 
 import { DatosEntidadesPage } from '../datos-entidades/datos-entidades';
 import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
+import { TageoProvider } from '../../providers/tageo/tageo';
 /**
  * Generated class for the EntidadesPage page.
  *
@@ -46,6 +47,7 @@ export class EntidadesPage
     constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
+      public tageoProvider:TageoProvider,
       private serviceBankProvider:ServiceBankProvider
     )
     {
@@ -165,7 +167,12 @@ export class EntidadesPage
     {
 
         console.log('ionViewDidLoad EntidadesPage');
-
+        this.tageoProvider.tagSection(3).then(
+          (done:any)=>{
+          },
+          (err:any)=>{
+          }
+        );
         //this.country =[];
         //this.countries = [];
     }

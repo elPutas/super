@@ -49,6 +49,7 @@ import { ActiveRateProvider } from '../providers/active-rate/active-rate';
 
 import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
+import { TageoProvider } from '../providers/tageo/tageo';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -137,7 +138,6 @@ export class WebpackTranslateLoader implements TranslateLoader {
   ],
   providers: [
     StatusBar,
-
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceBankProvider,
@@ -149,7 +149,8 @@ export class WebpackTranslateLoader implements TranslateLoader {
     File,
     FileOpener,
     TrmProvider,
-    ActiveRateProvider
+    ActiveRateProvider,
+    TageoProvider
 
   ]
 })

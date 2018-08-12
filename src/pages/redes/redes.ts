@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { TageoProvider } from '../../providers/tageo/tageo';
 /**
  * Generated class for the RedesPage page.
  *
@@ -15,13 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RedesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public tageoProvider:TageoProvider, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RedesPage');
+    this.tageoProvider.tagSection(4).then(
+      (done:any)=>{
+      },
+      (err:any)=>{
+      }
+    );
   }
-  
+
   ngAfterViewInit() {
       !function(d,s,id){
             var js: any,

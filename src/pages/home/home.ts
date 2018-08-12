@@ -5,6 +5,7 @@ import { Chart } from 'chart.js';
 
 import { TranslateService } from '@ngx-translate/core';
 import { TrmProvider } from '../../providers/trm/trm';
+import { TageoProvider } from '../../providers/tageo/tageo';
 import { SocialSharing } from '@ionic-native/social-sharing';
 
 
@@ -50,6 +51,7 @@ export class HomePage
         public navCtrl: NavController,
         public translate: TranslateService,
         public trmProvider: TrmProvider,
+        public tageoProvider:TageoProvider,
         public socialSharing: SocialSharing,
         public events:Events,
         public statusBar: StatusBar
@@ -175,6 +177,13 @@ export class HomePage
 
               }
             });
+
+            this.tageoProvider.tagSection(1).then(
+              (done:any)=>{
+              },
+              (err:any)=>{  
+              }
+            );
         }
 
         uriToBase64(MY_URL){
