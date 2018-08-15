@@ -13,7 +13,6 @@ import { ServiceBankProvider } from '../../providers/service-bank/service-bank';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-tasas-pasivas',
   templateUrl: 'tasas-pasivas.html',

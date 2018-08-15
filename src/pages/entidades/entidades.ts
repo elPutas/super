@@ -12,7 +12,6 @@ import { TageoProvider } from '../../providers/tageo/tageo';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-entidades',
   templateUrl: 'entidades.html',

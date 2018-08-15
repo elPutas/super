@@ -18,7 +18,6 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-tasas-activas-result',
   templateUrl: 'tasas-activas-result.html',

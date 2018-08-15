@@ -10,7 +10,6 @@ import { TageoProvider } from '../../providers/tageo/tageo';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-eventos',
   templateUrl: 'eventos.html',
@@ -91,6 +90,6 @@ export class EventosPage
           (err:any)=>{
           }
         );
-        
+
     }
 }

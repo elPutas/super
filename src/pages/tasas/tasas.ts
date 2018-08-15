@@ -10,7 +10,6 @@ import { TageoProvider } from '../../providers/tageo/tageo';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-tasas',
   templateUrl: 'tasas.html',

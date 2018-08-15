@@ -8,15 +8,14 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-alert-event',
   templateUrl: 'alert-event.html',
 })
-export class AlertEventPage 
+export class AlertEventPage
 {
     infoArray = []
-    constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) 
+    constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController)
     {
         this.infoArray = navParams.get("myData")
         console.log(this.infoArray)
@@ -25,7 +24,7 @@ export class AlertEventPage
     ionViewDidLoad() {
         console.log('ionViewDidLoad AlertEventPage');
     }
-  
+
     dismiss(data) {
         this.viewCtrl.dismiss(data);
     }
