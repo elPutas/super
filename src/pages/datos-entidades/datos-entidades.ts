@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { EntitiesInfoProvider } from '../../providers/entities-info/entities-info';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the DatosEntidadesPage page.
@@ -40,7 +41,7 @@ export class DatosEntidadesPage {
     btnURL: string;
     hideHead: boolean = false;
     shareEntidad: boolean = false;
-
+    certhref:string = "";
 
     text;
 
@@ -49,12 +50,14 @@ export class DatosEntidadesPage {
      public events:Events,
      public navParams: NavParams,
      public socialSharing: SocialSharing,
+     public iab:InAppBrowser,
      private entitiesInfoProvider: EntitiesInfoProvider
     )
     {
         this.ce = navParams.get('ce');
         this.te = navParams.get('te');
         //this.origin = navParams.get('origin');
+        //this.certhref = "http://www.superfinanciera.gov.co/WebServiceEntidades/rest/entidad/certificadoExistenciaEntidad.json?tipoEntidad="+this.te+"&codigoEntidad="+this.ce;
 
     }
 
@@ -233,6 +236,13 @@ export class DatosEntidadesPage {
       request.send();
     });
 
+  }
+
+  openCertificate(){
+    let target = '_system';
+    let uri = "http://www.superfinanciera.gov.co/WebServiceEntidades/rest/entidad/certificadoExistenciaEntidad.json?tipoEntidad="+this.te+"&codigoEntidad="+this.ce;
+    let opts = "location=yes,enableViewportScale=no,hidden=yes";
+    this.iab.create(uri, target, opts);
   }
 
   public regularShare(){

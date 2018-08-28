@@ -12,21 +12,25 @@
     <div class="bg-alert">
         <div class="bg-btn"></div>
         <button class="button-close" (click)="dismiss()">
-            <!--img class="divisor" src="assets/imgs/bar.png"--> 
+            <!--img class="divisor" src="assets/imgs/bar.png"-->
                <ion-icon large  ios="ios-arrow-dropdown-circle" md="md-arrow-dropdown-circle"></ion-icon>
         </button>
-        
+
         <ion-list #list_options >
             <ion-item  *ngFor="let c of infoArray">
-                
                 <p class="title-date">{{c.time_txt}}<p>
                 <p class="title-event">{{c.titulo}}<p>
                 <p class="title-link">{{c.link}}<p>
             </ion-item>
+            <ion-item>
+              <button ion-button float-right (click)="regularShare()">
+                <ion-icon ios="ios-share-outline" md="md-share" style="font-size: 25px;"></ion-icon>
+              </button>
+            </ion-item>
         </ion-list>
-        
 
-        
-         
+
+
+
     </div>
 </ion-content>

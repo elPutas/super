@@ -51,6 +51,8 @@ import { File } from '@ionic-native/file';
 import { FileOpener } from '@ionic-native/file-opener';
 import { TageoProvider } from '../providers/tageo/tageo';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -146,6 +148,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ServiceEventsProvider,
     Screenshot,
     SocialSharing,
+    InAppBrowser,
     File,
     FileOpener,
     TrmProvider,
