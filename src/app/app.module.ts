@@ -10,6 +10,8 @@ import { EntidadesPage } from '../pages/entidades/entidades';
 import { RedesPage } from '../pages/redes/redes';
 import { EventosPage } from '../pages/eventos/eventos';
 import { DatosEntidadesPage } from '../pages/datos-entidades/datos-entidades';
+import { ConsultaPqrPage } from '../pages/consulta-pqr/consulta-pqr';
+import { PqrsfPage } from '../pages/pqrsf/pqrsf';
 
 import { TasasActivasPage } from '../pages/tasas-activas/tasas-activas';
 import { TasasPasivasPage } from '../pages/tasas-pasivas/tasas-pasivas';
@@ -52,6 +54,10 @@ import { FileOpener } from '@ionic-native/file-opener';
 import { TageoProvider } from '../providers/tageo/tageo';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import {ConsultaOficinaPage} from "../pages/consulta-oficina/consulta-oficina";
+import {TarifasPage} from "../pages/tarifas/tarifas";
+import {DenunciaPage} from "../pages/denuncia/denuncia";
+
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -104,6 +110,11 @@ export class WebpackTranslateLoader implements TranslateLoader {
     TasasActivasResultPage,
     AlertEventPage,
     DatosEntidadesPage,
+    ConsultaPqrPage,
+    PqrsfPage,
+    ConsultaOficinaPage,
+    TarifasPage,
+    DenunciaPage,
     TabsPage
   ],
   imports: [
@@ -136,6 +147,11 @@ export class WebpackTranslateLoader implements TranslateLoader {
     TasasActivasResultPage,
     AlertEventPage,
     DatosEntidadesPage,
+    ConsultaPqrPage,
+    PqrsfPage,
+    ConsultaOficinaPage,
+    TarifasPage,
+    DenunciaPage,
     TabsPage
   ],
   providers: [

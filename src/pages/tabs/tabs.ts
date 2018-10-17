@@ -9,6 +9,11 @@ import { EventosPage } from '../eventos/eventos';
 import { TrmProvider } from '../../providers/trm/trm';
 
 import { Screenshot } from '@ionic-native/screenshot';
+import {PqrsfPage} from "../pqrsf/pqrsf";
+import {ConsultaPqrPage} from "../consulta-pqr/consulta-pqr";
+import {DenunciaPage} from "../denuncia/denuncia";
+import {ConsultaOficinaPage} from "../consulta-oficina/consulta-oficina";
+import {TarifasPage} from "../tarifas/tarifas";
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -21,6 +26,11 @@ export class TabsPage {
   tab3Root = EntidadesPage;
   tab4Root = RedesPage;
   tab5Root = EventosPage;
+  tab6Root = PqrsfPage;
+  tab7Root = ConsultaPqrPage;
+  tab8Root = DenunciaPage;
+  tab9Root = ConsultaOficinaPage;
+  tab10Root= TarifasPage;
 
   constructor(
     public events: Events,

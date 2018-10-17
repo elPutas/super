@@ -1,0 +1,16 @@
+page-consulta-pqr {
+  .titlePage{
+    font-size: 20pt;
+    padding: 10px;
+    font-weight: bolder;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    color: map-get($colors, redSuperfinac);
+    border-left: 1px solid map-get($colors, dangerlf);
+    border-right: 1px solid map-get($colors, dangerri);
+  }
+
+}
